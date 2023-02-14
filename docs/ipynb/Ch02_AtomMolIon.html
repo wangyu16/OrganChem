@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>General Chemistry – ch02_atommolion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">GenChem</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch01_Introduction.html" class="sidebar-item-text sidebar-link">Chapter 01 Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch02_AtomMolIon.html" class="sidebar-item-text sidebar-link">Chapter 02 Atoms Molecules and Ions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch03_Stoichiometry.html" class="sidebar-item-text sidebar-link">Chapter 03 Stoichiometry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch04_AqReactions.html" class="sidebar-item-text sidebar-link">Chapter 04 Reactions in Aqueous Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch05_Gases.html" class="sidebar-item-text sidebar-link">Chapter 05 Gases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch06_Thermochemistry.html" class="sidebar-item-text sidebar-link">Chapter 06 Energy Relationships in Chemical Reactions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch07_Quantum.html" class="sidebar-item-text sidebar-link">Chapter 07 The Electronic Structure of Atoms</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch08_PeriodicTable.html" class="sidebar-item-text sidebar-link">Chapter 08 The Periodic Table</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch09_ChemicalBonds.html" class="sidebar-item-text sidebar-link">Chapter 09 Chemical Bonding I – The Covalent Bond</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch10_MolGeometry.html" class="sidebar-item-text sidebar-link">Chapter 10 Chemical Bonding II – Molecular Geometry and Hybridization of Atomic Orbitals</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch11_Intermolecular.html" class="sidebar-item-text sidebar-link">Chapter 11 Intermolecular Forces and Liquids and Solids</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch12_Solution.html" class="sidebar-item-text sidebar-link">Chapter 12 Physical Properties of Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch13_Kinetics.html" class="sidebar-item-text sidebar-link">Chapter 13 Chemical Kinetics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch14_Equilibrium.html" class="sidebar-item-text sidebar-link">Chapter 14 Chemical Equilibrium</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch15_AcidBase.html" class="sidebar-item-text sidebar-link">Chapter 15 Acids and Bases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch16_AcidBaseEq.html" class="sidebar-item-text sidebar-link">Chapter 16 Acid-Base Equilibria and Solubility Equilibria</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch17_Thermodynamics.html" class="sidebar-item-text sidebar-link">Chapter 17 Thymodynamics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch18_Electrochemistry.html" class="sidebar-item-text sidebar-link">Chapter 18 Redox Reactions and Electrochemistry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch19_NuclearChemistry.html" class="sidebar-item-text sidebar-link">Chapter 19 Nuclear Chemistry</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">HOME</a></li>
+  <li><a href="#atoms" id="toc-atoms" class="nav-link" data-scroll-target="#atoms">1. Atoms</a>
+  <ul class="collapse">
+  <li><a href="#the-structure-of-atoms" id="toc-the-structure-of-atoms" class="nav-link" data-scroll-target="#the-structure-of-atoms">1.1. The Structure of Atoms</a></li>
+  <li><a href="#atomic-number-mass-number-and-isotopes" id="toc-atomic-number-mass-number-and-isotopes" class="nav-link" data-scroll-target="#atomic-number-mass-number-and-isotopes">1.2. Atomic Number, Mass Number, and Isotopes</a></li>
+  </ul></li>
+  <li><a href="#molecules-and-ions" id="toc-molecules-and-ions" class="nav-link" data-scroll-target="#molecules-and-ions">2. Molecules and Ions</a>
+  <ul class="collapse">
+  <li><a href="#general-concepts" id="toc-general-concepts" class="nav-link" data-scroll-target="#general-concepts">2.1. General Concepts</a></li>
+  <li><a href="#chemical-formuas" id="toc-chemical-formuas" class="nav-link" data-scroll-target="#chemical-formuas">2.2. Chemical Formuas</a></li>
+  </ul></li>
+  <li><a href="#naming-compounds" id="toc-naming-compounds" class="nav-link" data-scroll-target="#naming-compounds">3. Naming Compounds</a>
+  <ul class="collapse">
+  <li><a href="#ionic-compouds" id="toc-ionic-compouds" class="nav-link" data-scroll-target="#ionic-compouds">3.1. Ionic Compouds</a></li>
+  <li><a href="#molecular-compounds" id="toc-molecular-compounds" class="nav-link" data-scroll-target="#molecular-compounds">3.2. Molecular Compounds</a></li>
+  <li><a href="#acids" id="toc-acids" class="nav-link" data-scroll-target="#acids">3.3. Acids</a></li>
+  <li><a href="#bases" id="toc-bases" class="nav-link" data-scroll-target="#bases">3.4 Bases</a></li>
+  <li><a href="#hydrates" id="toc-hydrates" class="nav-link" data-scroll-target="#hydrates">3.5 Hydrates</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/wangyu16/GeneralChemistry/assets/js/code_toggle.js"></script>
+<p><span class="math display">\[\require{mhchem}\]</span></p>
+<section id="home" class="level3">
+<h3 class="anchored" data-anchor-id="home"><a href="https://wangyu16.github.io/GeneralChemistry/">HOME</a></h3>
+#
+<center>
+General Chemistry Study Guide
+</center>
+###
+<center>
+Chapter 2. Atoms, Molecules and Ions
+</center>
+<hr>
+</section>
+<section id="atoms" class="level2">
+<h2 class="anchored" data-anchor-id="atoms">1. Atoms</h2>
+<section id="the-structure-of-atoms" class="level3">
+<h3 class="anchored" data-anchor-id="the-structure-of-atoms">1.1. The Structure of Atoms</h3>
+<section id="openstax-2.1-early-ideas-in-atomic-theory-2.2-evolution-of-atomic-theory.-brown-2.1-the-atomic-theory-of-matter-2.2-the-discovery-of-atomic-structure." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-2.1-early-ideas-in-atomic-theory-2.2-evolution-of-atomic-theory.-brown-2.1-the-atomic-theory-of-matter-2.2-the-discovery-of-atomic-structure."><b>OpenStax</b> 2.1 Early Ideas in Atomic Theory; 2.2 Evolution of Atomic Theory. <b>Brown</b> 2.1 The Atomic Theory of Matter; 2.2 The Discovery of Atomic Structure.</h5>
+<p><strong>Dalton’s Atomic Theory (1808)</strong></p>
+<ol type="1">
+<li>Elements are composed of extremely small particles called atoms.<br>
+</li>
+<li>All atoms of a given element are identical, having the same size, mass and chemical properties. The atoms of one element are different from the atoms of all other elements.</li>
+<li>Compounds are composed of atoms of more than one element. In any compound, the ratio of the numbers of atoms of any two of the elements present is either an integer or a simple fraction.</li>
+<li>A chemical reaction involves only the separation, combination, or rearrangement of atoms; it does not result in their creation or destruction.</li>
+</ol>
+<p><strong>The Structure of Atoms</strong></p>
+<p>An <strong>atom</strong> is the smallest constituent unit of ordinary matter that has the properties of a chemical element. Every solid, liquid, gas, and plasma is composed of neutral or ionized atoms. Atoms are very small; typical sizes are around 100 picometers.</p>
+<p>Every atom is composed of a <strong>nucleus</strong> and one or more <strong>electrons</strong> bound to the nucleus. The nucleus is made of one or more <strong>protons</strong> and typically a similar number of <strong>neutrons</strong>. Protons and neutrons are called <strong>nucleons</strong>. <em>More than 99.94% of an atom’s mass is in the nucleus</em>. The protons have a positive electric charge, the electrons have a negative electric charge, and the neutrons have no electric charge. If the number of protons and electrons are equal, that atom is electrically neutral. If an atom has more or fewer electrons than protons, then it has an overall negative or positive charge, respectively, and it is called an <strong>ion</strong>.</p>
+<p><strong>Rutherford’s Model of the Atom</strong></p>
+<figure class="figure">
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Geiger-Marsden_experiment_expectation_and_result.svg" style="width:500px" class="figure-img">
+</figure>
+<p><strong>Compare the mass and charges of subatomic particles</strong></p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 34%">
+<col style="width: 34%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Particle</th>
+<th>Mass (g)</th>
+<th>Charge (C)</th>
+<th>Charge unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Electron</td>
+<td><span class="math inline">\(9.10938\times 10^{-28}\)</span></td>
+<td><span class="math inline">\(-1.6022\times 10^{-19}\)</span></td>
+<td><span class="math inline">\(-1\)</span></td>
+</tr>
+<tr class="even">
+<td>Proton</td>
+<td><span class="math inline">\(1.67262\times 10^{-24}\)</span></td>
+<td><span class="math inline">\(+1.6022\times 10^{-19}\)</span></td>
+<td><span class="math inline">\(+1\)</span></td>
+</tr>
+<tr class="odd">
+<td>Neutron</td>
+<td><span class="math inline">\(1.67493\times 10^{-24}\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="radioactivity" class="level4">
+<h4 class="anchored" data-anchor-id="radioactivity">Radioactivity</h4>
+<p>(This section will be discussed further in Chapter 21 Nuclear Chemistry. Just have a brief idea of different types of radiations here.)</p>
+<p><strong>Radioactivity</strong> describes the spontaneous emission of particles and/or radiation. Consequently, any element that spontaneously emits radiation is said to be <strong>radioactive</strong>.</p>
+<p><strong><span class="math inline">\(\alpha\)</span>-radiation</strong>: Alpha radiation occurs when an atom undergoes radioactive decay, giving off a particle (called an alpha particle) consisting of two protons and two neutrons (essentially the nucleus of a helium-4 atom).</p>
+<p><strong><span class="math inline">\(\beta\)</span>-radiation</strong>: Beta radiation takes the form of either an electron or a positron (a particle with the size and mass of an electron, but with a positive charge) being emitted from an atom.</p>
+<p><strong><span class="math inline">\(\gamma\)</span>-radiation</strong>: Gamma rays are penetrating <strong>electromagnetic radiation</strong> of a kind arising from the radioactive decay of atomic nuclei. It consists of photons in the highest observed range of photon energy.</p>
+<p><strong>X-ray</strong>: X-radiation is a form of <strong>electromagnetic radiation</strong>. Most X-rays have a wavelength ranging from 0.01 to 10 nanometers, corresponding to frequencies in the range 30 petahertz to 30 exahertz and energies in the range 100 eV to 100 keV. X-Rays are longer-wavelength and (usually) lower energy than gamma radiation.</p>
+</section>
+<section id="important-experiments" class="level4">
+<h4 class="anchored" data-anchor-id="important-experiments">Important Experiments</h4>
+<p>(Just to have a brief idea how the subatomic structures were discovered.)</p>
+<p><strong>Measurement of the mass/charge ratio of electrons by J.J. Thomson</strong></p>
+<p><em>Cathode ray</em> is a beam of electrons emitted from the cathode of a high-vacuum tube.</p>
+<p><em>Cathode ray tube</em> is a high-vacuum tube in which cathode rays produce a luminous image on a fluorescent screen, used chiefly in televisions and computer terminals. In some experiments, two electrically charged plates and a magnet were added to the outside of the cathode ray tube. The external electric field and magnetic field can change the trajectory of the cathode ray (electrons). The ratio of electric charge to the mass of an individual electron can be calculated based on electromagnetic theory.</p>
+<p><strong>Measurement of the mass of electrons by Millikan</strong></p>
+<p>The experiment entailed observing tiny electrically charged droplets of oil located between two parallel metal surfaces. when the gravitational force and external electric force are balanced, the charge on the oil droplet can be calculated. By repeating the experiment for many droplets, they confirmed that the charges were all small integer multiples of a certain base value, which was found to be <span class="math inline">\(1.5924(17)\times10^{−19}\,\text{C}\)</span>, about <span class="math inline">\(0.6\%\)</span> difference from the currently accepted value of <span class="math inline">\(1.602176487(40)\times10^{−19}\,\text{C}\)</span>.</p>
+<p><strong>Rutherford’s Experiment</strong> (This is important!)</p>
+<p>Rutherford carried out a series of experiments using very thin foils of gold and other metals as targets for α particles from a radioactive source. He observed that the majority of particles penetrated the foil either undeflected or with only a slight deflection. In some instances, an α particle actually bounced back in the direction from which it had come! To explain the results of the α-scattering experiment, Rutherford devised a new model of atomic structure, suggesting that most of the atom must be empty space. This structure would allow most of the α particles to pass through the gold foil with little or no deflection. The atom’s positive charges, Rutherford proposed, are all concentrated in the nucleus, a dense central core within the atom. Whenever an α particle came close to a nucleus in the scattering experiment, it experienced a large repulsive force and therefore a large deflection. Moreover, an α particle traveling directly toward a nucleus would experience an enormous repulsion that could completely reverse the direction of the moving particle.</p>
+<p><strong>Chadwick’s Experiment</strong></p>
+<p>It was known that hydrogen, the simplest atom, contains only one proton and that the helium atom contains two protons. Therefore, the ratio of the mass of a helium atom to that of a hydrogen atom should be 2:1. (Because electrons are much lighter than protons, their contribution can be ignored.) In reality, however, the ratio is 4:1. Rutherford and others postulated that there must be another type of subatomic particle in the atomic nucleus; the proof was provided by another English physicist, James Chadwick, in 1932. When Chadwick bombarded a thin sheet of beryllium with α particles, a very high energy radiation similar to γ rays was emitted by the metal. Later experiments showed that the rays actually consisted of electrically neutral particles having a mass slightly greater than that of protons. Chadwick named these particles neutrons.</p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython <span class="im">import</span> display</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>display.IFrame(src<span class="op">=</span><span class="st">"https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering_en.html"</span>, width<span class="op">=</span><span class="dv">720</span>, height<span class="op">=</span><span class="dv">540</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+
+        <iframe width="720" height="540" src="https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering_en.html" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<blockquote class="blockquote">
+<h4 id="requirements" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand Dalton’s Atomic Theory.</li>
+<li>Understand Rutherford’s Experiment.</li>
+<li>Understand the structure of atoms. Understand the correlations in the table above (Compare the mass and charges of subatomic particles).</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="atomic-number-mass-number-and-isotopes" class="level3">
+<h3 class="anchored" data-anchor-id="atomic-number-mass-number-and-isotopes">1.2. Atomic Number, Mass Number, and Isotopes</h3>
+<section id="openstax-2.3-atomic-structure-and-symbolism-2.5-the-periodic-table.-brown-2.3-the-modern-view-of-atomic-structure-2.5-the-periodic-table." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-2.3-atomic-structure-and-symbolism-2.5-the-periodic-table.-brown-2.3-the-modern-view-of-atomic-structure-2.5-the-periodic-table."><b>OpenStax</b> 2.3 Atomic Structure and Symbolism; 2.5 The Periodic Table. <b>Brown</b> 2.3 The Modern View of Atomic Structure; 2.5 The Periodic Table.</h5>
+</section>
+<section id="atomic-number-and-mass-number" class="level4">
+<h4 class="anchored" data-anchor-id="atomic-number-and-mass-number">Atomic Number and Mass Number</h4>
+<p>The number of protons in the nucleus of each atom of an element is called the <strong>atomic number (Z)</strong>.</p>
+<p><span class="math display">\[\text{atomic number}=\text{number of protons}\]</span></p>
+<p>The <strong>mass number (A)</strong> is the total number of neutrons and protons present in the nucleus of an atom of an element.</p>
+<p><span class="math display">\[\text{mass number}=\text{number of protons}+\text{number of neutrons}\]</span></p>
+<p>The accepted way to denote the atomic number and mass number of an atom of element X is as follows:</p>
+<figure class="figure">
+<img src="https://www.nuclear-power.net/wp-content/uploads/2017/09/Proton-Number-Atomic-Number.png" style="width:400px" class="figure-img">
+<footer>
+<center>
+<small>© Copyright https://www.nuclear-power.net</small>
+</center>
+</footer>
+</figure>
+</section>
+<section id="isotopes" class="level4">
+<h4 class="anchored" data-anchor-id="isotopes">Isotopes</h4>
+<p>Atoms that have the same atomic number but different mass numbers are called <strong>isotopes</strong>.</p>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython <span class="im">import</span> display</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>display.IFrame(src<span class="op">=</span><span class="st">"https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass_en.html"</span>, width<span class="op">=</span><span class="dv">720</span>, height<span class="op">=</span><span class="dv">540</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+
+        <iframe width="720" height="540" src="https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass_en.html" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+</section>
+<section id="periodic-table" class="level4">
+<h4 class="anchored" data-anchor-id="periodic-table">Periodic Table</h4>
+<p><strong>Periodic table</strong> is a chart in which elements having similar chemical and physical properties are grouped together.</p>
+<p>The elements are arranged by atomic number (shown above the element symbol) in horizontal rows called <strong>periods</strong> and in vertical columns known as <strong>groups</strong> or <strong>families</strong>, according to similarities in their chemical properties.</p>
+<p>The elements can be divided into three categories — metals, nonmetals, and metalloids. A <strong>metal</strong> is a good conductor of heat and electricity, whereas a <strong>nonmetal</strong> is usually a poor conductor of heat and electricity. A <strong>metalloid</strong> has properties that are intermediate between those of metals and nonmetals.</p>
+<p>The Group 1A elements (Li, Na, K, Rb, Cs, and Fr) are called <strong>alkali metals</strong>, and the Group 2A elements (Be, Mg, Ca, Sr, Ba, and Ra) are called <strong>alkaline earth metals</strong>. Elements in Group 7A (F, Cl, Br, I, and At) are known as <strong>halogens</strong>, and those in Group 8A (He, Ne, Ar, Kr, Xe, and Rn) are called <strong>noble gases</strong> (or rare gases).</p>
+<figure class="figure">
+<img src="https://cnx.org/resources/029f72e6a7f96c5397e3cf506bedd36310016076" style="width:700px" class="figure-img">
+</figure>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython <span class="im">import</span> display</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>display.IFrame(src<span class="op">=</span><span class="st">"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html"</span>, width<span class="op">=</span><span class="dv">720</span>, height<span class="op">=</span><span class="dv">540</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+
+        <iframe width="720" height="540" src="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<blockquote class="blockquote">
+<h4 id="requirements-1" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the concepts.</li>
+<li>Know the relation between atomic number and mass number.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="molecules-and-ions" class="level2">
+<h2 class="anchored" data-anchor-id="molecules-and-ions">2. Molecules and Ions</h2>
+<section id="openstax-2.6-molecular-and-ionic-compounds.-brown-2.6-molecules-and-molecular-compounds-2.7-ions-and-ionic-compounds." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-2.6-molecular-and-ionic-compounds.-brown-2.6-molecules-and-molecular-compounds-2.7-ions-and-ionic-compounds."><b>OpenStax</b> 2.6 Molecular and Ionic Compounds. <b>Brown</b> 2.6 Molecules and Molecular Compounds; 2.7 Ions and Ionic Compounds.</h5>
+</section>
+<section id="general-concepts" class="level3">
+<h3 class="anchored" data-anchor-id="general-concepts">2.1. General Concepts</h3>
+<p>Of all the elements, only the six noble gases in Group 8A of the periodic table (He, Ne, Ar, Kr, Xe, and Rn) exist in nature as single atoms. For this reason, they are called monatomic (meaning a single atom) gases. Most matter is composed of molecules or ions formed by atoms.</p>
+<section id="molecules" class="level4">
+<h4 class="anchored" data-anchor-id="molecules">Molecules</h4>
+<p>A <strong>molecule</strong> is an aggregate of at least two atoms in a definite arrangement held together by chemical forces (also called chemical bonds).</p>
+<p>The hydrogen molecule, symbolized as <span class="math inline">\(\ce{H2}\)</span>, is called a <em>diatomic molecule</em> because it contains only two atoms. Molecules containing more than two atoms are called <em>polyatomic molecules</em>.</p>
+</section>
+<section id="organic-compounds" class="level4">
+<h4 class="anchored" data-anchor-id="organic-compounds">Organic Compounds</h4>
+<p><strong>Organic chemistry</strong> is the branch of chemistry that deals with carbon compounds. The simplest type of organic compounds is the <strong>hydrocarbons</strong>, which contain only carbon and hydrogen atoms.</p>
+<p>Example: methane <span class="math inline">\(\ce{CH4}\)</span></p>
+<p>The chemistry of organic compounds is largely determined by the <strong>functional groups</strong>, which consist of one or a few atoms bonded in a specific way. For example, when an <span class="math inline">\(\ce{H}\)</span> atom in methane is replaced by a hydroxyl group (<span class="math inline">\(\ce{—OH}\)</span>), an amino group (<span class="math inline">\(\ce{—NH2}\)</span>), and a carboxyl group (<span class="math inline">\(\ce{—COOH}\)</span>), the following molecules are generated: methanol (<span class="math inline">\(\ce{CH3OH}\)</span>), methylamine (<span class="math inline">\(\ce{CH3NH2}\)</span>), acetic acid (<span class="math inline">\(\ce{CH3COOH}\)</span>).</p>
+</section>
+<section id="ions" class="level4">
+<h4 class="anchored" data-anchor-id="ions">Ions</h4>
+<p>An <strong>ion</strong> is an atom or a group of atoms that has a net positive or negative charge.</p>
+<p>The loss of one or more electrons from a neutral atom results in a <strong>cation</strong>, an ion with a net positive charge. For example, a sodium atom (<span class="math inline">\(\ce{Na}\)</span>) can readily lose an electron to become a sodium cation, which is represented by <span class="math inline">\(\ce{Na+}\)</span>.</p>
+<p>An <strong>anion</strong> is an ion whose net charge is negative due to an increase in the number of electrons. A chlorine atom (<span class="math inline">\(\ce{Cl}\)</span>), for instance, can gain an electron to become the chloride ion <span class="math inline">\(\ce{Cl^{−}}\)</span>.</p>
+<p>Sodium chloride (<span class="math inline">\(\ce{NaCl}\)</span>), ordinary table salt, is called an <strong>ionic compound</strong> because it is formed from cations and anions.</p>
+<p>Ions like <span class="math inline">\(\ce{Na+}\)</span> and <span class="math inline">\(\ce{Cl^{−}}\)</span> are called <strong>monatomic ions</strong> because they contain only one atom. Figure 2.10 shows the charges of a number of monatomic ions. With very few exceptions, metals tend to form cations and nonmetals form anions.</p>
+<p><strong>Polyatomic ions</strong> such as <span class="math inline">\(\ce{OH^{−}}\)</span> (hydroxide ion), <span class="math inline">\(\ce{CN^{−}}\)</span> (cyanide ion), and <span class="math inline">\(\ce{NH4+}\)</span> (ammonium ion) are ions containing more than one atom.</p>
+<figure class="figure">
+<img src="https://cnx.org/resources/2041d04fb939e1022801633016efcab6148fce23" style="width:700px" class="figure-img">
+</figure>
+<blockquote class="blockquote">
+<h4 id="requirements-2" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the concepts.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="chemical-formuas" class="level3">
+<h3 class="anchored" data-anchor-id="chemical-formuas">2.2. Chemical Formuas</h3>
+<section id="openstax-2.4-chemical-formulas-2.6-molecular-and-ionic-compounds.-brown-2.6-molecules-and-molecular-compounds-2.7-ions-and-ionic-compounds." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-2.4-chemical-formulas-2.6-molecular-and-ionic-compounds.-brown-2.6-molecules-and-molecular-compounds-2.7-ions-and-ionic-compounds."><b>OpenStax</b> 2.4 Chemical Formulas; 2.6 Molecular and Ionic Compounds. <b>Brown</b> 2.6 Molecules and Molecular Compounds; 2.7 Ions and Ionic Compounds.</h5>
+<p>Chemists use <strong>chemical formulas</strong> to express the composition of molecules and ionic compounds in terms of chemical symbols.</p>
+</section>
+<section id="molecular-formulas" class="level4">
+<h4 class="anchored" data-anchor-id="molecular-formulas">Molecular Formulas</h4>
+<p>A <strong>molecular formula</strong> shows the exact number of atoms of each element in the smallest unit of a substance.</p>
+<p>An <strong>allotrope</strong> is one of two or more distinct forms of an element. Two allotropic forms of the element carbon—diamond and graphite—are dramatically different not only in properties but also in their relative cost.</p>
+<p><strong>Empirical Formulas</strong></p>
+<p>An empirical formula shows the simplest whole-number ratio of the atoms in a substance. For example, hydrogen peroxide <span class="math inline">\(\ce{H2O2}\)</span> has the empirical formula as <span class="math inline">\(\ce{HO}\)</span>.</p>
+<p><strong>Molecular Models</strong></p>
+<p>Molecules are too small for us to observe directly. An effective means of visualizing them is by the use of molecular models.</p>
+<figure class="figure">
+<img src="https://cnx.org/resources/700be7a9676f6d5263fecd751061677c47d678d0" style="width:700px" class="figure-img">
+<figcaption class="figure-caption">
+A methane molecule can be represented as (a) a molecular formula, (b) a structural formula, (c) a ball-and-stick model, and (d) a space-filling model. Carbon and hydrogen atoms are represented by black and white spheres, respectively.
+</figcaption>
+</figure>
+</section>
+<section id="formulas-of-ionic-compounds" class="level4">
+<h4 class="anchored" data-anchor-id="formulas-of-ionic-compounds">Formulas of Ionic Compounds</h4>
+<p><strong>Ionic compounds</strong> consist of a combination of cations and anions. - The formula is usually the same as the empirical formula. - The sum of the charges on the cation(s) and anion(s) in each formula unit must equal zero.</p>
+<div class="example">
+<p><b>Example: </b> Determine the formula of lead(IV) Oxide. <br></p>
+<p><b>Answer: </b><br></p>
+<p>The cation is <span class="math inline">\(\ce{Pb^4+}\)</span> and the oxygen anion is <span class="math inline">\(\ce{O^{2−}}\)</span>. The following diagram helps us determine the subscripts for the compound formed by the cation and the anion:</p>
+<figure class="figure">
+<img src="https://chem.libretexts.org/@api/deki/files/114113/5.5.2.PNG?revision=1" style="width:200px" class="figure-img">
+</figure>
+<p>The formula of the compound is <span class="math inline">\(\ce{Pb2O4}\)</span>. We should reduce the subscripts to the lowest ratio, and get <span class="math inline">\(\ce{PbO2}\)</span>. The sum of the charges is <span class="math inline">\(1\times(+4) + 2(−2) = 0\)</span>. Thus, the formula for led(IV) oxide is <span class="math inline">\(\ce{PbO2}\)</span>.</p>
+</div>
+<p>More examples see <a href="https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map%3A_Introductory_Chemistry_(Tro)/05%3A_Molecules_and_Compounds/5.05%3A_Writing_Formulas_for_Ionic_Compounds" target="_blank">here</a>.</p>
+<blockquote class="blockquote">
+<h4 id="requirements-3" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the concepts.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="naming-compounds" class="level2">
+<h2 class="anchored" data-anchor-id="naming-compounds">3. Naming Compounds</h2>
+<section id="openstax-2.7-chemical-nomenclature.-brown-2.8-naming-inorganic-compounds." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-2.7-chemical-nomenclature.-brown-2.8-naming-inorganic-compounds."><b>OpenStax</b> 2.7 Chemical Nomenclature. <b>Brown</b> 2.8 Naming Inorganic Compounds.</h5>
+</section>
+<section id="ionic-compouds" class="level3">
+<h3 class="anchored" data-anchor-id="ionic-compouds">3.1. Ionic Compouds</h3>
+<p>Often a metal and a nonmetal.</p>
+<ul>
+<li>Use the element name to represent the metal cation.</li>
+<li>Use the element name add “-ide” to represent the nonmetal anion.</li>
+</ul>
+<p>For example, <span class="math inline">\(\ce{NaCl}\)</span> is named as sodium chloride.</p>
+<p>For transition metals, indicate the charge on metal with Roman numberals. For example, <span class="math inline">\(\ce{FeCl2}\)</span> is named as iron(II) chloride, <span class="math inline">\(\ce{FeCl3}\)</span> is named as iron(III) chloride.</p>
+<p>Memorize the bold ones in the following table:</p>
+
+<table class="mt-responsive-table" align="center" cellpadding="0" cellspacing="0" height="370" width="533">
+<caption>
+<em><strong>Table <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-18-Frame" class="MathJax" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn mathvariant=&quot;bold&quot;>2.8.</mn><mn mathvariant=&quot;bold&quot;>1</mn></mrow></math>" role="presentation"><nobr aria-hidden="true"><span id="MathJax-Span-198" class="math" style="width: 2.689em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.36em; height: 0px; font-size: 114%;"><span style="position: absolute; clip: rect(1.428em, 1002.3em, 2.415em, -999.997em); top: -2.245em; left: 0em;"><span id="MathJax-Span-199" class="mrow"><span id="MathJax-Span-200" class="texatom"><span id="MathJax-Span-201" class="mrow"><span id="MathJax-Span-202" class="mn" style="font-family: MathJax_Main-bold;"></span><span id="MathJax-Span-203" class="mn" style="font-family: MathJax_Main-bold;"></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.251em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow class="MJX-TeXAtom-ORD"><mn mathvariant="bold">2.8</mn><mn mathvariant="bold">1</mn></mrow></math></span></span></strong>: Common Polyatomic Ions and Their Names</em>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+<strong>Formula</strong>
+</th>
+<th style="text-align:center;">
+<strong>Name of Ion</strong>
+</th>
+<th style="text-align:center;">
+<strong>Formula</strong>
+</th>
+<th style="text-align:center;">
+<strong>Name of Ion</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+NH<sub>4</sub><sup>+</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>ammonium</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+HPO<sub>4</sub><sup>2−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+<b>hydrogen phosphate</b>
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+CH<sub>3</sub>NH<sub>3</sub><sup>+</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+methylammonium
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+H<sub>2</sub>PO<sub>4</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+<b>dihydrogen phosphate</b>
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+OH<sup>−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>hydroxide</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+ClO<sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+<b>hypochlorite</b>
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+O<sub>2</sub><sup>2−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+peroxide
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+ClO<sub>2</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+<b>chlorite</b>
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+CN<sup>−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+cyanide
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+ClO<sub>3</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+<b>chlorate</b>
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+SCN<sup>−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+thiocyanate
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+ClO<sub>4</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+<b>perchlorate</b>
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+NO<sub>2</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>nitrite</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+MnO<sub>4</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+permanganate
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+NO<sub>3</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>nitrate</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+CrO4<sub>2</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+chromate
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+CO<sub>3</sub><sup>2−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>carbonate</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+dichromate
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+HCO<sub>3</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>hydrogen carbonate, or bicarbonate</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+C<sub>2</sub>O<sub>4</sub><sup>2−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+oxalate
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+SO<sub>3</sub><sup>2−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>sulfite</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+HCO<sub>2</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+formate
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+SO<sub>4</sub><sup>2−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>sulfate</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+CH<sub>3</sub>CO<sub>2</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+acetate
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+HSO<sub>4</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>hydrogen sulfate, or bisulfate</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+C<sub>6</sub>H<sub>5</sub>CO<sub>2</sub><sup>−</sup>
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+benzoate
+</td>
+</tr>
+<tr>
+<td data-th="Formula" style="text-align:center;">
+PO<sub>4</sub><sup>3−</sup>
+</td>
+<td class="mt-column-width-15" data-th="Name of Ion" style="text-align:center;">
+<b>phosphate</b>
+</td>
+<td class="mt-column-width-10" data-th="Formula" style="text-align:center;">
+</td>
+<td class="mt-column-width-10" data-th="Name of Ion" style="text-align:center;">
+</td>
+</tr>
+</tbody>
+
+</table>
+</section>
+<section id="molecular-compounds" class="level3">
+<h3 class="anchored" data-anchor-id="molecular-compounds">3.2. Molecular Compounds</h3>
+<p>Usually, molecular compounds are coumpounds with nonmetals or nonmetals + metalloids</p>
+<ul>
+<li>Common names may be used, such as water <span class="math inline">\(\ce{H2O}\)</span>, ammonia <span class="math inline">\(\ce{NH3}\)</span>, methane <span class="math inline">\(\ce{CH4}\)</span>.</li>
+<li>Element furthest to the left in a period and closest to the bottom of a group on periodic table is placed first in formula.</li>
+<li>If more than one compound can be formed from the same elements, use prefixes to indicate number of each kind of atom, such as carbon monoxide <span class="math inline">\(\ce{CO}\)</span> and carbon dioxide <span class="math inline">\(\ce{CO2}\)</span>.</li>
+<li>Last element name ends in -ide.</li>
+</ul>
+<p>Greek prefixes:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Prefix</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>mono-</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>di-</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>tri-</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>tetra-</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>penta-</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>hexa-</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>hepta-</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>octa-</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>nona-</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>deca-</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="acids" class="level3">
+<h3 class="anchored" data-anchor-id="acids">3.3. Acids</h3>
+<p>An <strong>acid</strong> can be defined as a substance that yields hydrogen ions (<span class="math inline">\(\ce{H+}\)</span>) when dissolved in water.</p>
+<p>For example, <span class="math inline">\(\ce{HCl}\)</span> gas as a pure substance is named as hydrogen chloride. When <span class="math inline">\(\ce{HCl}\)</span> is dissolved in water, hydrochloric acid is formed giving <span class="math inline">\(\ce{H3O+}\)</span> and <span class="math inline">\(\ce{Cl^{-}}\)</span>.</p>
+<p>(Most complicated part!) An <strong>oxoacid</strong> is an acid that contains hydrogen, oxygen, and another element. The formulas of oxoacids are usually written with the H first, followed by the central element and then O. We use the following five common acids as our references in naming oxoacids:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Acid</th>
+<th>Acid Name</th>
+<th>Acid</th>
+<th>Acid Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\ce{H2CO3}\)</span></td>
+<td>carbonic acid</td>
+<td><span class="math inline">\(\ce{H3PO4}\)</span></td>
+<td>phosphoric acid</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\ce{HClO3}\)</span></td>
+<td>chloric acid</td>
+<td><span class="math inline">\(\ce{H2SO4}\)</span></td>
+<td>sulfuric acid</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\ce{HNO3}\)</span></td>
+<td>nitric acid</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Often two or more oxoacids have the same central atom but a different number of O atoms. Starting with our reference oxoacids, whose names all end with “-ic,” we use the following rules to name these compounds.</p>
+<ol type="1">
+<li>Addition of one O atom to the “-ic” acid: The acid is called “per… -ic” acid. Thus, adding an O atom to <span class="math inline">\(\ce{HClO3}\)</span> changes chloric acid to perchloric acid, <span class="math inline">\(\ce{HClO4}\)</span>.</li>
+<li>Removal of one O atom from the “-ic” acid: The acid is called “-ous” acid. Thus, nitric acid, <span class="math inline">\(\ce{HNO3}\)</span>, becomes nitrous acid, <span class="math inline">\(\ce{HNO2}\)</span>.</li>
+<li>Removal of two O atoms from the “-ic” acid: The acid is called “hypo… -ous” acid. Thus, when <span class="math inline">\(\ce{HBrO3}\)</span> is converted to <span class="math inline">\(\ce{HBrO}\)</span>, the acid is called hypobromous acid.</li>
+</ol>
+<p>The rules for naming anions of oxoacids, called <em>oxoanions</em>, are</p>
+<ol type="1">
+<li>When all the H ions are removed from the “-ic” acid, the anion’s name ends with “-ate.” For example, the anion derived from <span class="math inline">\(\ce{H2CO3}\)</span> is called carbonate.</li>
+<li>When all the H ions are removed from the “-ous” acid, the anion’s name ends with “-ite.” Thus, the anion derived from <span class="math inline">\(\ce{HClO2}\)</span> is called chlorite.</li>
+<li>The names of anions in which one or more but not all of the hydrogen ions have been removed must indicate the number of H ions present. For example, consider the anions derived from phosphoric acid:</li>
+</ol>
+<p><span class="math inline">\(\ce{H3PO4}\)</span> : Phosphoric acid</p>
+<p><span class="math inline">\(\ce{HPO4^{2-}}\)</span> : Hydrogen phosphate</p>
+<p><span class="math inline">\(\ce{H2PO4^{-}}\)</span> : Dihydrogen phosphate</p>
+<p><span class="math inline">\(\ce{PO4^{3-}}\)</span> : Phosphate</p>
+<p>Names of Oxoacids and Oxoanions That Contain Chlorine</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Acid</th>
+<th>Acid Name</th>
+<th>Corresponding Anion</th>
+<th>Anion Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\ce{HClO4}\)</span></td>
+<td>perchloric acid</td>
+<td><span class="math inline">\(\ce{ClO4-}\)</span></td>
+<td>perchlorate</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\ce{HClO3}\)</span></td>
+<td>chloric acid</td>
+<td><span class="math inline">\(\ce{ClO3-}\)</span></td>
+<td>chlorate</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\ce{HClO2}\)</span></td>
+<td>chlorous acid</td>
+<td><span class="math inline">\(\ce{ClO2-}\)</span></td>
+<td>chlorite</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\ce{HClO}\)</span></td>
+<td>hypochlorous acid</td>
+<td><span class="math inline">\(\ce{ClO-}\)</span></td>
+<td>hypochlorite</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bases" class="level3">
+<h3 class="anchored" data-anchor-id="bases">3.4 Bases</h3>
+<p>A base can be defined as a substance that yields hydroxide ions (<span class="math inline">\(\ce{OH-}\)</span>) when dissolved in water, such as sodium hydroxide <span class="math inline">\(\ce{NaOH}\)</span>.</p>
+</section>
+<section id="hydrates" class="level3">
+<h3 class="anchored" data-anchor-id="hydrates">3.5 Hydrates</h3>
+<p><strong>Hydrates</strong> are compounds that have a specific number of water molecules attached to them, such as copper sulfate pentahydrate <span class="math inline">\(\ce{CuSO4}\cdot\ce{5H2O}\)</span>.</p>
+<blockquote class="blockquote">
+<h4 id="requirements-4" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the concepts.</li>
+</ol>
+</blockquote>
+<div class="practice">
+<p><b>Practice:</b> <br></p>
+<ol type="1">
+<li>The elements in a horizontal row of the periodic table are known as <br></li>
+</ol>
+<ol type="A">
+<li>metalloids <br></li>
+<li>a period <br></li>
+<li>nobel gases <br></li>
+<li>a group <br></li>
+<li>nonmetals <br> Answer: B <br><br></li>
+</ol>
+<ol start="2" type="1">
+<li>An cation is defined as <br></li>
+</ol>
+<ol type="A">
+<li>a charged atom or group of atoms with a net negative charge. <br></li>
+<li>a stable atom. <br></li>
+<li>a group of stable atoms. <br></li>
+<li>an atom or group of atoms with a net positive charge. <br></li>
+<li>a metal atom <br> Answer: D <br><br></li>
+</ol>
+<ol start="3" type="1">
+<li>Atoms of the same atomic number but with different mass numbers are called <br></li>
+</ol>
+<ol type="A">
+<li>ions <br></li>
+<li>neutrons <br></li>
+<li>allotropes <br></li>
+<li>isotopes <br></li>
+<li>chemical families <br> Answer: D <br><br></li>
+</ol>
+<ol start="4" type="1">
+<li>Which of the following must be molecular formula rather than empirical formula? <br></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{NO2}\)</span> <br></li>
+<li><span class="math inline">\(\ce{C8H10N4O2}\)</span> <br></li>
+<li><span class="math inline">\(\ce{CH2}\)</span> <br></li>
+<li><span class="math inline">\(\ce{C4H5N2O}\)</span> <br></li>
+<li><span class="math inline">\(\ce{CH2O}\)</span> <br> Answer: B <br><br></li>
+</ol>
+<ol start="5" type="1">
+<li><p>How many neutrons are there in an atom of uranium whose mass number is 235? <br> Answer: 143 <br><br></p></li>
+<li><p>How many protons and electrons are present in one <span class="math inline">\(\ce{Cl-}\)</span> ion? <br> Answer: 17 p, 18 e <br><br></p></li>
+<li><p>What is the correct formula for iron(II) phosphate? <br> Answer: <span class="math inline">\(\ce{Fe3(PO4)2}\)</span> <br><br></p></li>
+<li><p>What is the correct name for <span class="math inline">\(\ce{NH4NO3}\)</span>? <br> Answer: ammonium nitrate <br><br></p></li>
+<li><p>What is the correct name for <span class="math inline">\(\ce{CuSO4.5H2O}\)</span>? <br> Answer: copper sulfate pentahydrate <br><br></p></li>
+<li><p>What is the formula for hypobromous acid? <br> Answer: <span class="math inline">\(\ce{HBrO}\)</span> <br><br></p></li>
+</ol>
+</div>
+<hr>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.core.display <span class="im">import</span> HTML</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>copyright <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/copyright.md"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>HTML(copyright.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<p>Copyright (C) 2021 Yu Wang</p>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+<p>Contact: Dr. Yu Wang<br>
+Department of Chemistry<br>
+Institute for Materials Research and Innovation<br>
+University of Louisiana at Lafayette<br>
+Lafayette, LA 70504<br>
+Email: yuwang@louisiana.edu</p>
+</div>
+</div>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/custom.css"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>HTML(styles.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:400,400i|Raleway:400,400i,700,700i" rel="stylesheet" type="text/css">
+<style type="text/css">
+div.text_cell_render {
+    font-family: Lora, serif;
+    color: #222222;
+}
+.text_cell_render p {
+    padding-left: 1.5em;
+    text-align: justify;
+}
+.text_cell_render h3, h4, h6 {
+    font-family: Raleway, sans-serif;
+    color: #005c99;
+}
+.text_cell_render h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+}
+.text_cell_render h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 700; 
+    margin-top: 50px;
+    display:inline-block;
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: #f8f8f8;
+    border-radius: 10px 40px 10px 40px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+}
+.text_cell_render h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    border-style: groove;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    margin: 1em 0 1em 0;
+    line-height: 1.6;
+}
+div #notebook {
+    background-color: #f8f8f8;
+    width: 1110px;  
+    margin: auto;
+    padding-left: 0em;
+    border: 3px solid #cbd3e5; 
+    box-shadow: 0px 0px 7px 1px #cccccc;
+}
+div.example {
+    background-color:#007acc;
+    color: #ffffff;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #007acc; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div.practice {
+    background-color:#fbfbfb;
+    color: #007acc;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #eeeeee; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div #notebook-container {
+    background-color: #ffffff;
+    font-size: 1.5em; 
+    line-height: 1.6;
+    width: 1100px;
+    margin: auto;
+    padding-right: 150px;
+}
+.CodeMirror-code {
+    font-size: 1.2em;
+    line-height: 125%;
+    opacity: 0.9;
+}
+
+.text_cell_render td {
+    border-style: hidden;
+}
+.text_cell_render table {
+    border-style: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 80%;
+}
+
+.text_cell_render th, td {
+    padding: 8px;
+}
+
+.text_cell_render tr:nth-child(even){background-color: #e8e8e8}
+
+.text_cell_render th {
+    border-style: hidden;
+    background-color: #004c80;
+    color: #f8f8f8;
+}
+table td, table th, table tr {
+    text-align:left !important;
+}
+</style>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

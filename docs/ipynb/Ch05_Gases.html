@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>General Chemistry – ch05_gases</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">GenChem</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch01_Introduction.html" class="sidebar-item-text sidebar-link">Chapter 01 Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch02_AtomMolIon.html" class="sidebar-item-text sidebar-link">Chapter 02 Atoms Molecules and Ions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch03_Stoichiometry.html" class="sidebar-item-text sidebar-link">Chapter 03 Stoichiometry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch04_AqReactions.html" class="sidebar-item-text sidebar-link">Chapter 04 Reactions in Aqueous Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch05_Gases.html" class="sidebar-item-text sidebar-link">Chapter 05 Gases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch06_Thermochemistry.html" class="sidebar-item-text sidebar-link">Chapter 06 Energy Relationships in Chemical Reactions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch07_Quantum.html" class="sidebar-item-text sidebar-link">Chapter 07 The Electronic Structure of Atoms</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch08_PeriodicTable.html" class="sidebar-item-text sidebar-link">Chapter 08 The Periodic Table</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch09_ChemicalBonds.html" class="sidebar-item-text sidebar-link">Chapter 09 Chemical Bonding I – The Covalent Bond</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch10_MolGeometry.html" class="sidebar-item-text sidebar-link">Chapter 10 Chemical Bonding II – Molecular Geometry and Hybridization of Atomic Orbitals</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch11_Intermolecular.html" class="sidebar-item-text sidebar-link">Chapter 11 Intermolecular Forces and Liquids and Solids</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch12_Solution.html" class="sidebar-item-text sidebar-link">Chapter 12 Physical Properties of Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch13_Kinetics.html" class="sidebar-item-text sidebar-link">Chapter 13 Chemical Kinetics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch14_Equilibrium.html" class="sidebar-item-text sidebar-link">Chapter 14 Chemical Equilibrium</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch15_AcidBase.html" class="sidebar-item-text sidebar-link">Chapter 15 Acids and Bases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch16_AcidBaseEq.html" class="sidebar-item-text sidebar-link">Chapter 16 Acid-Base Equilibria and Solubility Equilibria</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch17_Thermodynamics.html" class="sidebar-item-text sidebar-link">Chapter 17 Thymodynamics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch18_Electrochemistry.html" class="sidebar-item-text sidebar-link">Chapter 18 Redox Reactions and Electrochemistry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch19_NuclearChemistry.html" class="sidebar-item-text sidebar-link">Chapter 19 Nuclear Chemistry</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">HOME</a></li>
+  <li><a href="#general-concepts" id="toc-general-concepts" class="nav-link" data-scroll-target="#general-concepts">1. General Concepts</a>
+  <ul class="collapse">
+  <li><a href="#substances-that-exist-as-gases" id="toc-substances-that-exist-as-gases" class="nav-link" data-scroll-target="#substances-that-exist-as-gases">1.1. Substances That Exist as Gases</a></li>
+  <li><a href="#pressure" id="toc-pressure" class="nav-link" data-scroll-target="#pressure">1.2. Pressure</a></li>
+  </ul></li>
+  <li><a href="#the-gas-laws" id="toc-the-gas-laws" class="nav-link" data-scroll-target="#the-gas-laws">2. The Gas Laws</a></li>
+  <li><a href="#partial-pressures" id="toc-partial-pressures" class="nav-link" data-scroll-target="#partial-pressures">3. Partial Pressures</a></li>
+  <li><a href="#the-kinetic-molecular-theory-of-gases" id="toc-the-kinetic-molecular-theory-of-gases" class="nav-link" data-scroll-target="#the-kinetic-molecular-theory-of-gases">4. The Kinetic Molecular Theory of Gases</a></li>
+  <li><a href="#deviations-from-ideal-behavior" id="toc-deviations-from-ideal-behavior" class="nav-link" data-scroll-target="#deviations-from-ideal-behavior">5. Deviations from Ideal Behavior</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/wangyu16/GeneralChemistry/assets/js/code_toggle.js"></script>
+<p><span class="math display">\[\require{mhchem}\]</span></p>
+<section id="home" class="level3">
+<h3 class="anchored" data-anchor-id="home"><a href="https://wangyu16.github.io/GeneralChemistry/">HOME</a></h3>
+#
+<center>
+General Chemistry Study Guide
+</center>
+###
+<center>
+Chapter 5. Gases
+</center>
+<hr>
+<section id="openstax-9-gases.-brown-10-gases." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-9-gases.-brown-10-gases."><b>OpenStax</b> 9 Gases. <b>Brown</b> 10 Gases.</h5>
+</section>
+</section>
+<section id="general-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="general-concepts">1. General Concepts</h2>
+<p>All gases have the following physical characteristics: - Gases assume the volume and shape of their containers. - Gases are the most compressible of the states of matter. - Gases will mix evenly and completely when confined to the same container. - Gases have much lower densities than liquids and solids.</p>
+<section id="substances-that-exist-as-gases" class="level3">
+<h3 class="anchored" data-anchor-id="substances-that-exist-as-gases">1.1. Substances That Exist as Gases</h3>
+<p>Elements that exist as gases at <span class="math inline">\(25\,^\circ\text{C}\)</span> and <span class="math inline">\(1\,\text{atmosphere}\)</span> are: noble gases (<span class="math inline">\(\ce{He}\)</span>, <span class="math inline">\(\ce{Ne}\)</span>, <span class="math inline">\(\ce{Ar}\)</span>, <span class="math inline">\(\ce{Kr}\)</span>, <span class="math inline">\(\ce{Xe}\)</span>, <span class="math inline">\(\ce{Rn}\)</span>), two halogens (<span class="math inline">\(\ce{F2}\)</span>, <span class="math inline">\(\ce{Cl2}\)</span>), oxygen (<span class="math inline">\(\ce{O2}\)</span>), nitrogen (<span class="math inline">\(\ce{N2}\)</span>) and hydrogen (<span class="math inline">\(\ce{H2}\)</span>)</p>
+</section>
+<section id="pressure" class="level3">
+<h3 class="anchored" data-anchor-id="pressure">1.2. Pressure</h3>
+<p><span class="math display">\[\text{Pressure} = \frac{\text{Force}}{\text{Area}}\]</span></p>
+<p><span class="math display">\[\text{Force}=\text{Mass}\times\text{Accelaration}\qquad\text{Newton's Second Law}\]</span></p>
+<p>The unit for force is <span class="math inline">\(\text{N}\)</span> which is defined as <span class="math inline">\(\text{kg}\cdot\text{m/s}^2\)</span>.</p>
+<p>The unit for pressure is <span class="math inline">\(\text{Pa}\)</span> which is defined as <span class="math inline">\(\text{N/m}^2\)</span>.</p>
+<p>Other commonly used units for pressure are 1. <span class="math inline">\(\text{atm}\)</span> which means atomospheric pressure and <span class="math inline">\(1\,\text{atm}\)</span> is equal to <span class="math inline">\(101325\,\text{Pa}\)</span>. 2. <span class="math inline">\(\text{mmHg}\)</span> or <span class="math inline">\(\text{cmHg}\)</span> which is the pressure of mercury with the hight of <span class="math inline">\(1\,\text{mm}\)</span> or <span class="math inline">\(1\,\text{cm}\)</span>, respectively. <span class="math inline">\(1\,\text{atm} = 760\,\text{mmHg}\)</span>. 3. <span class="math inline">\(\text{torr}\)</span>. <span class="math inline">\(1\,\text{torr} = 1\,\text{mmHg}\)</span>.</p>
+<blockquote class="blockquote">
+<h4 id="requirements" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the general properties of gases.</li>
+<li>Remember elements exist as gases at <span class="math inline">\(25\,^\circ\text{C}\)</span> and <span class="math inline">\(1\,\text{atmosphere}\)</span>.</li>
+<li>Be familiar with the substances exist as gases at <span class="math inline">\(25\,^\circ\text{C}\)</span> and <span class="math inline">\(1\,\text{atmosphere}\)</span>.</li>
+<li>Understand the defination of pressure and learn how to convert the units.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="the-gas-laws" class="level2">
+<h2 class="anchored" data-anchor-id="the-gas-laws">2. The Gas Laws</h2>
+<p>Boyle’s Law: <span class="math inline">\(P \propto \frac{1}{V}\)</span> or <span class="math inline">\(V \propto \frac{1}{P}\)</span> (at constant <span class="math inline">\(n\)</span> and <span class="math inline">\(T\)</span>)</p>
+<p>Charles’s Law: <span class="math inline">\(V \propto T\)</span> (at constant <span class="math inline">\(n\)</span> and <span class="math inline">\(P\)</span>)</p>
+<p>Avogadro’s Law: <span class="math inline">\(V \propto n\)</span> (at constant <span class="math inline">\(P\)</span> and <span class="math inline">\(T\)</span>)</p>
+<p>Combine all three expressions</p>
+<p><span class="math display">\[V \propto \frac{nT}{P}\]</span></p>
+<section id="ideal-gas-equation" class="level4">
+<h4 class="anchored" data-anchor-id="ideal-gas-equation">Ideal Gas Equation:</h4>
+<p>An <strong>ideal gas</strong> is a theoretical gas composed of many randomly moving point particles whose only interactions are perfectly elastic collisions. In another word, the molecules of an ideal gas do not attract or repel one another, and their volume is negligible.</p>
+<p><span class="math display">\[V = R\frac{nT}{P}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[PV = nRT\]</span></p>
+<p>where <span class="math inline">\(R\)</span>, the proportionality constant, is called the gas constant.</p>
+<p><span class="math display">\[R = 8.314\,\text{J/K mol} = 8.314\,\text{N m/K mol} = 8.314\times10^{-3}\,\text{kJ/K mol} = 0.0821\,\text{L atm/K mol}\]</span></p>
+<p>Note</p>
+<p><span class="math display">\[1\,\text{J} = 1\,\text{N m}\]</span> <span class="math display">\[1\,\text{Pa} = 1\,\text{N/m}^2\]</span></p>
+<p>For an ideal gas, at <span class="math inline">\(0\,^\circ\text{C}\)</span> (<span class="math inline">\(273.15\,\text{K}\)</span>) and <span class="math inline">\(1\,\text{atm}\)</span>, it occupies <span class="math inline">\(22.14\,\text{L}\)</span> volume. The conditions <span class="math inline">\(0\,^\circ\text{C}\)</span> and <span class="math inline">\(1\,\text{atm}\)</span> are called standard temperature and pressure,</p>
+<div class="example">
+<p><b>Example: </b> Calculate the pressure of 1.92 mol of ideal gas in a steel vessel of volume 4.50 L at <span class="math inline">\(25.6\,^\circ\text{C}\)</span> <br></p>
+<p><b>Answer: </b><br> <span class="math display">\[\begin{align*}
+P &amp; = \frac{nRT}{V} \\
+  &amp; = \frac{1.92\,\text{mol}\times 0.0821\,\text{L atm/K mol}\times (25.6+273.2)\,\text{K}}{4.50\,\text{L}} \\
+  &amp; = 10.5\,\text{atm}
+\end{align*}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\begin{align*}
+P &amp; = \frac{nRT}{V} \\
+  &amp; = \frac{1.92\,\text{mol}\times 8.314\,\text{N m/K mol}\times (25.6+273.2)\,\text{K}}{4.50\times10^{-3}\,\text{m}^3} \\
+  &amp; = 1.06\times10^6\,\text{N/m}^2= 1.06\times10^6\,\text{Pa}
+\end{align*}\]</span></p>
+</div>
+<div class="example">
+<p><b>Example: </b> An air bubble with an initial volume 2.54 mL rises from the bottom of a lake. The temperature and the pressure at the bottom of the lake are <span class="math inline">\(6.42\,^\circ\text{C}\)</span> and 4.56 atm. The temperature and pressure of the lake surface are <span class="math inline">\(24.8\,^\circ\text{C}\)</span> and 1.00 atm. Calculat the final volume of the air bubble. <br></p>
+<p><b>Answer: </b><br></p>
+<p>Key idea: the moles of the gas does not change during this process. Thus, at the beginning <span class="math inline">\(P_iV_i=nRT_i\)</span>; and when the air bubble reaches the lake surface <span class="math inline">\(P_fV_f=nRT_f\)</span>. <span class="math display">\[\begin{align*}
+n &amp; =\frac{P_iV_i}{RT_i}=\frac{P_fV_f}{RT_f} \\
+V_f &amp; =\frac{P_iV_i}{T_i}\times\frac{T_f}{P_f} \\
+    &amp; = \frac{4.56\,\text{atm}\times 2.54\,\text{mL}}{(6.42+273.15)\,\text{K}}\times\frac{(24.8+273.15)\,\text{K}}{1.00\,\text{atm}} \\
+    &amp; = 12.3\,\text{mL}
+\end{align*}\]</span></p>
+</div>
+<div class="example">
+<p><b>Example: </b> In the reaction <span class="math display">\[\ce{2NaN3 (s) -&gt; 2Na(s) + 3 N2(g)}\]</span> What is the volume of <span class="math inline">\(\ce{N2}\)</span> generated by 38.2 g <span class="math inline">\(\ce{NaN3}\)</span> at <span class="math inline">\(20.5\,^\circ\text{C}\)</span> and 0.982 atm? <br></p>
+<p><b>Answer: </b><br></p>
+<p><span class="math display">\[\begin{align*}
+\text{moles of }\ce{N2} &amp; =38.2\,\text{g }\ce{NaN3}\times\frac{1\,\text{mol }\ce{NaN3}}{65.02\,\text{g }\ce{NaN3}}\times\frac{3\,\text{mol }\ce{N2}}{2\,\text{mol }\ce{NaN3}} \\
+&amp; = 0.881\,\text{mol }\ce{N2}
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+\text{volume of }\ce{N2} &amp; =\frac{nRT}{P} \\
+&amp; = \frac{0.881\,\text{mol}\times 0.0821\,\text{L atm/K mol}\times(20.5+273.2)\,\text{K}}{0.982\,\text{atm}} \\
+&amp; = 21.6\,\text{L}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="density-and-molar-mass-of-gaseous-substance" class="level4">
+<h4 class="anchored" data-anchor-id="density-and-molar-mass-of-gaseous-substance">Density and Molar Mass of Gaseous Substance</h4>
+<p><span class="math display">\[n = \frac{m}{\mathcal{M}}\]</span></p>
+<p>where <span class="math inline">\(m\)</span> is the mass, <span class="math inline">\(\mathcal{M}\)</span> is the molar mass.</p>
+<p>Thus,</p>
+<p><span class="math display">\[PV = \frac{m}{\mathcal{M}}RT\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\frac{m}{\mathcal{M}V} = \frac{P}{RT}\]</span></p>
+<p>Since</p>
+<p><span class="math display">\[\text{d} = \frac{m}{V}\]</span></p>
+<p>we get</p>
+<p><span class="math display">\[\frac{d}{\mathcal{M}}= \frac{P}{RT}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\mathcal{M}=\frac{dRT}{P}\]</span></p>
+<p>where <span class="math inline">\(d\)</span> is the density.</p>
+<div class="example">
+<p><b>Example: </b> A gas has a density of 7.71 g/L at <span class="math inline">\(36.0\,^\circ\text{C}\)</span> and 2.88 atm. What is the molar mass of this gas? <br></p>
+<p><b>Answer: </b><br> <span class="math display">\[\begin{align*}
+\mathcal{M} &amp; =\frac{dRT}{P} \\
+&amp; = \frac{7.71\,\text{g/L}\times 0.0821\,\text{L atm/K mol}\times(36.0+273.2)\,\text{K}}{2.88\,\text{atm}} \\
+&amp; = 68.0\,\text{g/mol}
+\end{align*}\]</span></p>
+</div>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> YouTubeVideo</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>YouTubeVideo(<span class="st">"88uEsGgXJrU"</span>, width<span class="op">=</span><span class="dv">700</span>, height<span class="op">=</span><span class="dv">550</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Watch the following video for a better understanding </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># on gas laws.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+
+        <iframe width="700" height="550" src="https://www.youtube.com/embed/88uEsGgXJrU" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<blockquote class="blockquote">
+<h4 id="requirements-1" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the ideal gas equation. Konw the meaning of gas constant. Use ideal gas equation to do calculations.</li>
+<li>Learn how to calculate the molar mass or density of a gaseous substance.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="partial-pressures" class="level2">
+<h2 class="anchored" data-anchor-id="partial-pressures">3. Partial Pressures</h2>
+<p>In a mixture of several gaseous substances, the total moles of gasses is expressed as <span class="math inline">\(n\)</span>, and the moles of each gas is expressed as <span class="math inline">\(n_1\)</span>, <span class="math inline">\(n_2\)</span>, etc. According to ideal gas equation</p>
+<p><span class="math display">\[P = \frac{nRT}{V}\]</span></p>
+<p>where <span class="math inline">\(P\)</span> is the total pressure.</p>
+<p>Define</p>
+<p><span class="math display">\[P_1 = \frac{n_1RT}{V}\]</span></p>
+<p><span class="math display">\[P_2 = \frac{n_2RT}{V}\]</span></p>
+<p>and so on …</p>
+<p>The values of <span class="math inline">\(P_1\)</span>, <span class="math inline">\(P_2\)</span>, … are regarded as the partial pressures of each gaseous substance.</p>
+<p>The sum of all partial pressures must equal to the total pressure.</p>
+<p><span class="math display">\[P = P_1 + P_2 + \dots\]</span></p>
+<p>Define</p>
+<p><span class="math display">\[X_i = \frac{n_i}{n}\]</span></p>
+<p>as the molar fraction of one gas substance in the mixture. The sum of the fractions of every gaseous substances must equal to <span class="math inline">\(1\)</span>.</p>
+<p>We have</p>
+<p><span class="math display">\[P_i = X_iP\]</span></p>
+<div class="example">
+<p><b>Example: </b> A mixture of three gases A, B and C. The total pressure is 3.46 atm. The moles of each components are 1.53 mol A, 1.64 mol B, and 2.64 mol C. What are the partial pressures of each gases? <br></p>
+<p><b>Answer: </b><br> <span class="math display">\[\begin{align*}
+P_\text{A} &amp; = P_\text{total}\times\frac{n_\text{A}}{n_\text{A}+n_\text{B}+n_\text{C}} \\
+&amp; = 3.46\,\text{atm}\times\frac{1.53\,\text{mol}}{1.53\,\text{mol}+1.64\,\text{mol}+2.64\,\text{mol}} \\
+&amp; = 0.911\,\text{atm}
+\end{align*}\]</span> The partial pressures of B and C can be calculated the same way. The sum of the partial pressures must equal the total pressure.</p>
+</div>
+<div class="example">
+<p><b>Example: </b> In one reaction 153 mL <span class="math inline">\(\ce{H2}\)</span> gas is collected. The temperature is <span class="math inline">\(23.7\,^\circ\text{C}\)</span>, the atomspheric pressure is 758 mmHg. Knowing the water vapor pressure is 22.4 mmHg, calculate the moles of <span class="math inline">\(\ce{H2}\)</span> obtained. <br></p>
+<p><b>Answer: </b><br> The partial pressure of <span class="math inline">\(\ce{H2}\)</span> is <span class="math inline">\(758 - 22.4 = 736\)</span> mmHg = 0.968 atm. <span class="math display">\[\begin{align*}
+n &amp; = \frac{PV}{RT} \\
+&amp; = \frac{0.968\,\text{atm}\times 0.153\,\text{L}}{0.0821\,\text{L atm/K mol}\times (23.7+273.2)\,\text{K}} \\
+&amp; = 6.08\times 10^{-3}\,\text{mol}
+\end{align*}\]</span></p>
+</div>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> YouTubeVideo</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>YouTubeVideo(<span class="st">"A2xi-jEqpmg"</span>, width<span class="op">=</span><span class="dv">700</span>, height<span class="op">=</span><span class="dv">550</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Watch the following video for a better understanding </span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># on partial pressures.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+
+        <iframe width="700" height="550" src="https://www.youtube.com/embed/A2xi-jEqpmg" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<blockquote class="blockquote">
+<h4 id="requirements-2" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand what is partial pressure and learn how to do calculation with it.</li>
+</ol>
+</blockquote>
+</section>
+<section id="the-kinetic-molecular-theory-of-gases" class="level2">
+<h2 class="anchored" data-anchor-id="the-kinetic-molecular-theory-of-gases">4. The Kinetic Molecular Theory of Gases</h2>
+<p><strong>Energy</strong> is defined as the capacity to do <em>work</em> or to produce change. In mechanics, <em>work</em> is defined as force times distance. Because energy can be measured as work, we can write</p>
+<p><span class="math display">\[\text{energy}=\text{word done}=\text{force}\times\text{distance}\]</span></p>
+<p>The SI unit of energy is <strong>joule (J)</strong></p>
+<p><span class="math display">\[1\,\text{J} = 1\,\text{kg m}^2\text{/s}^2 = 1\,\text{N m}\]</span></p>
+<p><strong>Kinetic energy (KE)</strong> is the type of energy expended by a moving object, or <em>energy of motion</em>.</p>
+<p>The assumptions of the kinetic molecular theory of gases</p>
+<ol type="1">
+<li>A gas is composed of molecules that are separated from each other by distances far greater than their own dimensions. The molecules can be considered to be points; that is, they possess mass but have negligible volume.</li>
+<li>Gas molecules are in constant motion in random directions, and they frequently collide with one another. Collisions among molecules are perfectly elastic.</li>
+<li>Gas molecules exert neither attractive nor repulsive forces on one another.</li>
+<li>The average kinetic energy of the molecules is proportional to the temperature of the gas in kelvins. Any two gases at the same temperature will have the same average kinetic energy</li>
+</ol>
+<p><span class="math display">\[\overline{KE}=\frac{1}{2}m\overline{u^2}\propto T\]</span></p>
+<p>An <strong>elastic collision</strong> is an encounter between two bodies in which the total kinetic energy of the two bodies after the encounter is equal to their total kinetic energy before the encounter.</p>
+<p>Explanation of the gas laws</p>
+<ul>
+<li>Compressibility of Gases. Because molecules in the gas phase are separated by large distances (assumption 1), gases can be compressed easily to occupy less volume.</li>
+<li>Boyle’s Law. The pressure exerted by a gas results from the impact of its molecules on the walls of the container. The collision rate, or the number of molecular collisions with the walls per second, is proportional to the number density (that is, number of molecules per unit volume) of the gas. Decreasing the volume of a given amount of gas increases its number density and hence its collision rate. For this reason, the pressure of a gas is inversely proportional to the volume it occupies; as volume decreases, pressure increases and vice versa.</li>
+<li>Charles’s Law. Because the average kinetic energy of gas molecules is proportional to the sample’s absolute temperature (assumption 4), raising the temperature increases the average kinetic energy. Consequently, molecules will collide with the walls of the container more frequently and with greater impact if the gas is heated, and thus the pressure increases. The volume of gas will expand until the gas pressure is balanced by the constant external pressure</li>
+<li>Avogadro’s Law. For two gases under the same conditions of pressure, volume, and temperature (that is, when <span class="math inline">\(P_1 = P_2\)</span>, <span class="math inline">\(T_1 = T_2\)</span>, and <span class="math inline">\(V_1 = V_2\)</span>), it follows that <span class="math inline">\(n_1 = n_2\)</span>, which is a mathematical expression of Avogadro’s law.</li>
+<li>Dalton’s Law of Partial Pressures. If molecules do not attract or repel one another (assumption 3), then the pressure exerted by one type of molecule is unaffected by the presence of another gas. Consequently, the total pressure is given by the sum of individual gas pressures.</li>
+</ul>
+<section id="root-mean-square-speed" class="level4">
+<h4 class="anchored" data-anchor-id="root-mean-square-speed">Root-Mean-Square Speed</h4>
+<p><span class="math display">\[u_{rms}=\sqrt{\frac{3RT}{\mathcal{M}}}\]</span></p>
+<p>where <span class="math inline">\(u_{rms}\)</span>is the root-mean-square speed which is an average molecular speed.</p>
+</section>
+<section id="gas-diffusion" class="level4">
+<h4 class="anchored" data-anchor-id="gas-diffusion">Gas diffusion</h4>
+<p>Gas diffusion is the gradual mixing of molecules of one gas with molecules of another by virtue of their kinetic properties.</p>
+</section>
+<section id="gas-effusion" class="level4">
+<h4 class="anchored" data-anchor-id="gas-effusion">Gas effusion</h4>
+<p>is the process by which gas under pressure escapes from one compartment of a container to another by passing through a small opening.</p>
+<p>In both diffusion and effusion the correlations among rate, time and molar mass are:</p>
+<p><span class="math display">\[\frac{r_1}{r_2}=\frac{t_2}{t_1}=\sqrt{\frac{\mathcal{M}_2}{\mathcal{M}_1}}\]</span></p>
+<blockquote class="blockquote">
+<h4 id="requirements-3" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand the concepts and explanations of the kinetic molecular theory.</li>
+<li>Understand the square root rule. If the gas molecule is 100 times heavier, the average speed would reduce to 1/10.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="deviations-from-ideal-behavior" class="level2">
+<h2 class="anchored" data-anchor-id="deviations-from-ideal-behavior">5. Deviations from Ideal Behavior</h2>
+<p>Real gas molecules do have certain sizes and interactions! At <em>higher pressure</em> and/or <em>lower temperature</em> the deviations from ideal behavior become more significant.</p>
+<ul>
+<li>Pressure of a real gas is lower than an ideal gas counterpart. Consider the approach of a particular molecule toward the wall of a container. The intermolecular attractions exerted by its neighbors tend to soften the impact made by this molecule against the wall.</li>
+<li>Free volume of a real gas is less than the volume of the container since the gas molecules occupy certain volume.</li>
+</ul>
+<p>One can use <strong>van der Waals equation</strong> to deal with real gases.</p>
+<p><span class="math display">\[\left( P + \frac{an^2}{V^2}\right)\left(V-nb\right)=nRT\]</span></p>
+<p>The parameters <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> can be found in Table 5.3.</p>
+<blockquote class="blockquote">
+<h4 id="requirements-4" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand why real gases do not behave exactly like ideal gases.</li>
+</ol>
+</blockquote>
+<div class="practice">
+<p><b>Practice:</b> <br></p>
+<ol type="1">
+<li><p>The pressure of a gas sample was measured to be 489 mmHg. What is the pressure in Pa? <br> Answer: <span class="math inline">\(6.52\times 10^4\)</span> <br><br>
+<br></p></li>
+<li><p>A sample of a gas occupies <span class="math inline">\(1.40\times10^3\)</span> mL at 25 <span class="math inline">\(^\circ\text{C}\)</span> and 760 mmHg. What volume will it occupy at the same temperature and 380 mmHg? <br> Answer: <span class="math inline">\(2.80\times10^3\)</span> mL <br><br>
+<br></p></li>
+<li><p>sample of <span class="math inline">\(\ce{N2}\)</span> gas occupies 2.40 L at 20 <span class="math inline">\(^\circ\text{C}\)</span>. If the gas is in a container that can contract or expand at constant pressure, at what temperature will the <span class="math inline">\(\ce{N2}\)</span> occupy 4.80 L?<br> Answer: 313 <span class="math inline">\(^\circ\text{C}\)</span> <br><br>
+<br></p></li>
+<li><p>Calculate the number of moles of gas contained in a 10.0 L tank at 22 <span class="math inline">\(^\circ\text{C}\)</span> and 0.5 atm. <br> Answer: 0.206 mol <br><br></p></li>
+<li><p>Which one of these gases has lowest density at the same temperature and pressure? <br></p></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{Ne}\)</span> <br></li>
+<li><span class="math inline">\(\ce{Cl2}\)</span> <br></li>
+<li><span class="math inline">\(\ce{SO2}\)</span> <br></li>
+<li><span class="math inline">\(\ce{PH3}\)</span> <br></li>
+<li><span class="math inline">\(\ce{NO2}\)</span> <br> Answer: A <br><br></li>
+</ol>
+<ol start="6" type="1">
+<li>Two moles of chlorine gas at 20.0 <span class="math inline">\(^\circ\text{C}\)</span> are heated to 350 <span class="math inline">\(^\circ\text{C}\)</span> while the volume is doubled. The density of the gas would<br></li>
+</ol>
+<ol type="A">
+<li>increase <br></li>
+<li>decrease<br></li>
+<li>remain the same <br></li>
+<li>depend on the pressure<br></li>
+<li>Not enough information is given to correctly answer the question.<br> Answer: B <br><br></li>
+</ol>
+<ol start="7" type="1">
+<li><p>Determine the molar mass of chloroform gas if a sample weighing 0.389 g is collected in a ask with a volume of 102 cm<span class="math inline">\(^3\)</span> at 97 <span class="math inline">\(^\circ\text{C}\)</span>. The pressure of the chloroform is 728 mmHg.<br> Answer: 121 g/mol <br><br></p></li>
+<li><p>A sample of hydrogen gas was collected over water at 21 <span class="math inline">\(^\circ\text{C}\)</span> and 685 mmHg. The volume of the container was 7.80 L. Calculate the mass of <span class="math inline">\(\ce{H2}\)</span>(g) collected. (Vapor pressure of water = 18.6 mmHg at 21 <span class="math inline">\(^\circ\text{C}\)</span>.)<br> Answer: 0.572 g <br><br></p></li>
+<li><p>Which of these properties is not a general characteristic of gases? <br></p></li>
+</ol>
+<ol type="A">
+<li>Colorless <br></li>
+<li>High compressibility <br></li>
+<li>Relatively large distances between molecules <br></li>
+<li>Formation of homogeneous mixtures regardless of the nature of gases <br></li>
+<li>Under the same pressure and temperature, the density of a gas is correlated with its molar mass <br> Answer: A <br><br></li>
+</ol>
+<ol start="10" type="1">
+<li>Which statement is false? <br></li>
+</ol>
+<ol type="A">
+<li>The average kinetic energies of molecules from samples of different “ideal” gases is the same at the same temperature. <br></li>
+<li>The molecules of an ideal gas are relatively far apart. <br></li>
+<li>All molecules of an ideal gas have the same kinetic energy at constant temperature. <br></li>
+<li>Molecules of a gas undergo many collisions with each other and the container walls.<br></li>
+<li>Molecules of greater mass have a lower average speed than those of less mass at the same temperature. <br> Answer: C <br><br></li>
+</ol>
+</div>
+<hr>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.core.display <span class="im">import</span> HTML</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>copyright <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/copyright.md"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>HTML(copyright.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<p>Copyright (C) 2021 Yu Wang</p>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+<p>Contact: Dr. Yu Wang<br>
+Department of Chemistry<br>
+Institute for Materials Research and Innovation<br>
+University of Louisiana at Lafayette<br>
+Lafayette, LA 70504<br>
+Email: yuwang@louisiana.edu</p>
+</div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/custom.css"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>HTML(styles.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:400,400i|Raleway:400,400i,700,700i" rel="stylesheet" type="text/css">
+<style type="text/css">
+div.text_cell_render {
+    font-family: Lora, serif;
+    color: #222222;
+}
+.text_cell_render p {
+    padding-left: 1.5em;
+    text-align: justify;
+}
+.text_cell_render h3, h4, h6 {
+    font-family: Raleway, sans-serif;
+    color: #005c99;
+}
+.text_cell_render h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+}
+.text_cell_render h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 700; 
+    margin-top: 50px;
+    display:inline-block;
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: #f8f8f8;
+    border-radius: 10px 40px 10px 40px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+}
+.text_cell_render h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    border-style: groove;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    margin: 1em 0 1em 0;
+    line-height: 1.6;
+}
+div #notebook {
+    background-color: #f8f8f8;
+    width: 1110px;  
+    margin: auto;
+    padding-left: 0em;
+    border: 3px solid #cbd3e5; 
+    box-shadow: 0px 0px 7px 1px #cccccc;
+}
+div.example {
+    background-color:#007acc;
+    color: #ffffff;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #007acc; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div.practice {
+    background-color:#fbfbfb;
+    color: #007acc;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #eeeeee; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div #notebook-container {
+    background-color: #ffffff;
+    font-size: 1.5em; 
+    line-height: 1.6;
+    width: 1100px;
+    margin: auto;
+    padding-right: 150px;
+}
+.CodeMirror-code {
+    font-size: 1.2em;
+    line-height: 125%;
+    opacity: 0.9;
+}
+
+.text_cell_render td {
+    border-style: hidden;
+}
+.text_cell_render table {
+    border-style: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 80%;
+}
+
+.text_cell_render th, td {
+    padding: 8px;
+}
+
+.text_cell_render tr:nth-child(even){background-color: #e8e8e8}
+
+.text_cell_render th {
+    border-style: hidden;
+    background-color: #004c80;
+    color: #f8f8f8;
+}
+table td, table th, table tr {
+    text-align:left !important;
+}
+</style>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="The total entropy of the universe can only increase. That is the real driving force for everything to happen.">
+
+<title>General Chemistry - 17 Thymodynamics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/social-share-0.1.0/social-share.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/social-share-0.1.0/all.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8484Q795DY"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-8484Q795DY', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">GenChem</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/wangyu16/GeneralChemistry"><i class="bi bi-github" role="img" aria-label="GenChem GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">17 Thymodynamics</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch01_Introduction.html" class="sidebar-item-text sidebar-link">01 Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch02_AtomMolIon.html" class="sidebar-item-text sidebar-link">02 Atoms Molecules and Ions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch03_Stoichiometry.html" class="sidebar-item-text sidebar-link">03 Stoichiometry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch04_AqReactions.html" class="sidebar-item-text sidebar-link">04 Reactions in Aqueous Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch05_Gases.html" class="sidebar-item-text sidebar-link">05 Gases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch06_Thermochemistry.html" class="sidebar-item-text sidebar-link">06 Energy Relationships in Chemical Reactions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch07_Quantum.html" class="sidebar-item-text sidebar-link">07 The Electronic Structure of Atoms</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch08_PeriodicTable.html" class="sidebar-item-text sidebar-link">08 The Periodic Table</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch09_ChemicalBonds.html" class="sidebar-item-text sidebar-link">09 Chemical Bonding I – The Covalent Bond</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch10_MolGeometry.html" class="sidebar-item-text sidebar-link">10 Chemical Bonding II – Molecular Geometry and Hybridization of Atomic Orbitals</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch11_Intermolecular.html" class="sidebar-item-text sidebar-link">11 Intermolecular Forces and Liquids and Solids</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch12_Solution.html" class="sidebar-item-text sidebar-link">12 Physical Properties of Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch13_Kinetics.html" class="sidebar-item-text sidebar-link">13 Chemical Kinetics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch14_Equilibrium.html" class="sidebar-item-text sidebar-link">14 Chemical Equilibrium</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch15_AcidBase.html" class="sidebar-item-text sidebar-link">15 Acids and Bases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch16_AcidBaseEq.html" class="sidebar-item-text sidebar-link">16 Acid-Base Equilibria and Solubility Equilibria</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch17_Thermodynamics.html" class="sidebar-item-text sidebar-link active">17 Thymodynamics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch18_Electrochemistry.html" class="sidebar-item-text sidebar-link">18 Redox Reactions and Electrochemistry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch19_NuclearChemistry.html" class="sidebar-item-text sidebar-link">19 Nuclear Chemistry</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#entropy" id="toc-entropy" class="nav-link active" data-scroll-target="#entropy">1. Entropy</a></li>
+  <li><a href="#the-laws-of-thermodynamics" id="toc-the-laws-of-thermodynamics" class="nav-link" data-scroll-target="#the-laws-of-thermodynamics">2. The Laws of Thermodynamics</a></li>
+  <li><a href="#free-energy" id="toc-free-energy" class="nav-link" data-scroll-target="#free-energy">3. Free Energy</a></li>
+  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">Practice Questions</a></li>
+  <li><a href="#copyright" id="toc-copyright" class="nav-link" data-scroll-target="#copyright">Copyright</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">17 Thymodynamics</h1>
+</div>
+
+<div>
+  <div class="description">
+    The total entropy of the universe can only increase. That is the real driving force for everything to happen.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="../img/Ch17_Thermodynamics.jpg" width="100%"></p>
+<p><strong>Thermodynamics:</strong> the branch of physical science that deals with the relations between heat and other forms of energy (such as mechanical, electrical, or chemical energy), and, by extension, of the relationships between all forms of energy.</p>
+<section id="entropy" class="level2">
+<h2 class="anchored" data-anchor-id="entropy">1. Entropy</h2>
+<p><strong>Spontaneous Processes</strong><br>
+A reaction that does occur under the given set of conditions is called a <strong>spontaneous reaction</strong>.</p>
+<p>Two factors determine if a process occur spontaneously. 1. Release or absorb heat; 2. Increase or decrease disordor.</p>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-i6eq{background-color:#ffccc9;vertical-align:top}
+.tg .tg-a080{background-color:#9aff99;vertical-align:top}
+.tg .tg-c57o{background-color:#ecf4ff;vertical-align:top}
+</style>
+
+<table class="tg">
+<tbody><tr>
+<td class="tg-a080">
+Release heat<br>Increase disorder<br><b>Spontaneous!</b>
+</td>
+<td class="tg-c57o">
+Absorb heat<br>Increase disorder<br><b>Depends!</b>
+</td>
+</tr>
+<tr>
+<td class="tg-c57o">
+Release heat<br>Decrease disorder<br><b>Depends!</b>
+</td>
+<td class="tg-i6eq">
+Absorb heat<br>Decrease disorder<br><b>Never happen!</b>
+</td>
+</tr>
+
+</tbody></table>
+<p><strong>Entropy</strong> (<span class="math inline">\(S\)</span>) is a measure of the randomness or disorder of a system. The unit of entropy is J/K.</p>
+<p><span class="math display">\[S = k \ln W\]</span><br>
+where <span class="math inline">\(k\)</span> is Boltzmann constant (<span class="math inline">\(1.38\times 10^{-23}\,\text{J/K}\)</span>), <span class="math inline">\(W\)</span> is the number of microstates. The unit of entroy is J/K.</p>
+<p>Consider the general case of a system comprised of <span class="math inline">\(N\)</span> particles distributed among <span class="math inline">\(n\)</span> boxes. The number of microstates possible for such a system is <span class="math inline">\(n^N\)</span>. For example, distributing four particles among two boxes will result in <span class="math inline">\(2^4 = 16\)</span> different microstates as illustrated in the figure.</p>
+<p><img src="https://openstax.org/resources/022c5c45817d04be15d3dd55d9c5528b0df45bf3" width="100%/"></p>
+<p>Microstates with equivalent particle arrangements (not considering individual particle identities) are grouped together and are called distributions. The probability that a system will exist with its components in a given distribution is proportional to the number of microstates within the distribution. In this example, there are 5 possible states. Distribution (a), all 4 particles are in the left box, has only one possible microstate; while distribution (c), 2 particles in the left box and 2 particles in the right box, has 6 microstates. Thus the entropy of state (c) is greater than that of state (a). Since entropy increases logarithmically with the number of microstates, the most probable distribution is therefore the one of greatest entropy.</p>
+<p><strong>State functions</strong> are properties that are determined by the state of the system, regardless of how that condition was achieved.</p>
+<p>Entropy is a state function. Thus,</p>
+<p><span class="math display">\[\Delta S = S_\text{f} - S_\text{i}=k\ln W_\text{f} - k\ln W_\text{i} = k\ln\frac{W_\text{f}}{W_\text{i}}\]</span></p>
+<p>where, <span class="math inline">\(S_\text{i}\)</span> and <span class="math inline">\(S_\text{f}\)</span> mean the entropy of the initial and final states. No matter how does the system go from one state to another, as long as the initial and final states are the same, the change of entropy is the same.</p>
+<p><strong>Standard Entropy</strong> (<span class="math inline">\(S^\ominus\)</span>) is the absolute entropy of a substance at 1 atm and usually quoted with its value at 25 <span class="math inline">\(^\circ\)</span>C. The values of <span class="math inline">\(S^\ominus\)</span> can be found <a href="https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances" target="_blank">here</a>.</p>
+<p>General trends: * Gas <span class="math inline">\(\gg\)</span> Liquid <span class="math inline">\(&gt;\)</span> Solid; * If the same state, more complex molecules result in higher entropy.</p>
+<p><strong>Standard Entropy of a Reaction</strong></p>
+<p>For a reaction:</p>
+<p><span class="math display">\[\ce{aA + bB -&gt; cC + dD}\]</span><br>
+The standard entropy of reaction <span class="math inline">\(\Delta S^\ominus_\text{rxn}\)</span> is:</p>
+<p><span class="math display">\[\Delta S^\ominus_\text{rxn}=[cS^\ominus(\ce{C})+dS^\ominus(\ce{D})]-[aS^\ominus(\ce{A})+dS^\ominus(\ce{B})]\]</span></p>
+<p>Generally,</p>
+<ul>
+<li>If a reaction produces more gas molecules than it consumes, <span class="math inline">\(\Delta S^\ominus_\text{rxn}\)</span> is positive;<br>
+</li>
+<li>If the total number of gas molecules diminishes, <span class="math inline">\(\Delta S^\ominus_\text{rxn}\)</span> is negative;<br>
+</li>
+<li>If there is no net change in the total number of gas molecules, then <span class="math inline">\(\Delta S^\ominus_\text{rxn}\)</span> can be either positive or negative, but will be relatively small numerically.</li>
+</ul>
+<div class="example">
+<p><b>Example:</b> Calculate the standard entropy of the following reaction at 25 °C. <span class="math display">\[\ce{4Fe(s) + 3O2 (g) -&gt; 2Fe2O3(s)}\]</span> <br></p>
+<p><b>Answer:</b> <br> First, find out the standard entropy of <span class="math inline">\(\ce{Fe(s)}\)</span>, <span class="math inline">\(\ce{O2 (g)}\)</span> and <span class="math inline">\(\ce{Fe2O3(s)}\)</span> are 27.3, 205.2 and 87.4 J/K mol.</p>
+<p><span class="math display">\[\begin{align*}    
+&amp; \Delta S^\ominus_\text{rxn}\\
+    &amp; = 2\times S^\ominus(\ce{Fe2O3}) - [4\times S^\ominus(\ce{Fe}) + 3\times S^\ominus(\ce{O2})]\\
+    &amp; = 2\times 87.4\text{ J/K mol} - [4\times 27.3\text{ J/K mol} + 3\times 205.2\text{ J/K mol}]\\
+    &amp; = -550\text{ J/K mol}
+\end{align*}\]</span></p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Understand what is a spontaneous process.<br>
+2. Understand what is entropy; what are state functions; what is the standard entropy of a given substance.<br>
+3. Calculate the <span class="math inline">\(\Delta S^\ominus_\text{rxn}\)</span> of a reaction. Predict whether the entropy change of a system is positive or negative.</p>
+</blockquote>
+</section>
+<section id="the-laws-of-thermodynamics" class="level2">
+<h2 class="anchored" data-anchor-id="the-laws-of-thermodynamics">2. The Laws of Thermodynamics</h2>
+<p>An alternate statement of the laws of thermodynamics:</p>
+<ul>
+<li><strong>Zeroth law of thermodynamics:</strong> If two systems are in thermal equilibrium with a third system, they are in thermal equilibrium with each other. (If A and B have the same temperature, B and C have the same temperature, A and C must also have the same temperature.)<br>
+</li>
+<li><strong>First law of thermodynamics:</strong> When energy passes, as work, as heat, or with matter, into or out from a system, the system’s internal energy changes in accord with the law of conservation of energy. (Energy can be converted from one form to another, but cannot be created or destroyed.)<br>
+</li>
+<li><strong>Second law of thermodynamics:</strong> In a natural thermodynamic process, the sum of the entropies of the interacting thermodynamic systems increases. (The sum of the entropy change of a system and that of the surroundings ,i.e., the entropy change of the whole universe, must always increases. )<br>
+</li>
+<li><strong>Third law of thermodynamics:</strong> The entropy of a system approaches a constant value as the temperature approaches absolute zero. With the exception of non-crystalline solids (glasses) the entropy of a system at absolute zero is typically close to zero, and is equal to the logarithm of the product of the quantum ground states. (The entropy of a pure, perfect crystalline substance at 0 K is zero.)</li>
+</ul>
+<p><strong>Second Law</strong></p>
+<p>Consider the universe as a whole, the total amount of energy is constant (First Law). The universe cannot release or gain energy from “outside”. If a process can happen spontaneously, it must cause the total entropy of the universe increase (Second Law).</p>
+<p>When the entropy of the universe reaches a maximum value, which means the universe reaches a thermodynamic equilibrium , no processes that increase entropy (including computation and life) can be sustained any more. This state is called the <em>heat death of the universe</em> which is a possible ultimate fate of the universe.</p>
+<p><strong>Third Law</strong></p>
+<p>The important point about the third law of thermodynamics is that it enables us to determine the absolute entropies of substances.</p>
+<p>Example: Diamond should have <span class="math inline">\(S=0\)</span> at 0 K. The standard entropy <span class="math inline">\(S^\ominus\)</span> you find <a href="https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances" target="_blank">here</a> means the entropy of 1 mol substance at 25 <span class="math inline">\(^\circ\)</span>C and 1 atm. For diamond the value is <span class="math inline">\(S^\ominus = 2.4\)</span> J/K. Higher temperature results in higher entropy.</p>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Understand these laws of thermodynamics.</p>
+</blockquote>
+</section>
+<section id="free-energy" class="level2">
+<h2 class="anchored" data-anchor-id="free-energy">3. Free Energy</h2>
+<p><strong>Defination of Free Energy</strong></p>
+<p>If a system releases heat to the surroundings (the rest of the universe), the entropy of the surroundings will increase. If a system absorb heat from the surroundings, the entropy of the surroundings will decrease. Under constant temperature and pressure, we have:</p>
+<p><span class="math display">\[\Delta S_\text{surr}=-\frac{\Delta H_\text{sys}}{T}\]</span></p>
+<p>A spontaneous process is a process that increases the total entropy of the universe, which means:</p>
+<p><span class="math display">\[\Delta S_\text{univ}=\Delta S_\text{sys}+\Delta S_\text{surr} &gt; 0\]</span></p>
+<p>That is to say:</p>
+<p><span class="math display">\[\Delta S_\text{sys}-\frac{\Delta H_\text{sys}}{T}&gt;0\]</span></p>
+<p>or:</p>
+<p><span class="math display">\[\Delta H_\text{sys}-T\Delta S_\text{sys} &lt; 0\]</span></p>
+<p>Define <strong>Gibbs free energy</strong> (<span class="math inline">\(G\)</span>), which is the free energy at constant temperature and pressure, as:</p>
+<p><span class="math display">\[G = H -TS\]</span></p>
+<p>Free energy can be considered as the amount of energy that is available for the system to do work.</p>
+<p>A spontaneous process requires:</p>
+<p><span class="math display">\[\Delta G_\text{sys}=\Delta H_\text{sys}-T\Delta S_\text{sys} &lt; 0\]</span></p>
+<p>After introducing the concept of free energy, the spontaneous processes can be defined more precisely as: A <strong>spontaneous process</strong> is the time-evolution of a system in which it releases free energy and moves to a lower, more thermodynamically stable energy state. Thus,</p>
+<ul>
+<li><span class="math inline">\(\Delta G &lt; 0\)</span>, the reaction is spontaneous in the forward direction;<br>
+</li>
+<li><span class="math inline">\(\Delta G &gt; 0\)</span>, the reaction is nonspontaneous, while the reverse reaction is spontaneous;<br>
+</li>
+<li><span class="math inline">\(\Delta G = 0\)</span>, the system is at equilibrium. There is no net change.</li>
+</ul>
+<p><img src="https://openstax.org/resources/5f742b3a483fec6c49439639c5e006d5feb08723" width="100%/"></p>
+<p>Free energy is a state function. If a process takes several steps, the overall change of free energy equals the sum of the free energy changes of individual steps.</p>
+<p><strong>Standard Free Energy Changes</strong></p>
+<p>The standard free energy of reaction (<span class="math inline">\(\Delta G^\ominus_\text{rxn}\)</span>) is the free energy change for a reaction when it occurs under standard-state conditions (25 °C and 1 atm).</p>
+<p>For a reaction:</p>
+<p><span class="math display">\[\ce{aA + bB -&gt; cC + dD}\]</span><br>
+The standard free energy of reaction <span class="math inline">\(\Delta G^\ominus_\text{rxn}\)</span> is:</p>
+<p><span class="math display">\[\Delta G^\ominus_\text{rxn}=[c\Delta G^\ominus_f(\ce{C})+d\Delta G^\ominus_f(\ce{D})]-[a\Delta G^\ominus_f(\ce{A})+d\Delta G^\ominus_f(\ce{B})]\]</span><br>
+Where <span class="math inline">\(\Delta G^\ominus_f\)</span> is the standard free energy of formation of a compound, that is, the free-energy change that occurs when 1 mole of the compound is synthesized from its elements in their standard states. We define the standard free energy of formation of any element in its stable allotropic form at 1 atm and 25 °C as zero. The values of <span class="math inline">\(\Delta G^\ominus_f\)</span> can be found <a href="https://openstax.org/books/chemistry-2e/pages/g-standard-thermodynamic-properties-for-selected-substances" target="_blank">here</a>.</p>
+<p><strong>Temperature and Chemical Reactions</strong> The forward direction of the following reaction is endothermic</p>
+<p><span class="math display">\[\ce{CaCO3(s) &lt;=&gt; CaO(s) + CO2(g)}\]</span></p>
+<p>According to LeChatelier’s principle, the reaction shifts towards right side under higher temperature. Same conclusion should be obtained if we look at the free energy change.</p>
+<p>At 25 °C, <span class="math inline">\(\Delta H^\ominus = 177.8\,\text{kJ/mol} &gt; 0\)</span>; <span class="math inline">\(\Delta S^\ominus = 160.5\,\text{J/K}\cdot\text{mol} &gt; 0\)</span>. Thus, <span class="math inline">\(\Delta G^\ominus= \Delta H^\ominus - T\Delta S^\ominus = 130.0\,\text{kJ/mol} &gt; 0\)</span>. This reaction does not take place spontaneously at room temperature.</p>
+<p>At what temperature will this reaction occur? Let <span class="math inline">\(\Delta G^\ominus= \Delta H^\ominus - T\Delta S^\ominus = 0\)</span>, assuming <span class="math inline">\(\Delta H^\ominus\)</span> and <span class="math inline">\(\Delta S^\ominus\)</span> does not change, we get <span class="math inline">\(T = 1108\,\text{K}\)</span> which is 835 °C. At this temperature the equilibrium pressure of <span class="math inline">\(\ce{CO2}\)</span> reaches 1 atm. Above 835 °C, the equilibrium pressure of <span class="math inline">\(\ce{CO2}\)</span> exceeds 1 atm.</p>
+<p><strong>Phase Transitions</strong></p>
+<p>The melting point of ice is 0 °C under 1 atm means at this temperature the change between water and ice is at equilibrium (<span class="math inline">\(\Delta G = 0\)</span>).</p>
+<p><span class="math display">\[\Delta G = \Delta H - T\Delta S=0\]</span></p>
+<p><span class="math display">\[\Delta S = \frac{\Delta H}{T}\]</span></p>
+<p>At 0 °C the phase change from ice to water has <span class="math inline">\(\Delta H = 6.01\,\text{kJ/mol}\)</span> and <span class="math inline">\(\Delta S = 22.0\,\text{J/K}\cdot\text{mol}\)</span></p>
+<p>Similarly, water boils at 100 °C under 1 atm means liquid water and steam reach an equilibrium under this condition.</p>
+<p><strong>Free Energy and Chemical Equilibrium</strong></p>
+<p><span class="math display">\[\Delta G = \Delta G^\ominus + RT \ln Q\]</span></p>
+<p><span class="math inline">\(R\)</span> is the gas constant (8.314 J/K mol), <span class="math inline">\(T\)</span> is the absolute temperature, and <span class="math inline">\(Q\)</span> is the reaction quotient. For gas phase equilibria, the pressure-based reaction quotient, <span class="math inline">\(Q_P\)</span>, is used (bedause for gases standard states mean under 1 atm rather than 1 mol/L). The concentration-based reaction quotient, <span class="math inline">\(Q_C\)</span>, is used for condensed phase equilibria.</p>
+<p>When the reaction reaches equilibrium <span class="math inline">\(\Delta G = 0\)</span> and <span class="math inline">\(Q= K\)</span>, thus</p>
+<p><span class="math display">\[0 = \Delta G^\ominus + RT \ln K\]</span></p>
+<p><span class="math display">\[\Delta G^\ominus =- RT \ln K\]</span></p>
+<p>If <span class="math inline">\(Q &lt; K\)</span>, then <span class="math inline">\(\Delta G &lt; 0\)</span> and the reaction proceeds from left to right;<br>
+If <span class="math inline">\(Q &gt; K\)</span>, then <span class="math inline">\(\Delta G &gt; 0\)</span> and the reaction proceeds from right to left.</p>
+<div class="example">
+<p><b>Example:</b> Calculate the standard free energy of the following reaction at 25 °C. <span class="math display">\[\ce{4Fe(s) + 3O2 (g) -&gt; 2Fe2O3(s)}\]</span> <br></p>
+<p><b>Answer:</b> <br> First, find out the standard free energy of formation of <span class="math inline">\(\ce{Fe(s)}\)</span>, <span class="math inline">\(\ce{O2 (g)}\)</span> and <span class="math inline">\(\ce{Fe2O3(s)}\)</span> are 0, 0 and -824.2 kJ/mol.</p>
+<p><span class="math display">\[\begin{align*}    
+\Delta G^\ominus_\text{rxn} = &amp; 2\times \Delta G^\ominus_f(\ce{Fe2O3}) - [4\times \Delta G^\ominus_f(\ce{Fe}) + 3\times \Delta G^\ominus_f(\ce{O2})]\\
+    = &amp; 2\times(-824.2\text{ kJ/mol}) - [4\times 0 + 3\times 0]\\
+    = &amp; -1648.4\text{ kJ/mol}
+\end{align*}\]</span></p>
+</div>
+<div class="example">
+<p><b>Example:</b> Calculate the boiling point of <span class="math inline">\(\ce{CH2Cl2}\)</span> under 1 atm from <span class="math inline">\(\Delta H^\ominus_\text{f}\)</span> and <span class="math inline">\(S^\ominus\)</span> of liquid and gaseous <span class="math inline">\(\ce{CH2Cl2}\)</span>. Assume the enthyalpy change and entropy change of the phase transation do not depend on the temperature.<br></p>
+<p><b>Answer:</b> <br></p>
+<p>Find out the <span class="math inline">\(\Delta H^\ominus_\text{f}\)</span> and <span class="math inline">\(S^\ominus\)</span> of liquid and gaseous <span class="math inline">\(\ce{CH2Cl2}\)</span>.</p>
+
+<table>
+<thead>
+<tr>
+<th>
+</th>
+<th>
+<span class="math inline">\(\Delta H^\ominus_\text{f}\text{ (kJ/mol)}\)</span>
+</th>
+<th>
+<span class="math inline">\(S^\ominus\text{ (J/K mol)}\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span class="math inline">\(\ce{CH2Cl2(l)}\)</span>
+</td>
+<td>
+-124.2
+</td>
+<td>
+177.8
+</td>
+</tr>
+<tr>
+<td>
+<span class="math inline">\(\ce{CH2Cl2(g)}\)</span>
+</td>
+<td>
+-95.4
+</td>
+<td>
+270.2
+</td>
+</tr>
+</tbody>
+
+</table>
+<p>Calculate the enthalpy and entropy change of the phase transation.</p>
+<p><span class="math display">\[\begin{align*}
+   \Delta H^\ominus_\text{vap} = &amp;\Delta H^\ominus_\text{f}(\ce{CH2Cl2(g)}) - \Delta H^\ominus_\text{f}(\ce{CH2Cl2(l)})\\
+    = &amp; (-95.4)\text{ kJ/mol} - (-124.2)\text{ kJ/mol}\\
+    = &amp; 28.8\text{ kJ/mol}\\
+   \Delta S^\ominus_\text{vap} = &amp; S^\ominus(\ce{CH2Cl2(g)}) - S^\ominus(\ce{CH2Cl2(l)})\\
+    = &amp; 270.2\text{ J/K mol} - 177.8\text{ J/K mol}\\
+    = &amp; 92.4\text{ J/K mol}    
+\end{align*}\]</span></p>
+<p>At the boiling point the gas phase and the liquid phase reach an equilibrium, which means <span class="math inline">\(\Delta G^\ominus_\text{vap} = \Delta H^\ominus_\text{vap} - T\Delta S^\ominus_\text{vap} = 0\)</span>. Thus,</p>
+<p><span class="math display">\[\begin{align*}
+    T = &amp; \frac{\Delta H^\ominus_\text{vap}}{\Delta S^\ominus_\text{vap}}\\
+    = &amp; \frac{28.8\times10^3\text{ J/mol}}{92.4\text{ J/K mol}}\\
+    = &amp; 312\text{ K}\\
+    = &amp; 39\text{ }^\circ\text{C}
+\end{align*}\]</span></p>
+</div>
+<div class="example">
+<p><b>Example:</b> Calculate the equilibrium constant for the dissociation of dinitrogen tetroxide at 25 °C. <span class="math display">\[\ce{N2O4(g) &lt;=&gt; 2NO2(g)}\]</span> <br></p>
+<p><b>Answer:</b> <br></p>
+<p>Find out <span class="math inline">\(\Delta G^\ominus_\text{f}\)</span> for <span class="math inline">\(\ce{N2O4}\)</span> and <span class="math inline">\(\ce{NO2}\)</span> as 99.8 and 51.3 kJ/mol.</p>
+<p><span class="math display">\[\begin{align*}
+    \Delta G^\ominus_\text{rxn} &amp; = 2\times\Delta G^\ominus_\text{f}(\ce{NO2(g)}) - \Delta G^\ominus_\text{f}(\ce{N2O4(g)})\\
+    &amp; = 2\times 51.3\text{ kJ/mol} - 99.8\text{ kJ/mol}\\
+    &amp; = 2.8\text{ kJ/mol}\\
+K_p &amp; = e^{-\frac{\Delta G^\ominus_\text{rxn}}{RT}}\\
+    &amp; = e^{-\frac{2.8\times10^3\text{ J/mol}}{8.314\text{ J/K mol}\times298\text{ K}}} \\
+    &amp; = 0.323
+\end{align*}\]</span></p>
+</div>
+<div class="example">
+<p><b>Example:</b> What is the free energy change for the following reaction under the specified conditions? <span class="math inline">\(T = 25\text{ }^\circ\text{C}\)</span>, pressures of <span class="math inline">\(\ce{N2}\)</span>, <span class="math inline">\(\ce{H2}\)</span> and <span class="math inline">\(\ce{NH3}\)</span> are 0.870 atm, 0.250 atm and 0.129 atm. <span class="math display">\[\ce{2NH3(g) -&gt; 3H2(g) + N2(g)}\qquad\Delta G^\ominus = 33.0\text{ kJ/mol}\]</span> <br></p>
+<p><b>Answer:</b> <br></p>
+<p><span class="math display">\[\begin{align*}
+    \Delta G = &amp; \Delta G^\ominus + RT\ln Q\\
+    = &amp; 33.0\times10^3\text{ J/mol} + \\
+    &amp; 8.314\text{ J/mol K}\times 298\text{ K}\times\ln\frac{0.250^3\times0.870}{0.129^2}\\
+    = &amp; 3.25\times10^4\text{ J/mol}\\
+    = &amp; 32.5\text{ kJ/mol}
+\end{align*}\]</span></p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Understand how to determine if a process is spontaneous;<br>
+2. Know how to calculate standard free energy of reaction;<br>
+3. Calculate how would <span class="math inline">\(\Delta G^\ominus\)</span> change with temperature; Know the correlation between <span class="math inline">\(\Delta H\)</span> and <span class="math inline">\(\Delta S\)</span> at melting point or boiling point;<br>
+4. Calculate <span class="math inline">\(\Delta G^\ominus\)</span> from <span class="math inline">\(K\)</span>, or calculate <span class="math inline">\(K\)</span> from <span class="math inline">\(\Delta G^\ominus\)</span>.<br>
+5. Calculate the <span class="math inline">\(\Delta G\)</span> value with known concentrations of all species in a reaction, predict the reaction direction.</p>
+</blockquote>
+</section>
+<section id="practice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="practice-questions">Practice Questions</h2>
+<div class="practice">
+<ol type="1">
+<li><p>For a reaction, <span class="math inline">\(\Delta H^\ominus = -20.2\)</span> kJ/mol and <span class="math inline">\(\Delta S^\ominus = 4.3\)</span> J/K mol. Which of these statements is true?<br> A. The reaction is only spontaneous at low temperature <br> B. The reaction is spontaneous only at high temperature <br> C. The reaction is spontaneous at all temperatures <br> D. <span class="math inline">\(\Delta G^\ominus\)</span> becomes larger as temperature increases <br> E. The reaction is at equilibrium at 25 <span class="math inline">\(^\circ\)</span>C under standard conditions <br> Answer: C <br></p></li>
+<li><p>Arrange these compounds, atom(s) and molecules in an order of increasing standard molar entropy at 25 <span class="math inline">\(^\circ\)</span>C: <span class="math inline">\(\ce{HF(g)}\)</span>, <span class="math inline">\(\ce{H2O(l)}\)</span>, <span class="math inline">\(\ce{Al(s)}\)</span>.<br> Answer: <span class="math inline">\(\ce{Al(s)} &lt; \ce{H2O(l)} &lt; \ce{HF(g)}\)</span></p></li>
+<li><p>Calculate the standard free energy of the third reaction knowing that of the first two.<br>
+<span class="math display">\[\begin{align*}
+&amp; (1)\quad\ce{ZnS(s) -&gt; Zn(s) + S(s)}\quad\Delta G^\ominus_1=201.3\text{ kJ/mol}\\
+&amp; (2)\quad\ce{S(s) + H2(g) -&gt; H2S(g)}\quad\Delta G^\ominus_2=-33.4\text{ kJ/mol}\\
+&amp; (3)\quad\ce{ZnS(s) +H2(g) -&gt; Zn(s) + H2S(g)}\quad\Delta G^\ominus_3=?\\
+\end{align*}\]</span><br>
+Answer: 167.9 kJ/mol <br></p></li>
+<li><p>Using the data in the table, calculate <span class="math inline">\(\Delta G^\ominus_\text{rxn}\)</span>, <span class="math inline">\(Q\)</span>, <span class="math inline">\(K_P\)</span> and <span class="math inline">\(\Delta G\)</span> for this reaction at 25 <span class="math inline">\(^\circ\)</span>C. Predict which direction would this reaction proceed. <span class="math display">\[\ce{PCl5(g) &lt;=&gt; PCl3(g) + Cl2(g)}\]</span></p>
+
+<table>
+<thead>
+<tr>
+<th>
+<p>Substance</p>
+</th>
+<th>
+<p><span class="math inline">\(\Delta G^\ominus_\text{f}\text{ (kJ/mol)}\)</span></p>
+</th>
+<th>
+<p>Pressure (atm)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><span class="math inline">\(\ce{Cl2(g)}\)</span></p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0.363</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span class="math inline">\(\ce{PCl3(g)}\)</span></p>
+</td>
+<td>
+<p>-286</p>
+</td>
+<td>
+<p>0.215</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span class="math inline">\(\ce{PCl5(g)}\)</span></p>
+</td>
+<td>
+<p>-325</p>
+</td>
+<td>
+<p>0.00300</p>
+</td>
+</tr>
+</tbody>
+
+</table>
+<p><br> Answer: <span class="math inline">\(\Delta G^\ominus_\text{rxn} = 39\)</span> kJ/mol, <span class="math inline">\(Q=26.0\)</span>, <span class="math inline">\(K_p = 1.47\times 10^{-7}\)</span>, <span class="math inline">\(\Delta G = 47\)</span> kJ/mol. <br></p></li>
+<li><p>Which one of the following reactions would you expect to have the lowest <span class="math inline">\(\Delta S^\ominus\)</span> <br> A. <span class="math inline">\(\ce{CH4(g) + 2O2(g) -&gt; CO2(g) + 2H2O(g)}\)</span><br> B. <span class="math inline">\(\ce{C2H4(g) + O2(g) -&gt; 2CO2(g) + 2H2O(g)}\)</span><br> C. <span class="math inline">\(\ce{2C2H6(g) + 7O2(g) -&gt; 4CO2(g) + 6H2O(g)}\)</span><br> D. <span class="math inline">\(\ce{2C6H6(g) + 15O2(g) -&gt; 12CO2(g) + 6H2O(g)}\)</span><br> E. <span class="math inline">\(\ce{2C2H2(g) + 5O2(g) -&gt; 4CO2(g) + 2H2O(g)}\)</span><br> Answer: E <br></p></li>
+<li><p>Calculate the standard reaction entropy of the following reaction. The standard entropy of <span class="math inline">\(\ce{S(s)}\)</span>, <span class="math inline">\(\ce{O2(g)}\)</span> and <span class="math inline">\(\ce{SO2(g)}\)</span> are 31.88, 205.0 and 248.5 J/K mol, respectively. <span class="math display">\[\ce{S(s) + O2(g) -&gt; SO2(g)}\]</span> <br> Answer: 11.1 J/K mol <br></p></li>
+<li><p>Benzene has a melting point of 5.5 <span class="math inline">\(^\circ\)</span>C, and its <span class="math inline">\(\Delta H^\ominus_\text{fus}\)</span> is 10.9 kJ/mol. Calculate the molar entropy of fusion. <br> Answer: 39.1 J/K mol <br></p></li>
+</ol>
+</div>
+</section>
+<section id="copyright" class="level2">
+<h2 class="anchored" data-anchor-id="copyright">Copyright</h2>
+<p>Copyright(C) 2022 Yu Wang</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<div class="page-columns page-rows-contents page-layout-article"><div class="social-share"><a href="https://twitter.com/share?url=https://wangyu16.quarto.pub/general-chemistry/&amp;text=General Chemistry Study Guide" target="_blank" class="twitter"><i class="fab fa-twitter fa-fw fa-lg"></i></a><a href="https://www.linkedin.com/shareArticle?url=https://wangyu16.quarto.pub/general-chemistry/&amp;title=General Chemistry Study Guide" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in fa-fw fa-lg"></i></a>  <a href="mailto:?subject=General Chemistry Study Guide&amp;body=Check out this link:https://wangyu16.quarto.pub/general-chemistry/" target="_blank" class="email"><i class="fa-solid fa-envelope fa-fw fa-lg"></i></a><a href="https://www.facebook.com/sharer.php?u=https://wangyu16.quarto.pub/general-chemistry/" target="_blank" class="facebook"><i class="fab fa-facebook-f fa-fw fa-lg"></i></a><a href="https://reddit.com/submit?url=https://wangyu16.quarto.pub/general-chemistry/&amp;title=General Chemistry Study Guide" target="_blank" class="reddit">   <i class="fa-brands fa-reddit-alien fa-fw fa-lg"></i></a></div></div>
+
+
+
+</body></html>

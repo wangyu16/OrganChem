@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>General Chemistry – ch04_aqrex</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">GenChem</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch01_Introduction.html" class="sidebar-item-text sidebar-link">Chapter 01 Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch02_AtomMolIon.html" class="sidebar-item-text sidebar-link">Chapter 02 Atoms Molecules and Ions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch03_Stoichiometry.html" class="sidebar-item-text sidebar-link">Chapter 03 Stoichiometry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch04_AqReactions.html" class="sidebar-item-text sidebar-link">Chapter 04 Reactions in Aqueous Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch05_Gases.html" class="sidebar-item-text sidebar-link">Chapter 05 Gases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch06_Thermochemistry.html" class="sidebar-item-text sidebar-link">Chapter 06 Energy Relationships in Chemical Reactions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch07_Quantum.html" class="sidebar-item-text sidebar-link">Chapter 07 The Electronic Structure of Atoms</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch08_PeriodicTable.html" class="sidebar-item-text sidebar-link">Chapter 08 The Periodic Table</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch09_ChemicalBonds.html" class="sidebar-item-text sidebar-link">Chapter 09 Chemical Bonding I – The Covalent Bond</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch10_MolGeometry.html" class="sidebar-item-text sidebar-link">Chapter 10 Chemical Bonding II – Molecular Geometry and Hybridization of Atomic Orbitals</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch11_Intermolecular.html" class="sidebar-item-text sidebar-link">Chapter 11 Intermolecular Forces and Liquids and Solids</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch12_Solution.html" class="sidebar-item-text sidebar-link">Chapter 12 Physical Properties of Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch13_Kinetics.html" class="sidebar-item-text sidebar-link">Chapter 13 Chemical Kinetics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch14_Equilibrium.html" class="sidebar-item-text sidebar-link">Chapter 14 Chemical Equilibrium</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch15_AcidBase.html" class="sidebar-item-text sidebar-link">Chapter 15 Acids and Bases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch16_AcidBaseEq.html" class="sidebar-item-text sidebar-link">Chapter 16 Acid-Base Equilibria and Solubility Equilibria</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch17_Thermodynamics.html" class="sidebar-item-text sidebar-link">Chapter 17 Thymodynamics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch18_Electrochemistry.html" class="sidebar-item-text sidebar-link">Chapter 18 Redox Reactions and Electrochemistry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch19_NuclearChemistry.html" class="sidebar-item-text sidebar-link">Chapter 19 Nuclear Chemistry</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">HOME</a></li>
+  <li><a href="#general-properties-of-aqueous-solutions" id="toc-general-properties-of-aqueous-solutions" class="nav-link" data-scroll-target="#general-properties-of-aqueous-solutions">1. General Properties of Aqueous Solutions</a></li>
+  <li><a href="#precipitation-reactions" id="toc-precipitation-reactions" class="nav-link" data-scroll-target="#precipitation-reactions">2. Precipitation Reactions</a></li>
+  <li><a href="#acid-base-reactions" id="toc-acid-base-reactions" class="nav-link" data-scroll-target="#acid-base-reactions">3. Acid-Base Reactions</a></li>
+  <li><a href="#oxidation-reduction-reactions" id="toc-oxidation-reduction-reactions" class="nav-link" data-scroll-target="#oxidation-reduction-reactions">4. Oxidation-Reduction Reactions</a>
+  <ul class="collapse">
+  <li><a href="#oxidation-number" id="toc-oxidation-number" class="nav-link" data-scroll-target="#oxidation-number">Oxidation Number</a></li>
+  </ul></li>
+  <li><a href="#solution-stoichiometry" id="toc-solution-stoichiometry" class="nav-link" data-scroll-target="#solution-stoichiometry">5. Solution Stoichiometry</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/wangyu16/GeneralChemistry/assets/js/code_toggle.js"></script>
+<p><span class="math display">\[\require{mhchem}\]</span></p>
+<section id="home" class="level3">
+<h3 class="anchored" data-anchor-id="home"><a href="https://wangyu16.github.io/GeneralChemistry/">HOME</a></h3>
+#
+<center>
+General Chemistry Study Guide
+</center>
+###
+<center>
+Chapter 4. Reactions in Aqueous Solutions
+</center>
+<hr>
+</section>
+<section id="general-properties-of-aqueous-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="general-properties-of-aqueous-solutions">1. General Properties of Aqueous Solutions</h2>
+<section id="openstax-3.3-molarity.-brown-4.1-general-properties-of-aqueous-solutions" class="level5">
+<h5 class="anchored"><b>OpenStax</b> 3.3 Molarity. <b>Brown</b> 4.1 General Properties of Aqueous Solutions</h5>
+<p>A <strong>solution</strong> is a homogenous mixture of 2 or more substances.</p>
+<p>The <strong>solute</strong> is (are) the substance(s) present in the smaller amount(s).</p>
+<p>The <strong>solvent</strong> is the substance present in the larger amount.</p>
+<p>An <strong>electrolyte</strong> is a substance that, when dissolved in water, results in a solution that can conduct electricity. Electrolytes are generally ionic coumponds.</p>
+<ul>
+<li>Strong electrolyte dissociates/ionizes completely in water, e.g.&nbsp;<span class="math inline">\(\ce{NaCl}\)</span>.<br>
+</li>
+<li>Weak electrolyte dissociates/ionizes partially in water, e.g.&nbsp;<span class="math inline">\(\ce{CH3COOH}\)</span>. <strong>Weak acids and weak bases are weak electrolytes. Strong acids and strong bases are strong electrolytes. Solube salts are strong electrolytes.</strong></li>
+</ul>
+<p>A <strong>nonelectrolyte</strong> is a substance that, when dissolved, results in a solution that does not conduct electricity.</p>
+<p><strong>Hydration</strong> is the process in which an ion is surrounded by water molecules arranged in a specific manner.</p>
+<blockquote class="blockquote">
+<h4 id="requirements" class="anchored" data-anchor-id="openstax-3.3-molarity.-brown-4.1-general-properties-of-aqueous-solutions">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the concepts.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="precipitation-reactions" class="level2">
+<h2 class="anchored" data-anchor-id="precipitation-reactions">2. Precipitation Reactions</h2>
+<section id="openstax-4.1-writing-and-balancing-chemical-equations-4.2-classifying-chemical-reactions.-brown-4.2-precipitation-reactions." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-4.1-writing-and-balancing-chemical-equations-4.2-classifying-chemical-reactions.-brown-4.2-precipitation-reactions."><b>OpenStax</b> 4.1 Writing and Balancing Chemical Equations; 4.2 Classifying Chemical Reactions. <b>Brown</b> 4.2 Precipitation Reactions.</h5>
+<p><strong>Precipitate</strong> – insoluble solid that separates from solution</p>
+<p><strong>Solubility</strong> is the <em>maximum</em> amount of solute that will dissolve in a given quantity of solvent at a specific temperature.</p>
+<p>Check this <a href="http://periodic-table-of-elements.org/SOLUBILITY">website</a> to see the solubility of common ionic coumponds.</p>
+<p><strong>Memorize the following:</strong></p>
+<ul>
+<li>The first group metal, i.e., the alkali metal, and <span class="math inline">\(\ce{NH4^+}\)</span> always form water soluble ionic compounds.</li>
+<li><span class="math inline">\(\ce{NO3^-}\)</span>, <span class="math inline">\(\ce{ClO3^-}\)</span> and <span class="math inline">\(\ce{HCO3^-}\)</span> always form water soluble ionic compounds.</li>
+<li>Most ionic compounds with <span class="math inline">\(\ce{Cl^-}\)</span>, <span class="math inline">\(\ce{Br^-}\)</span> or <span class="math inline">\(\ce{I^-}\)</span> as the anion are soluble, except <span class="math inline">\(\ce{AgCl}\)</span>, <span class="math inline">\(\ce{AgBr}\)</span>, <span class="math inline">\(\ce{AgI}\)</span>. (There are other exceptions, but do not need to memerize.)</li>
+<li>Most ionic compounds with <span class="math inline">\(\ce{SO4^{2-}}\)</span> as the anion are soluble. One except to be memorized is <span class="math inline">\(\ce{BaSO4}\)</span>. (There are other exceptions, but do not need to memerize.)</li>
+<li>With <span class="math inline">\(\ce{OH^-}\)</span> or <span class="math inline">\(\ce{CO3^{2-}}\)</span> as the anion, most of the ionic compounds are not water soluble, except with alkali metal cations or <span class="math inline">\(\ce{NH4^+}\)</span>. <span class="math inline">\(\ce{Ba(OH)2}\)</span> is soluble.</li>
+</ul>
+</section>
+<section id="writing-net-ionic-equations" class="level4">
+<h4 class="anchored" data-anchor-id="writing-net-ionic-equations">Writing Net Ionic Equations</h4>
+<ol type="1">
+<li>Write the balanced molecular equation.</li>
+<li>Write the ionic equation showing the strong electrolytes completely dissociated into cations and anions.</li>
+<li>Cancel the spectator ions on both sides of the ionic equation.</li>
+<li>Check that charges and number of atoms are balanced in the net ionic equation.</li>
+</ol>
+<div class="example">
+<p><b>Example: </b> Give the ionic form and the net ionic form of the following reaction.</p>
+<p><span class="math display">\[\ce{AgNO3 (aq) + NaCl (aq) -&gt; AgCl (s) + NaNO3 (aq)}\]</span></p>
+<p><b>Answer: </b><br> In ionic form:</p>
+<p><span class="math display">\[\ce{Ag+ (aq) + NO3- (aq) + Na+ (aq) + Cl- (aq) -&gt; AgCl (s) + Na+ (aq) + NO3- (aq)}\]</span></p>
+<p>Net ionic form:</p>
+<p><span class="math display">\[\ce{Ag+ (aq) + Cl- (aq) -&gt; AgCl (s)}\]</span></p>
+</div>
+<div class="example">
+<p><b>Example: </b> Give the ionic form and the net ionic form of the following reaction.</p>
+<p><span class="math display">\[\ce{Ba(OH)2 (aq) + Na2SO4 (aq) -&gt; BaSO4 (s) + 2NaOH (aq)}\]</span></p>
+<p><b>Answer: </b><br> In ionic form:</p>
+<p><span class="math display">\[\ce{Ba^{2+} (aq) + 2OH- (aq) + 2Na+ (aq) + SO4^{2-} (aq) -&gt; BaSO4 (s) + 2Na+ (aq) + 2OH- (aq)}\]</span></p>
+<p>Net ionic form:</p>
+<p><span class="math display">\[\ce{Ba^{2+} (aq) + SO4^{2-} (aq) -&gt; BaSO4 (s)}\]</span></p>
+</div>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> YouTubeVideo</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>YouTubeVideo(<span class="st">"BgTpPM9BMuU"</span>, width<span class="op">=</span><span class="dv">700</span>, height<span class="op">=</span><span class="dv">550</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Watch the following video for a better understanding </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># on complete and net ionic equations.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+
+        <iframe width="700" height="550" src="https://www.youtube.com/embed/BgTpPM9BMuU" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<blockquote class="blockquote">
+<h4 id="requirements-1" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the concepts.</li>
+<li>Get familiar with some insoluble salts.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="acid-base-reactions" class="level2">
+<h2 class="anchored" data-anchor-id="acid-base-reactions">3. Acid-Base Reactions</h2>
+<section id="openstax-4.2-classifying-chemical-reactions.-brown-4.3-acids-bases-and-neutralization-reactions." class="level5">
+<h5 class="anchored"><b>OpenStax</b> 4.2 Classifying Chemical Reactions. <b>Brown</b> 4.3 Acids, Bases, and Neutralization Reactions.</h5>
+<p>Properties of acids - Have a sour taste. Vinegar owes its taste to acetic acid. Citrus fruits contain citric acid. - Cause color changes in plant dyes. - React with certain metals to produce hydrogen gas. - React with carbonates and bicarbonates to produce carbon dioxide gas. - Aqueous acid solutions conduct electricity.</p>
+<p>Properties of bases - Have a bitter taste. - Feel slippery.<br>
+- Aqueous base solutions conduct electricity.</p>
+<p><strong>Arrhenius acid</strong> is a substance that produces <span class="math inline">\(\ce{H+}\)</span> (<span class="math inline">\(\ce{H3O+}\)</span>) in water.<br>
+<span class="math display">\[\ce{HCl + H2O &lt;=&gt; H3O+ + Cl-}\]</span></p>
+<p><strong>Arrhenius base</strong> is a substance that produces <span class="math inline">\(\ce{OH-}\)</span> in water.</p>
+<p><span class="math display">\[\ce{NaOH + H2O &lt;=&gt; OH- + Na+}\]</span></p>
+<p>A <strong>Brønsted acid</strong> is a proton donor. A Brønsted acid must contain at least one ionizable proton.<br>
+A <strong>Brønsted base</strong> is a proton acceptor.</p>
+<p><span class="math display">\[\ce{NH3 + H2O &lt;=&gt; NH4+ + OH-}\]</span></p>
+<p>In the forward reaction <span class="math inline">\(\ce{H2O}\)</span> is the acid and <span class="math inline">\(\ce{NH3}\)</span> is the base; in the reverse reaction <span class="math inline">\(\ce{NH4+}\)</span> is the acid and <span class="math inline">\(\ce{OH-}\)</span> is the base.</p>
+<p>Common strong and weak acids. Strong acids ionize completely in water; weak acids ionize partially in water.</p>
+<p>List of common strong acids.</p>
+<ul>
+<li><span class="math inline">\(\ce{HCl}\)</span> - hydrochloric acid</li>
+<li><span class="math inline">\(\ce{HNO3}\)</span> - nitric acid</li>
+<li><span class="math inline">\(\ce{H2SO4}\)</span> - sulfuric acid (<span class="math inline">\(\ce{HSO4-}\)</span> is a weak acid)</li>
+<li><span class="math inline">\(\ce{HBr}\)</span> - hydrobromic acid</li>
+<li><span class="math inline">\(\ce{HI}\)</span> - hydroiodic acid</li>
+<li><span class="math inline">\(\ce{HClO4}\)</span> - perchloric acid</li>
+<li><span class="math inline">\(\ce{HClO3}\)</span> - chloric acid</li>
+</ul>
+<p>List of common weak acids</p>
+<ul>
+<li><span class="math inline">\(\ce{H2SO3}\)</span> - sulfurous acid</li>
+<li><span class="math inline">\(\ce{HSO4-}\)</span> - hydrogen sulfate ion</li>
+<li><span class="math inline">\(\ce{H3PO4}\)</span> - phosphoric acid</li>
+<li><span class="math inline">\(\ce{HNO2}\)</span> - nitrous acid</li>
+<li><span class="math inline">\(\ce{HF}\)</span> - hydrofluoric acid</li>
+<li><span class="math inline">\(\ce{HCN}\)</span> - hydrocyanic acid</li>
+<li><span class="math inline">\(\ce{C6H5COOH}\)</span> - benzoic acid</li>
+<li><span class="math inline">\(\ce{CH3COOH}\)</span> - acetic acid</li>
+<li><span class="math inline">\(\ce{HCOOH}\)</span> - formic acid</li>
+<li><span class="math inline">\(\ce{HOOC-COOH}\)</span> - oxalic acid</li>
+</ul>
+<p><em>The last 4 examples in the list are organic acids with <span class="math inline">\(\ce{-COOH}\)</span>. These organic acids are all week acids.</em></p>
+<p>A <strong>nutralization reaction</strong>s when an acid and a base react to form water and a salt and involves the combination of H+ ions and OH- ions to generate water.</p>
+<p>Strong acid and strong base</p>
+<div class="example">
+<p><b>Example: </b> Give the net ionic form of the following reaction. <span class="math display">\[\ce{HCl(aq) + NaOH(aq) -&gt; NaCl(aq) + H2O}\]</span></p>
+<p><b>Answer: </b><br> <span class="math display">\[\ce{H+ + Cl- + Na+ + OH- -&gt; Na+ + Cl- + H2O}\]</span> <span class="math display">\[\ce{H+ + OH- -&gt; H2O}\]</span></p>
+</div>
+<p>Weak acid and strong base</p>
+<div class="example">
+<p><b>Example: </b> Give the net ionic form of the following reaction. <span class="math display">\[\ce{HCN(aq) + NaOH(aq) -&gt; NaCN(aq) + H2O}\]</span></p>
+<p><b>Answer: </b><br> <span class="math display">\[\ce{HCN + Na+ + OH- -&gt; Na+ + CN- + H2O}\]</span> <span class="math display">\[\ce{HCN + OH- -&gt; CN- + H2O}\]</span></p>
+</div>
+<blockquote class="blockquote">
+<h4 id="requirements-2" class="anchored" data-anchor-id="openstax-4.2-classifying-chemical-reactions.-brown-4.3-acids-bases-and-neutralization-reactions.">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the concepts.</li>
+<li>Remember the common strong and weak acids.</li>
+<li>Understand the difference of strong and weak acids in nutralization reactions.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="oxidation-reduction-reactions" class="level2">
+<h2 class="anchored" data-anchor-id="oxidation-reduction-reactions">4. Oxidation-Reduction Reactions</h2>
+<section id="openstax-4.2-classifying-chemical-reactions.-brown-4.4-oxidation-reduction-reactions." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-4.2-classifying-chemical-reactions.-brown-4.4-oxidation-reduction-reactions."><b>OpenStax</b> 4.2 Classifying Chemical Reactions. <b>Brown</b> 4.4 Oxidation-Reduction Reactions.</h5>
+<p><strong>Redox</strong> (short for reduction–oxidation reaction) is a chemical reaction in which the oxidation states of atoms are changed. Any such reaction involves both a <em>reduction</em> process and a complementary <em>oxidation</em> process. * <strong>Oxidation</strong> is the loss of electrons or an increase in oxidation state by a molecule, atom, or ion. * <strong>Reduction</strong> is the gain of electrons or a decrease in oxidation state by a molecule, atom, or ion.</p>
+<p>Example:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NaF.gif"></p>
+<p>In this example, <span class="math inline">\(\ce{Na}\)</span> loses one electron becoming <span class="math inline">\(\ce{Na+}\)</span>. We call this process the oxidation of <span class="math inline">\(\ce{Na}\)</span>. Simultaneously, <span class="math inline">\(\ce{F}\)</span> gains one electron becoming <span class="math inline">\(\ce{F-}\)</span>. This process is called the reduction of <span class="math inline">\(\ce{F}\)</span>.</p>
+<p><strong>Reducing agent</strong> is an element or compound that loses (or “donates”) an electron to another chemical species in a redox chemical reaction. Since the reducing agent is losing electrons, it is said to have been oxidized.<br>
+<strong>Oxidizing agent</strong> is a substance that has the ability to oxidize other substances (cause them to lose electrons). In a redox reaction, the oxidizing agent itself is reduced.</p>
+</section>
+<section id="oxidation-number" class="level3">
+<h3 class="anchored" data-anchor-id="oxidation-number">Oxidation Number</h3>
+<p>The <strong>oxidation state</strong>, often called the <strong>oxidation number</strong>, is an indicator of the degree of oxidation (loss of electrons) of an atom in a chemical compound. Conceptually, the oxidation state, which may be positive, negative or zero, is the hypothetical charge that an atom would have if all bonds to atoms of different elements were 100% ionic, with no covalent component.</p>
+<ol type="1">
+<li>The oxidation state of a free element (uncombined element) is zero.</li>
+<li>For a simple (monatomic) ion, the oxidation state is equal to the net charge on the ion.</li>
+<li>Hydrogen has an oxidation state of <span class="math inline">\(+1\)</span> and oxygen has an oxidation state of <span class="math inline">\(−2\)</span> when they are present in most compounds. Exceptions to this are that hydrogen has an oxidation state of <span class="math inline">\(−1\)</span> in hydrides of active metals, e.g.&nbsp;<span class="math inline">\(\ce{LiH}\)</span>, and oxygen has an oxidation state of <span class="math inline">\(−1\)</span> in peroxides, e.g.&nbsp;<span class="math inline">\(\ce{H2O2}\)</span>.</li>
+<li>Group IA metals have oxidation states of <span class="math inline">\(+1\)</span>; IIA metals have <span class="math inline">\(+2\)</span>. Fluorine always has an oxidation state of <span class="math inline">\(-1\)</span>.</li>
+<li>The algebraic sum of oxidation states of all atoms in a neutral molecule must be zero, while in ions the algebraic sum of the oxidation states of the constituent atoms must be equal to the charge on the ion.</li>
+<li>Oxidation numbers do not have to be integers. The oxidation number of oxygen in the superoxide ion, <span class="math inline">\(\ce{O2^-}\)</span>, is <span class="math inline">\(-1/2\)</span>.</li>
+</ol>
+<p>The oxidation numbers of elements in their compounds (upper right corner of each element):</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Periodic_Table_of_the_Elements_svg.svg"></p>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> YouTubeVideo</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>YouTubeVideo(<span class="st">"M7PnxSQedkM"</span>, width<span class="op">=</span><span class="dv">700</span>, height<span class="op">=</span><span class="dv">550</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Watch the following video for a better understanding </span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># on how to determine the oxidation number.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+
+        <iframe width="700" height="550" src="https://www.youtube.com/embed/M7PnxSQedkM" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<section id="types-of-redox-reactions" class="level4">
+<h4 class="anchored" data-anchor-id="types-of-redox-reactions">Types of redox reactions</h4>
+<p><strong>Combination Reaction</strong></p>
+<p>Combination is a reaction where two or more elements or compounds (reactants) combine to form a single compound (product).</p>
+<p>Example</p>
+<p><span class="math display">\[\ce{2Al + 3Br2 -&gt; 2AlBr3}\]</span></p>
+<p><strong>Decomposition Reaction</strong></p>
+<p>Decomposition means the separation of a single chemical compound into its two or more elemental parts or to simpler compounds.</p>
+<p>Example</p>
+<p><span class="math display">\[\ce{2KClO3 -&gt; 2KCl + 3O2}\]</span></p>
+<p><strong>Combustion Reaction</strong></p>
+<p>Combustion reactions always involve molecular oxygen <span class="math inline">\(\ce{O2}\)</span>. Anytime anything burns (in the usual sense), it is a combustion reaction.</p>
+<p>Example</p>
+<p><span class="math display">\[\ce{2H2 + O2 -&gt; 2H2O}\]</span></p>
+<p><strong>Displacement Reaction</strong></p>
+<p><em>Hydrogen Displacement Reaction</em></p>
+<p>Metals react with water or acid to produce hydrogen.</p>
+<p>Example</p>
+<p><span class="math display">\[\ce{Zn + 2HCl -&gt; ZnCl2 + H2}\]</span></p>
+<p>The Activity series for metals</p>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metal</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Li, K, Ba, Ca, Na</td>
+<td>React with cold water to produce <span class="math inline">\(\ce{H2}\)</span>.</td>
+</tr>
+<tr class="even">
+<td>Mg, Al, Zn, Cr, Fe, Cd</td>
+<td>React with steam to produce <span class="math inline">\(\ce{H2}\)</span>.</td>
+</tr>
+<tr class="odd">
+<td>Co, Ni, Sn, Pb</td>
+<td>React with acids to produce <span class="math inline">\(\ce{H2}\)</span>.</td>
+</tr>
+<tr class="even">
+<td>Cu, Ag, Hg, Pt, Au</td>
+<td>Do not react with water or acids to produce <span class="math inline">\(\ce{H2}\)</span>.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Metal Displacement Reaction</em></p>
+<p>More active metals displace less active metals.</p>
+<p>Example</p>
+<p><span class="math display">\[\ce{TiCl4 + 2Mg -&gt; Ti + 2MgCl2}\]</span></p>
+<p><em>Halogen Displacement Reaction</em></p>
+<p>More active halogen produces less active halogen</p>
+<p><span class="math display">\[\ce{F2 &gt; Cl2 &gt; Br2 &gt; I2}\]</span></p>
+<p>Example</p>
+<p><span class="math display">\[\ce{Cl2 + 2KBr -&gt; 2KCl + Br2}\]</span></p>
+<p><strong>Disproportionation Reaction</strong></p>
+<p>The same element is simultaneously oxidized and reduced.</p>
+<p>Example</p>
+<p><span class="math display">\[\ce{Cl2 + 2OH- -&gt; ClO- + Cl- + H2O}\]</span></p>
+<div class="example">
+<p><b>Example: </b> Classify the following redox reactions and indicate changes in the oxidation numbers of the elements. <span class="math display">\[\begin{align*}
+&amp; \text{(a)}\,\ce{2N2O(g) -&gt; 2N2(g) + O2(g)} \\
+&amp; \text{(b)}\,\ce{6Li(s) + N2(g) -&gt; 2Li3N(s)} \\
+&amp; \text{(c)}\,\ce{Ni(s) + Pb(NO3)2(aq) -&gt; Pb(s) + Ni(NO3)2(aq)}
+\end{align*}\]</span> <br></p>
+<p><b>Answer: </b><br> (a) Decomposition reaction. The products, <span class="math inline">\(\ce{N2}\)</span> and <span class="math inline">\(\ce{O2}\)</span>, are free elements. The oxdation numbers must be 0. In the reactant, O has an oxidation number of <span class="math inline">\(-2\)</span> according to the rule, N must be <span class="math inline">\(+1\)</span>.</p>
+<ol start="2" type="a">
+<li><p>Combination reaction. The reactants, <span class="math inline">\(\ce{Li}\)</span> and <span class="math inline">\(\ce{N2}\)</span>, are free elements. The oxdation numbers must be 0. In the product, Li has an oxidation number of <span class="math inline">\(+1\)</span> according to the rule, N must be <span class="math inline">\(-3\)</span>.</p></li>
+<li><p>Metal displacement reaction. <span class="math inline">\(\ce{NO3-}\)</span> anion does not change in this reaction. According to the rule, O has an oxidation number of <span class="math inline">\(-2\)</span>, thus N must be <span class="math inline">\(+5\)</span>. In the reactants, Ni as free element has an oxidation number 0, Pb must be <span class="math inline">\(+2\)</span> to make <span class="math inline">\(\ce{Pb(NO3)2}\)</span> neutral. In the products, Pb as free element has an oxidation number 0, Ni must be <span class="math inline">\(+2\)</span> to make <span class="math inline">\(\ce{Pb(NO3)2}\)</span> neutral.</p></li>
+</ol>
+</div>
+<blockquote class="blockquote">
+<h4 id="requirements-3" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the concepts.</li>
+<li>Know how to determine oxidation numbers.</li>
+<li>Remember the relative activities of metals. Alkali metals plus Ca, Ba are very active and can react with cool water. Mg, Al, Zn, Fe can react with steam. Ni and Pb only react with acid. Cu, Ag, Hg, Au, Pt do not react with acid to produce hydrogen.<br>
+</li>
+<li>Remember at lease one example of each type of redox reactions.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="solution-stoichiometry" class="level2">
+<h2 class="anchored" data-anchor-id="solution-stoichiometry">5. Solution Stoichiometry</h2>
+<section id="openstax-3.3-molarity-4.5-quantitative-chemical-analysis.-brown-4.5-concentrations-of-solutions-4.6-solution-stoichiometry-and-chemical-analysis." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-3.3-molarity-4.5-quantitative-chemical-analysis.-brown-4.5-concentrations-of-solutions-4.6-solution-stoichiometry-and-chemical-analysis."><b>OpenStax</b> 3.3 Molarity; 4.5 Quantitative Chemical Analysis. <b>Brown</b> 4.5 Concentrations of Solutions; 4.6 Solution Stoichiometry and Chemical Analysis.</h5>
+<p>The <strong>concentration</strong> of a solution is the amount of solute present in a given quantity of solvent or solution.</p>
+<p><span class="math display">\[M = \text{molarity} = \frac{\text{moles of solute}}{\text{liters of solution}}\]</span></p>
+<p>The unit is mol/L. You can also use M as the unit, which is the same as mol/L.</p>
+<p><strong>Dilution</strong> is the procedure for preparing a less concentrated solution from a more concentrated solution.</p>
+<p>Moles of solute does not change</p>
+<p>Thus, <span class="math display">\[M_iV_i = M_fV_f\]</span></p>
+<div class="example">
+<p><b>Example: </b> To make a solution of glucose (<span class="math inline">\(\ce{C6H12O6}\)</span>) with the concentration of 0.283 mol/L and volume of 250 mL. How many grams of glucose is needed?</p>
+<p><b>Answer: </b><br> <span class="math display">\[\text{molar mass of glucose} = 6\times 12.01\,\text{g/mol} + 12\times 1.01\,\text{g/mol} + 6\times 16.00\,\text{g/mol} = 180.18\,\text{g/mol}\]</span> <span class="math display">\[\text{mass of glucose} = 250\,\text{mL}\times\frac{1\,\text{L}}{1000\,\text{mL}}\times\frac{0.283\,\text{mol}}{1\,\text{L}}\times\frac{180.18\,\text{g}}{1\,\text{mol}}=12.8\,\text{g}\]</span></p>
+</div>
+<div class="example">
+<p><b>Example: </b> How you would prepare 50 mL of a 1.00 mol/L HCl solution, starting with an 3.92 mol/L stock solution of HCl?</p>
+<p><b>Answer: </b><br> Take a certain volume (<span class="math inline">\(V_i\)</span>) of 3.92 mol/L HCl, and add water till the overall final volume (<span class="math inline">\(V_f\)</span>) is 50 mL. To caculate <span class="math inline">\(V_i\)</span>, we use the equation</p>
+<p><span class="math display">\[M_i\times V_i = M_f \times V_f\]</span></p>
+<p>Thus,</p>
+<p><span class="math display">\[V_i = \frac{M_f \times V_f}{M_i} = \frac{1.00\,\text{mol/L}\times\frac{1\,\text{L}}{1000\,\text{mL}}\times 50\,\text{mL}}{3.92\,\text{mol/L}}=0.0128\,\text{L}=12.8\,\text{mL}\]</span></p>
+</div>
+</section>
+<section id="gravimetric-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="gravimetric-analysis">Gravimetric Analysis</h4>
+<ol type="1">
+<li>Dissolve unknown substance in water</li>
+<li>React unknown with known substance to form a precipitate</li>
+<li>Filter and dry precipitate</li>
+<li>Weigh precipitate</li>
+<li>Use chemical formula and mass of precipitate to determine amount of unknown ion</li>
+</ol>
+</section>
+<section id="titrations" class="level4">
+<h4 class="anchored" data-anchor-id="titrations">Titrations</h4>
+<p>In a <strong>titration</strong>, a solution of accurately known concentration is added gradually added to another solution of unknown concentration until the chemical reaction between the two solutions is complete. Titrations can be used in the analysis of acid-base reactions and redox reactions.</p>
+<p><strong>Equivalence point</strong> – the point at which the reaction is complete</p>
+<p><strong>Indicator</strong> – substance that changes color at (or near) the equivalence point</p>
+<blockquote class="blockquote">
+<h4 id="requirements-4" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand and remember the concepts. Remember the defination of molarity. Do calculations using molarity.</li>
+<li>Understand the concept of gravimetric analysis and titrations.</li>
+</ol>
+</blockquote>
+<div class="practice">
+<p><b>Practice:</b> <br></p>
+<ol type="1">
+<li><p>Identify the major ionic species present in an aqueous solution of <span class="math inline">\(\ce{Na3PO4}\)</span>. <br> Answer: <span class="math inline">\(\ce{Na+}\)</span> and <span class="math inline">\(\ce{PO4^{3-}}\)</span>. <br><br>
+<br></p></li>
+<li><p>Based on the solubility rules, which one of the following compounds should be insoluble in water? <br></p></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{Na2CO3}\)</span> <br></li>
+<li><span class="math inline">\(\ce{BaSO4}\)</span> <br></li>
+<li><span class="math inline">\(\ce{AgNO3}\)</span> <br></li>
+<li><span class="math inline">\(\ce{NH4OH}\)</span> <br></li>
+<li><span class="math inline">\(\ce{KOH}\)</span> <br> Answer: B <br><br>
+<br></li>
+</ol>
+<ol start="3" type="1">
+<li><p>What is the chemical formula of the salt produced by the neutralization of hydrobromic acid with magnesium hydroxide? <br> Answer: <span class="math inline">\(\ce{MgBr2}\)</span> <br> <br></p></li>
+<li><p>Which of the following compounds is a weak electrolyte? <br></p></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{NaOH}\)</span> <br></li>
+<li><span class="math inline">\(\ce{NaF}\)</span> <br></li>
+<li><span class="math inline">\(\ce{HNO3}\)</span> <br></li>
+<li><span class="math inline">\(\ce{HF}\)</span> <br></li>
+<li><span class="math inline">\(\ce{NaNO3}\)</span> <br> Answer: D <br><br>
+<br></li>
+</ol>
+<ol start="5" type="1">
+<li>Which of the following compounds is a weak acid? <br></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{HNO3}\)</span> <br></li>
+<li><span class="math inline">\(\ce{HI}\)</span> <br></li>
+<li><span class="math inline">\(\ce{HBr}\)</span> <br></li>
+<li><span class="math inline">\(\ce{HCl}\)</span> <br></li>
+<li><span class="math inline">\(\ce{H3PO4}\)</span> <br> Answer: E <br><br>
+<br></li>
+</ol>
+<ol start="6" type="1">
+<li><p>Write the molecular form, ionic form and net ionic form equations for the reaction between sulfuric acid and potassium hydroxide. <br> Answer: <span class="math inline">\(\ce{H2SO4 + 2KOH -&gt; 2H2O + K2SO4}\)</span> <br> <span class="math inline">\(\ce{2H+ + SO4^{2-} + 2K+ + 2OH- -&gt; 2H2O + 2K+ + SO4^{2-}}\)</span> <br> <span class="math inline">\(\ce{H+ + OH- -&gt; H2O}\)</span><br> <br></p></li>
+<li><p>What is the oxidation number of <span class="math inline">\(\ce{S}\)</span> in <span class="math inline">\(\ce{K2SO4}\)</span>? <br> Answer: 6 <br><br>
+<br></p></li>
+<li><p>Which one of the following is not a redox reaction? <br></p></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{CaBr2(aq) + H2SO4(aq) -&gt; CaSO4(s) + 2HBr(g)}\)</span> <br></li>
+<li><span class="math inline">\(\ce{2NaI + Br2 -&gt; 2NaBr + I2}\)</span> <br></li>
+<li><span class="math inline">\(\ce{2Al(s) +3H2SO4(aq) -&gt; Al2(SO4)3(aq) + 3H2(g)}\)</span> <br></li>
+<li><span class="math inline">\(\ce{Cu(NO3)2 + Zn -&gt; Zn(NO3)2 + Cu}\)</span> <br></li>
+<li><span class="math inline">\(\ce{2H2O -&gt; 2H2 + O2}\)</span> <br> Answer: A <br><br>
+<br></li>
+</ol>
+<ol start="9" type="1">
+<li><p>In the following redox reaction, which element is oxidized and which is reduced?<br> <span class="math inline">\(\ce{3Cu + 8HNO3 -&gt; 3Cu(NO3)2 + 2NO + 4H2O}\)</span> <br> Answer: Cu oxidized, N reduced. <br><br>
+<br></p></li>
+<li><p>What mass of <span class="math inline">\(\ce{Na2SO4}\)</span> is needed to prepare 350 mL of a solution having a sodium ion concentration of 0.125 M? (Hint: each unit of the compound results in two units of the sodium cations.)<br> Answer: 3.11 g <br><br>
+<br></p></li>
+<li><p>What type of redox reaction the following reaction is? <br></p></li>
+</ol>
+<p><span class="math inline">\(\ce{2NaI + Br2 -&gt; 2NaBr + I2}\)</span> <br> Answer: halogen displacement <br></p>
+</div>
+<hr>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.core.display <span class="im">import</span> HTML</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>copyright <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/copyright.md"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>HTML(copyright.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<p>Copyright (C) 2021 Yu Wang</p>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+<p>Contact: Dr. Yu Wang<br>
+Department of Chemistry<br>
+Institute for Materials Research and Innovation<br>
+University of Louisiana at Lafayette<br>
+Lafayette, LA 70504<br>
+Email: yuwang@louisiana.edu</p>
+</div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/custom.css"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>HTML(styles.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:400,400i|Raleway:400,400i,700,700i" rel="stylesheet" type="text/css">
+<style type="text/css">
+div.text_cell_render {
+    font-family: Lora, serif;
+    color: #222222;
+}
+.text_cell_render p {
+    padding-left: 1.5em;
+    text-align: justify;
+}
+.text_cell_render h3, h4, h6 {
+    font-family: Raleway, sans-serif;
+    color: #005c99;
+}
+.text_cell_render h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+}
+.text_cell_render h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 700; 
+    margin-top: 50px;
+    display:inline-block;
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: #f8f8f8;
+    border-radius: 10px 40px 10px 40px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+}
+.text_cell_render h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    border-style: groove;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    margin: 1em 0 1em 0;
+    line-height: 1.6;
+}
+div #notebook {
+    background-color: #f8f8f8;
+    width: 1110px;  
+    margin: auto;
+    padding-left: 0em;
+    border: 3px solid #cbd3e5; 
+    box-shadow: 0px 0px 7px 1px #cccccc;
+}
+div.example {
+    background-color:#007acc;
+    color: #ffffff;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #007acc; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div.practice {
+    background-color:#fbfbfb;
+    color: #007acc;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #eeeeee; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div #notebook-container {
+    background-color: #ffffff;
+    font-size: 1.5em; 
+    line-height: 1.6;
+    width: 1100px;
+    margin: auto;
+    padding-right: 150px;
+}
+.CodeMirror-code {
+    font-size: 1.2em;
+    line-height: 125%;
+    opacity: 0.9;
+}
+
+.text_cell_render td {
+    border-style: hidden;
+}
+.text_cell_render table {
+    border-style: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 80%;
+}
+
+.text_cell_render th, td {
+    padding: 8px;
+}
+
+.text_cell_render tr:nth-child(even){background-color: #e8e8e8}
+
+.text_cell_render th {
+    border-style: hidden;
+    background-color: #004c80;
+    color: #f8f8f8;
+}
+table td, table th, table tr {
+    text-align:left !important;
+}
+</style>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

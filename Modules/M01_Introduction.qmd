@@ -1,0 +1,18 @@
+---
+title: "01 Introduction"
+description: "Module 1 description"
+image: "/img/M01_chemistry_small.jpg"
+---
+
+<img src="/img/M01_chemistry.jpg" width="100%" />
+
+## 1. General Concepts in Organic Chemistry
+
+**Chemistry** is the study of matter and the changes it undergoes.
+
+**Matter** is anything that occupies space and has mass.
+
+
+
+
+{{< include _copyright.qmd >}}

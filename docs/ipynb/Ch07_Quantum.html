@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>General Chemistry – ch07_quantum</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">GenChem</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch01_Introduction.html" class="sidebar-item-text sidebar-link">Chapter 01 Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch02_AtomMolIon.html" class="sidebar-item-text sidebar-link">Chapter 02 Atoms Molecules and Ions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch03_Stoichiometry.html" class="sidebar-item-text sidebar-link">Chapter 03 Stoichiometry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch04_AqReactions.html" class="sidebar-item-text sidebar-link">Chapter 04 Reactions in Aqueous Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch05_Gases.html" class="sidebar-item-text sidebar-link">Chapter 05 Gases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch06_Thermochemistry.html" class="sidebar-item-text sidebar-link">Chapter 06 Energy Relationships in Chemical Reactions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch07_Quantum.html" class="sidebar-item-text sidebar-link">Chapter 07 The Electronic Structure of Atoms</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch08_PeriodicTable.html" class="sidebar-item-text sidebar-link">Chapter 08 The Periodic Table</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch09_ChemicalBonds.html" class="sidebar-item-text sidebar-link">Chapter 09 Chemical Bonding I – The Covalent Bond</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch10_MolGeometry.html" class="sidebar-item-text sidebar-link">Chapter 10 Chemical Bonding II – Molecular Geometry and Hybridization of Atomic Orbitals</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch11_Intermolecular.html" class="sidebar-item-text sidebar-link">Chapter 11 Intermolecular Forces and Liquids and Solids</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch12_Solution.html" class="sidebar-item-text sidebar-link">Chapter 12 Physical Properties of Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch13_Kinetics.html" class="sidebar-item-text sidebar-link">Chapter 13 Chemical Kinetics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch14_Equilibrium.html" class="sidebar-item-text sidebar-link">Chapter 14 Chemical Equilibrium</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch15_AcidBase.html" class="sidebar-item-text sidebar-link">Chapter 15 Acids and Bases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch16_AcidBaseEq.html" class="sidebar-item-text sidebar-link">Chapter 16 Acid-Base Equilibria and Solubility Equilibria</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch17_Thermodynamics.html" class="sidebar-item-text sidebar-link">Chapter 17 Thymodynamics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch18_Electrochemistry.html" class="sidebar-item-text sidebar-link">Chapter 18 Redox Reactions and Electrochemistry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch19_NuclearChemistry.html" class="sidebar-item-text sidebar-link">Chapter 19 Nuclear Chemistry</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">HOME</a></li>
+  <li><a href="#wave-and-photon" id="toc-wave-and-photon" class="nav-link" data-scroll-target="#wave-and-photon">1. Wave and Photon</a>
+  <ul class="collapse">
+  <li><a href="#wave" id="toc-wave" class="nav-link" data-scroll-target="#wave">1.1. Wave</a></li>
+  <li><a href="#electromagnetic-radiation" id="toc-electromagnetic-radiation" class="nav-link" data-scroll-target="#electromagnetic-radiation">1.2. Electromagnetic Radiation</a></li>
+  <li><a href="#photon" id="toc-photon" class="nav-link" data-scroll-target="#photon">1.3. Photon</a></li>
+  <li><a href="#the-photoelectric-effect" id="toc-the-photoelectric-effect" class="nav-link" data-scroll-target="#the-photoelectric-effect">1.4. The Photoelectric Effect</a></li>
+  </ul></li>
+  <li><a href="#bohrs-theory-and-quantum-theory-of-atoms" id="toc-bohrs-theory-and-quantum-theory-of-atoms" class="nav-link" data-scroll-target="#bohrs-theory-and-quantum-theory-of-atoms">2. Bohr’s Theory and Quantum Theory of Atoms</a>
+  <ul class="collapse">
+  <li><a href="#bohrs-theory" id="toc-bohrs-theory" class="nav-link" data-scroll-target="#bohrs-theory">2.1. Bohr’s Theory</a></li>
+  <li><a href="#the-dual-nature-of-the-electron" id="toc-the-dual-nature-of-the-electron" class="nav-link" data-scroll-target="#the-dual-nature-of-the-electron">2.2. The Dual Nature of the Electron</a></li>
+  <li><a href="#quantum-mechanics" id="toc-quantum-mechanics" class="nav-link" data-scroll-target="#quantum-mechanics">2.3. Quantum Mechanics</a></li>
+  </ul></li>
+  <li><a href="#electrons-in-atoms" id="toc-electrons-in-atoms" class="nav-link" data-scroll-target="#electrons-in-atoms">3. Electrons in atoms</a>
+  <ul class="collapse">
+  <li><a href="#quantum-number" id="toc-quantum-number" class="nav-link" data-scroll-target="#quantum-number">3.1. Quantum Number</a></li>
+  <li><a href="#atomic-orbitals" id="toc-atomic-orbitals" class="nav-link" data-scroll-target="#atomic-orbitals">3.2. Atomic Orbitals</a></li>
+  <li><a href="#electron-configuration" id="toc-electron-configuration" class="nav-link" data-scroll-target="#electron-configuration">3.3. Electron Configuration</a></li>
+  <li><a href="#the-building-up-principle" id="toc-the-building-up-principle" class="nav-link" data-scroll-target="#the-building-up-principle">3.4. The Building-Up Principle</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/wangyu16/GeneralChemistry/assets/js/code_toggle.js"></script>
+<p><span class="math display">\[\require{mhchem}\]</span></p>
+<section id="home" class="level3">
+<h3 class="anchored" data-anchor-id="home"><a href="https://wangyu16.github.io/GeneralChemistry/">HOME</a></h3>
+#
+<center>
+General Chemistry Study Guide
+</center>
+###
+<center>
+Chapter 7. The Electronic Structure of Atoms
+</center>
+<hr>
+<section id="openstax-6-electronic-structure-and-periodic-properties-of-elements-6.1-to-6.4.-brown-6-electronic-structure-of-atoms." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-6-electronic-structure-and-periodic-properties-of-elements-6.1-to-6.4.-brown-6-electronic-structure-of-atoms."><b>OpenStax</b> 6 Electronic Structure and Periodic Properties of Elements (6.1 to 6.4). <b>Brown</b> 6 Electronic Structure of Atoms.</h5>
+</section>
+</section>
+<section id="wave-and-photon" class="level2">
+<h2 class="anchored" data-anchor-id="wave-and-photon">1. Wave and Photon</h2>
+<section id="wave" class="level3">
+<h3 class="anchored" data-anchor-id="wave">1.1. Wave</h3>
+<p>A <strong>wave</strong> can be thought of as a vibrating disturbance by which energy is transmitted.</p>
+<p>The <strong>speed</strong> <span class="math inline">\(u\)</span> of a wave depends on the type of wave and the nature of the medium through which the wave is traveling (for example, air, water, or a vacuum).</p>
+<p>The distance between identical points on successive waves is called the <strong>wavelength</strong> <span class="math inline">\(\lambda\)</span>.</p>
+<p>The <strong>frequency</strong> <span class="math inline">\(\nu\)</span> of the wave is the number of waves that pass through a particular point in one second.</p>
+<p>The <strong>amplitude</strong> is the vertical distance from the midline of a wave to the peak or trough.</p>
+<p><span class="math display">\[u = \lambda\times\nu\]</span></p>
+</section>
+<section id="electromagnetic-radiation" class="level3">
+<h3 class="anchored" data-anchor-id="electromagnetic-radiation">1.2. Electromagnetic Radiation</h3>
+<p><strong>Electromagnetic radiation</strong> is the emission and transmission of energy in the form of <strong>electromagnetic waves</strong>. An electromagnetic wave has an electric field component and a magnetic field component.</p>
+<p><strong>Light speed</strong> <span class="math inline">\(c\)</span>, or the speed of electromagnetic waves, in a vacuum is <span class="math inline">\(3.00\times10^8\)</span> meters per second. The wavelength of electromagnetic waves is usually given in nanometers (nm). For light</p>
+<p><span class="math display">\[c = \lambda\times\nu\]</span></p>
+<p>Types of electromagnetic radiation include: * <span class="math inline">\(\gamma\)</span> ray with wavelength ~ <span class="math inline">\(10^{-3}\)</span> nm; * X-ray with wavelength ~ <span class="math inline">\(10^{-1}\)</span> nm; * Ultravialot with wavelength between X-ray and visible light; * Visible light with wavelength 400 ~ 700 nm; * Infrared with wavelength longer than visible light and shorter than microwave; * Microwave with wavelength ~ cm level; * Radio wave with wavelength ~ m level or higher.</p>
+<p>There are no clear bounderies except for visible lights.</p>
+<div class="example">
+<p><b>Example:</b> (a) Calculate the frequency of the light with a wavelength 400 nm. (b) Calculate the wavelength of the light with a frequency <span class="math inline">\(5.75\times10^{14}\)</span> Hz. <br></p>
+<p><b>Answer: </b><br></p>
+<ol type="a">
+<li><p><span class="math display">\[\lambda = \frac{c}{\nu} = \frac{3.00\times10^8\,\text{m/s}}{400\times10^{-9}\,\text{m}}=7.50\times10^{14}\,\text{Hz}\]</span></p></li>
+<li><p><span class="math display">\[\nu =\frac{c}{\lambda}=\frac{3.00\times10^8\,\text{m/s}}{5.75\times10^{14}\,\text{Hz}} = 5.22\times10^{-7}\,\text{m} = 522\,\text{nm} \]</span></p></li>
+</ol>
+</div>
+</section>
+<section id="photon" class="level3">
+<h3 class="anchored" data-anchor-id="photon">1.3. Photon</h3>
+<p><strong>Quantum</strong>: the smallest quantity of energy that can be emitted (or absorbed) in the form of electromagnetic radiation which is also known as <strong>photon</strong>.</p>
+<blockquote class="blockquote">
+<p>A photon can be considered as a particle.</p>
+</blockquote>
+<p>The energy <span class="math inline">\(E\)</span> of a single photon of energy is given by</p>
+<p><span class="math display">\[E = h\nu\]</span></p>
+<p>where <span class="math inline">\(h\)</span> is called Planck’s constant which equals to <span class="math inline">\(6.63\times10^{−34}\)</span> J.</p>
+<p>Another form of the equation is</p>
+<p><span class="math display">\[E = h\frac{c}{\lambda}\]</span></p>
+<div class="example">
+<p><b>Example:</b> Calculate the energy of a photon with a wavelength of 500 nm. <br></p>
+<p><b>Answer: </b><br> <span class="math display">\[\begin{align*}
+E &amp; = h\frac{c}{\lambda} \\
+&amp; = 6.63\times10^{-34}\,\text{J s}\times\frac{3.00\times10^8\,\text{m/s}}{500\times10^{-9}\,\text{m}} \\
+&amp; = 3.98\times10^{-19}\,\text{J}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="the-photoelectric-effect" class="level3">
+<h3 class="anchored" data-anchor-id="the-photoelectric-effect">1.4. The Photoelectric Effect</h3>
+<p><strong>Photoelectric Effect</strong>: electrons are ejected from the surface of certain metals exposed to light of at least a certain minimum frequency, called the threshold frequency.</p>
+<p>The reason: <em>Because electrons are bonded to nucleus with certain strength. Only photons with enough energy can “knock out” the electrons from a piece of metal sample.</em></p>
+<p>Let <span class="math inline">\(KE\)</span> be the kinetic energy of the ejected electron and <span class="math inline">\(W\)</span> be the work function, which is a measure of how strongly the electrons are held in the metal. If the metal absorb a photon with frequancey <span class="math inline">\(\nu\)</span>, there is following correlation.</p>
+<p><span class="math display">\[E = h\nu = KE + W\]</span></p>
+<p>It take some energy (<span class="math inline">\(W\)</span>) to knock out the electron. The rest energy will be absorbed as the kinetic energy (<span class="math inline">\(KE\)</span>) of the electron.</p>
+<blockquote class="blockquote">
+<h4 id="requirements" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand the concepts.</li>
+<li>Know how to do calculations using the equations above.</li>
+<li>Be familiar with the types of electromagnetic waves.<br>
+</li>
+<li>Understand photoelectric effect and learn how to do calculations with the equation.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="bohrs-theory-and-quantum-theory-of-atoms" class="level2">
+<h2 class="anchored" data-anchor-id="bohrs-theory-and-quantum-theory-of-atoms">2. Bohr’s Theory and Quantum Theory of Atoms</h2>
+<section id="bohrs-theory" class="level3">
+<h3 class="anchored" data-anchor-id="bohrs-theory">2.1. Bohr’s Theory</h3>
+<p>For a hydrogen atom * Bohr postulated that the electron is allowed to occupy only certain orbits of specific energies. * An electron in any of the allowed orbits will not radiate energy. * Electron dropping from a higher-energy orbit to a lower one and giving up a quantum of energy (a photon) in the form of light.</p>
+<p>Energies that an electron in hydrogen atom can occupy are given by</p>
+<p><span class="math display">\[E_n = -R_H\left(\frac{1}{n^2}\right)\]</span></p>
+<p>When <span class="math inline">\(n = 1\)</span>, we call this the <strong>ground state</strong>, or the <strong>ground level</strong>, which refers to the lowest energy state of a system.</p>
+<p>The stability of the electron diminishes for <span class="math inline">\(n = 2, 3,\)</span> …. Each of these levels is called an <strong>excited state</strong>, or <strong>excited level</strong>, which is higher in energy than the ground state.</p>
+<p>The transition of a hydrogen atom from an excited level to another level with lower energy results in the emission of a photon of frequency <span class="math inline">\(\nu\)</span> and energy <span class="math inline">\(h\nu\)</span>, we can write</p>
+<p><span class="math display">\[\Delta E = h\nu = R_H\left(\frac{1}{n_i^2}-\frac{1}{n_f^2}\right)\]</span></p>
+<p>When <span class="math inline">\(n_i &gt; n_f\)</span>, a photon is emmitted; otherwise a photon is absopted with a negtive <span class="math inline">\(\Delta E\)</span> value.</p>
+<p>Since <span class="math inline">\(n_i\)</span> and <span class="math inline">\(n_f\)</span> can be any values, the possible emission photon frequencies could be many. The sum of all these emissions give the atomic emission spectra.</p>
+<p><strong>Emission spectra</strong> is either continuous or line spectra of radiation emitted by substances.</p>
+<p><strong>Line spectra</strong> are the light emission only at specific wavelengths. Atomic emission spectra are line spectra.</p>
+<div class="example">
+<p><b>Example:</b> What is the wavelength of a photon (in nanometers) emitted during a transition from the ni = 5 state to the nf = 2 state in the hydrogen atom? <br></p>
+<p><b>Answer: </b><br> <span class="math display">\[\begin{align*}
+\Delta E &amp; = R_\text{H}\left(\frac{1}{n_i^2} - \frac{1}{n_f^2}\right) \\
+&amp; = 2.18\times10^{-18}\,\text{J}\times\left(\frac{1}{5^2}-\frac{1}{2^2} \right) \\
+&amp; = -4.58\times10^{-19}\,\text{J}
+\end{align*}\]</span> The negative sign indicates that this is an emission process. (Energy is released from the process.)</p>
+<p><span class="math display">\[\begin{align*}
+\lambda &amp; = \frac{c}{\nu} \\
+&amp; = \frac{c}{\Delta E /h} \\
+&amp; = \frac{ch}{\Delta E} \\
+&amp; = \frac{3.00\times10^8\,\text{m/s}\times 6.63\times10^{-34}\,\text{j s}}{4.58\times10^{-19}\,\text{J}} \\
+&amp; = 4.34\times10^{-7}\,\text{m} \\
+&amp; = 434\,\text{nm}
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="the-dual-nature-of-the-electron" class="level3">
+<h3 class="anchored" data-anchor-id="the-dual-nature-of-the-electron">2.2. The Dual Nature of the Electron</h3>
+<blockquote class="blockquote">
+<p>An electron can be considered as a kind of wave.</p>
+</blockquote>
+<p>The wavelength of an electron can be calculated as</p>
+<p><span class="math display">\[\lambda = \frac{h}{mu}\]</span></p>
+<div class="example">
+<p><b>Example:</b> Calculate the wavelength of an electron moving at 68 m/s. The mass of an electron is <span class="math inline">\(9.11\times10^{-31}\)</span> kg. <br></p>
+<p><b>Answer: </b><br></p>
+<p><span class="math display">\[\begin{align*}
+\lambda &amp; = \frac{h}{mu} \\
+&amp; = \frac{6.63\times10^{-34}\,\text{J s}}{9.11\times10^{-31}\,\text{kg}\times 68\,\text{m/s}} \\
+&amp; = 1.1\times10^{-5}\,\text{m}
+\end{align*}\]</span></p>
+</div>
+<p>According to de Broglie, an electron bound to the nucleus behaves like a <strong>standing wave</strong>.</p>
+<p>The waves are described as standing, or stationary, because they do not travel along the string. Some points on the string, called <strong>nodes</strong>, do not move at all; that is, the amplitude of the wave at these points is zero. There is a node at each end, and there may be nodes between the ends. The greater the frequency of vibration, the shorter the wavelength of the standing wave and the greater the number of nodes.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Standing-waves-string.svg"></p>
+<p>The relation between the circumference of an allowed orbit (<span class="math inline">\(2\pi r\)</span>) and the wavelength (<span class="math inline">\(\lambda\)</span>) of the electron is given by</p>
+<p><span class="math display">\[2\pi r = n\lambda\]</span></p>
+<p>which means the circumference must equal to whold number of wavelengths.</p>
+</section>
+<section id="quantum-mechanics" class="level3">
+<h3 class="anchored" data-anchor-id="quantum-mechanics">2.3. Quantum Mechanics</h3>
+<p>To fully understand the structure of atoms, <strong>quantum mechanics</strong> is needed.</p>
+<p><strong>Schrödinger equation</strong> is the fundmental equation in quantum mechanics, by solving which one can get a wave function to describe the whole system.</p>
+<p><strong>Heisenberg uncertainty principle</strong>: It is impossible to know simultaneously both the momentum (mass times velocity) and the position of a particle with certainty.</p>
+<p>Although quantum mechanics tells us that we cannot pinpoint an electron in an atom, it does define the region where the electron might be at a given time. The concept of <strong>electron density</strong> gives the probability that an electron will be found in a particular region of an atom. The square of the wave function, <span class="math inline">\(\psi^2\)</span>, defines the distribution of electron density in three-dimensional space around the nucleus. Regions of high electron density represent a high probability of locating the electron, whereas the opposite holds for regions of low electron density.</p>
+<p>An <strong>atomic orbital</strong> can be thought of as the wave function of an electron in an atom. When we say that an electron is in a certain orbital, we mean that the distribution of the electron density or the probability of locating the electron in space is described by the square of the wave function associated with that orbital. An atomic orbital, therefore, has a characteristic energy, as well as a characteristic distribution of electron density.</p>
+<p><strong>Pauli exclusion principle</strong>: no two electrons in an atom can have the same four quantum numbers.</p>
+<blockquote class="blockquote">
+<h4 id="requirements-1" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand Bohr’s theory and atomic emission spectra.</li>
+<li>Remember the relation between the circumference of an allowed orbit and the wavelength of the electron.</li>
+<li>Be familiar with the concepts in quantum mechanics.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="electrons-in-atoms" class="level2">
+<h2 class="anchored" data-anchor-id="electrons-in-atoms">3. Electrons in atoms</h2>
+<section id="quantum-number" class="level3">
+<h3 class="anchored" data-anchor-id="quantum-number">3.1. Quantum Number</h3>
+<section id="the-principal-quantum-number-n" class="level4">
+<h4 class="anchored" data-anchor-id="the-principal-quantum-number-n">The Principal Quantum Number (<span class="math inline">\(n\)</span>)</h4>
+<p>The principal quantum number (<span class="math inline">\(n\)</span>) can have integral values <span class="math inline">\(1, 2, 3,\)</span> and so forth; it corresponds to the quantum number in Bohr’s atomic theory. The value of <span class="math inline">\(n\)</span> determines the energy of an orbital. The principal quantum number also relates to the average distance of the electron from the nucleus in a particular orbital. The larger <span class="math inline">\(n\)</span> is, the greater the average distance of an electron in the orbital from the nucleus and therefore the larger the orbital.</p>
+</section>
+<section id="the-angular-momentum-quantum-number-l" class="level4">
+<h4 class="anchored" data-anchor-id="the-angular-momentum-quantum-number-l">The Angular Momentum Quantum Number (<span class="math inline">\(l\)</span>)</h4>
+<p>The angular momentum quantum number (<span class="math inline">\(l\)</span>) tells us the “shape” of the orbitals. The values of <span class="math inline">\(l\)</span> depend on the value of the principal quantum number, <span class="math inline">\(n\)</span>. For a given value of <span class="math inline">\(n\)</span>, <span class="math inline">\(l\)</span> has possible integral values from <span class="math inline">\(0\)</span> to <span class="math inline">\((n − 1)\)</span>.</p>
+<p>For example, if <span class="math inline">\(n=1\)</span>, the only possible value of <span class="math inline">\(l\)</span> is <span class="math inline">\(0\)</span>; if <span class="math inline">\(n=2\)</span>, the possible values of <span class="math inline">\(l\)</span> are <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>.</p>
+<p>The value of <span class="math inline">\(l\)</span> is generally designated by the letters s, p, d, f, … corresponding to the values of <span class="math inline">\(0, 1, 2, 3,\)</span> …, respectively.</p>
+</section>
+<section id="the-magnetic-quantum-number-m_l" class="level4">
+<h4 class="anchored" data-anchor-id="the-magnetic-quantum-number-m_l">The Magnetic Quantum Number (<span class="math inline">\(m_l\)</span>)</h4>
+<p>The magnetic quantum number (<span class="math inline">\(m_l\)</span>) describes the orientation of the orbital in space.</p>
+<p>the value of <span class="math inline">\(m_l\)</span> depends on the value of the angular momentum quantum number, <span class="math inline">\(l\)</span>. For a given value of <span class="math inline">\(l\)</span>, the possible values of <span class="math inline">\(m_l\)</span> are <span class="math inline">\(-l, (-l+1), ... 0, ... (+l-1), +l\)</span>.</p>
+<p>For example, if <span class="math inline">\(l= 2\)</span>, the possible values of <span class="math inline">\(m_l\)</span> are <span class="math inline">\(-2, -1, 0, +1, +2\)</span>.</p>
+</section>
+<section id="the-electron-spin-quantum-number-m_s" class="level4">
+<h4 class="anchored" data-anchor-id="the-electron-spin-quantum-number-m_s">The Electron Spin Quantum Number (<span class="math inline">\(m_s\)</span>)</h4>
+<p>According to electromagnetic theory, a spinning charge generates a magnetic field, and it is this motion that causes an electron to behave like a magnet. The electron spin quantum number (<span class="math inline">\(m_s\)</span>) has a value of <span class="math inline">\(+1/2\)</span> or <span class="math inline">\(-1/2\)</span>.</p>
+<blockquote class="blockquote">
+<h4 id="requirements-2" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Remember everything in this part.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="atomic-orbitals" class="level3">
+<h3 class="anchored" data-anchor-id="atomic-orbitals">3.2. Atomic Orbitals</h3>
+<p>Table 7.2 Relation Between Quantum Numbers and Atomic Orbitals</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span class="math inline">\(n\)</span></th>
+<th style="text-align: left;"><span class="math inline">\(l\)</span></th>
+<th style="text-align: left;"><span class="math inline">\(m_l\)</span></th>
+<th style="text-align: left;">Number of Orbitals</th>
+<th style="text-align: left;">Atomic Orbital Designations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><span class="math inline">\(1s\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><span class="math inline">\(2s\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">−1, 0, 1</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><span class="math inline">\(2p_x, 2p_y, 2p_z\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><span class="math inline">\(3s\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">−1, 0, 1</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><span class="math inline">\(3p_x, 3p_y, 3p_z\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">−2, −1, 0, 1, 2</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><span class="math inline">\(3d_{xy}, 3d_{yz}, 3d_{xz}, 3d_{x^2-y^2}, 3d_{z^2}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>All <span class="math inline">\(s\)</span> orbitals are spherical in shape but differ in size, which increases as the principal quantum number increases.</p>
+<p><img src="https://cnx.org/resources/310d80319138388705df939b86ccefd800891703" style="width:600px"></p>
+<p>Each <span class="math inline">\(p\)</span> orbital can be thought of as two lobes on opposite sides of the nucleus. Like <span class="math inline">\(s\)</span> orbitals, <span class="math inline">\(p\)</span> orbitals increase in size from <span class="math inline">\(2p\)</span> to <span class="math inline">\(3p\)</span> to <span class="math inline">\(4p\)</span> orbital and so on.</p>
+<p>All the <span class="math inline">\(3d\)</span> orbitals in an atom are identical in energy. The <span class="math inline">\(d\)</span> orbitals for which <span class="math inline">\(n\)</span> is greater than $3 $(<span class="math inline">\(4d\)</span>, <span class="math inline">\(5d\)</span>,…) have similar shapes.</p>
+<p>Orbitals having higher energy than <span class="math inline">\(d\)</span> orbitals are labeled <span class="math inline">\(f\)</span>, <span class="math inline">\(g\)</span>,… and so on.</p>
+<p>The <span class="math inline">\(f\)</span> orbitals are important in accounting for the behavior of elements with atomic numbers greater than 57, but their shapes are difficult to represent. In general chemistry we are not concerned with orbitals having <span class="math inline">\(l\)</span> values greater than <span class="math inline">\(3\)</span> (the <span class="math inline">\(g\)</span> orbitals and beyond).</p>
+<p>The shapes of <span class="math inline">\(p\)</span>, <span class="math inline">\(d\)</span>, <span class="math inline">\(f\)</span> orbitals are shown below.</p>
+<p><img src="https://cnx.org/resources/a90abd7d07f0304260a7d292a97f60ef7eee1b1f"></p>
+<section id="the-energies-of-orbitals" class="level4">
+<h4 class="anchored" data-anchor-id="the-energies-of-orbitals">The Energies of Orbitals</h4>
+<p>The energy of an electron in a hydrogen atom is determined solely by its principal quantum number. Thus,</p>
+<p><span class="math display">\[1s &lt; 2s = 2p &lt; 3s = 3p = 3d &lt; 4s = 4p = 4d = 4f &lt; ...\]</span></p>
+<p>The energy picture is more complex for many-electron atoms than for hydrogen. The energy level is shown as below.</p>
+<p><img src="https://cnx.org/resources/70c2a8b2764e4a01db7425a84f714eeb4e30bc6c" style="width:500px"></p>
+<p>The order in which atomic subshells are filled in a many-electron atom is shown below. Start with the <span class="math inline">\(1s\)</span> orbital and move downward, following the direction of the arrows. Thus, the order goes as follows: <span class="math inline">\(1s &lt; 2s &lt; 2p &lt; 3s &lt; 3p &lt; 4s &lt; 3d &lt; ….\)</span></p>
+<p><img src="https://cnx.org/resources/7909e7ef9926a80d76573e73d00eec2c1be57c1e" style="width:500px"></p>
+<div class="example">
+<p><b>Example:</b> Write the four quantum numbers (all possible combinations) for an electron in a <span class="math inline">\(3p\)</span> orbital. <br></p>
+<p><b>Answer: </b><br> In the <span class="math inline">\(3p\)</span> orbital, the main quantum number <span class="math inline">\(n=3\)</span>, the angular quantum number <span class="math inline">\(l=1\)</span>, the magnetic auantum number <span class="math inline">\(m_l\)</span> could be 0 and <span class="math inline">\(\pm 1\)</span>. The electron spin quantum number <span class="math inline">\(m_s\)</span> could be <span class="math inline">\(\pm\frac{1}{2}\)</span>. Thus, the possible combinations are: <br></p>
+<p>(3, 1, <span class="math inline">\(-1\)</span>, <span class="math inline">\(+\frac{1}{2}\)</span>) <br> (3, 1, <span class="math inline">\(-1\)</span>, <span class="math inline">\(-\frac{1}{2}\)</span>) <br> (3, 1, <span class="math inline">\(0\)</span>, <span class="math inline">\(+\frac{1}{2}\)</span>) <br> (3, 1, <span class="math inline">\(0\)</span>, <span class="math inline">\(-\frac{1}{2}\)</span>) <br> (3, 1, <span class="math inline">\(+1\)</span>, <span class="math inline">\(+\frac{1}{2}\)</span>) <br> (3, 1, <span class="math inline">\(+1\)</span>, <span class="math inline">\(-\frac{1}{2}\)</span>)</p>
+</div>
+<blockquote class="blockquote">
+<h4 id="requirements-3" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Remember Table 7.2. Be familiar with <span class="math inline">\(s, p, d\)</span> orbitals.</li>
+<li>Remember the order in which atomic subshells are filled in a many-electron atom.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="electron-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="electron-configuration">3.3. Electron Configuration</h3>
+<p>The four quantum numbers <span class="math inline">\(n\)</span>, <span class="math inline">\(l\)</span>, <span class="math inline">\(m_l\)</span>, and <span class="math inline">\(m_s\)</span> enable us to label completely an electron in any orbital in any atom. In a sense, we can regard the set of four quantum numbers as the “address” of an electron in an atom, somewhat in the same way that a street address, city, state, and postal ZIP code specify the address of an individual.</p>
+<p>Example. Write the four quantum numbers for an electron in a <span class="math inline">\(3p\)</span> orbital.</p>
+<p>In <span class="math inline">\(3p\)</span> orbital, the principle quantum number <span class="math inline">\(n = 3\)</span>, the angular momentum Quantum number <span class="math inline">\(l = 1\)</span>, the magnetic quantum number could be <span class="math inline">\(m_l = -1, 0, +1\)</span>, the electron spin quantum number could be <span class="math inline">\(m_s = -1, +1\)</span>. So, all possibilities are:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span class="math inline">\(n\)</span></th>
+<th style="text-align: left;"><span class="math inline">\(l\)</span></th>
+<th style="text-align: left;"><span class="math inline">\(m_l\)</span></th>
+<th style="text-align: left;"><span class="math inline">\(m_s\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(3\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(+1/2\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(3\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(-1/2\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(3\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(+1/2\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(3\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(-1/2\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(3\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(+1/2\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(3\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(-1/2\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://cnx.org/resources/c13c0e06b464bc81a58c4a194ad757221feb866e"></p>
+<section id="h" class="level4">
+<h4 class="anchored" data-anchor-id="h">H</h4>
+<p>Electron configuration of hydrogen atom:</p>
+<p><img src="https://cnx.org/resources/1ab48d0c386c2e3269938f6c49ab3601499f9e3b"></p>
+<p>The electron in a ground-state hydrogen atom must be in the <span class="math inline">\(1s\)</span> orbital.</p>
+</section>
+<section id="he" class="level4">
+<h4 class="anchored" data-anchor-id="he">He</h4>
+<p>There are two electrons in a helium atom. The ground-state electron configuration is <span class="math inline">\(1s^2\)</span>. Both electrons are in the <span class="math inline">\(1s\)</span> orbital. However, according to Pauli exclusion principle, the four quantum numbers should not be the same. Thus, in helium, <span class="math inline">\(m_s = +1/2\)</span> for one electron; <span class="math inline">\(m_s = -1/2\)</span> for the other. Electrons that have opposite spins are said to be paired.</p>
+<p><img src="https://cnx.org/resources/089531682e67210744db450a2705221aad9db2e0"></p>
+<p><strong>Paramagnetic</strong> substances are those that contain net unpaired spins and are attracted by a magnet.</p>
+<p><strong>Diamagnetic</strong> substances do not contain net unpaired spins and are slightly repelled by a magnet. He is diamagnetic.</p>
+</section>
+<section id="li" class="level4">
+<h4 class="anchored" data-anchor-id="li">Li</h4>
+<p>Consider the lithium atom (Z = 3), which has three electrons. The third electron cannot go into the <span class="math inline">\(1s\)</span> orbital because it would inevitably have the same set of four quantum numbers as one of the first two electrons. Therefore, this electron “enters” the next (energetically) higher orbital, which is the <span class="math inline">\(2s\)</span> orbital. The electron configuration is <span class="math inline">\(1s^22S^1\)</span></p>
+<p><img src="https://cnx.org/resources/9961800fdc13e39e099f1b83d5665329c14d89bc"></p>
+</section>
+<section id="be" class="level4">
+<h4 class="anchored" data-anchor-id="be">Be</h4>
+<p>The ground-state electron configuration of beryllium is <span class="math inline">\(1s^22s^2\)</span>.</p>
+<p><img src="https://cnx.org/resources/1764b855298b21ba0c08551ca1c80c1683363b2b"></p>
+</section>
+<section id="b" class="level4">
+<h4 class="anchored" data-anchor-id="b">B</h4>
+<p>The ground-state electron configuration of boron is <span class="math inline">\(1s^22s^22p^1\)</span>.</p>
+<p><img src="https://cnx.org/resources/e423465bd956b3d5c839d0df74cb907bea165dda"></p>
+</section>
+<section id="c" class="level4">
+<h4 class="anchored" data-anchor-id="c">C</h4>
+<p><strong>Hund’s rule</strong>, which states that the most stable arrangement of electrons in subshells is the one with the greatest number of parallel spins. Thus the ground-state electron configuration of carbon is <span class="math inline">\(1s^22s^22p^2\)</span>.The two <span class="math inline">\(p\)</span> orbital electrons have different <span class="math inline">\(m_l\)</span> quantum numbers.</p>
+<p><img src="https://cnx.org/resources/721b3371c8da61881a998fda6c95c6b93f168cd0"></p>
+</section>
+<section id="n" class="level4">
+<h4 class="anchored" data-anchor-id="n">N</h4>
+<p>The ground-state electron configuration of nitrogen is <span class="math inline">\(1s^22s^22p^3\)</span>.</p>
+</section>
+<section id="o" class="level4">
+<h4 class="anchored" data-anchor-id="o">O</h4>
+<p>The ground-state electron configuration of oxygen is <span class="math inline">\(1s^22s^22p^4\)</span>.</p>
+</section>
+<section id="f" class="level4">
+<h4 class="anchored" data-anchor-id="f">F</h4>
+<p>The ground-state electron configuration of fluorine is <span class="math inline">\(1s^22s^22p^5\)</span>.</p>
+</section>
+<section id="ne" class="level4">
+<h4 class="anchored" data-anchor-id="ne">Ne</h4>
+<p>The ground-state electron configuration of neon is <span class="math inline">\(1s^22s^22p^6\)</span>.</p>
+<p><img src="https://cnx.org/resources/14657364ef53b5dc10ce9114912d70bd9490e7ab"></p>
+</section>
+<section id="general-rules" class="level4">
+<h4 class="anchored" data-anchor-id="general-rules">General Rules</h4>
+<ol type="1">
+<li>Each shell or principal level of quantum number <span class="math inline">\(n\)</span> contains <span class="math inline">\(n\)</span> subshells. For example, if <span class="math inline">\(n = 2\)</span>, then there are two subshells (two values of <span class="math inline">\(l\)</span>) of angular momentum quantum numbers <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>.</li>
+<li>Each subshell of quantum number <span class="math inline">\(l\)</span> contains (<span class="math inline">\(2l + 1\)</span>) orbitals. For example, if <span class="math inline">\(l = 1\)</span>, then there are three <span class="math inline">\(p\)</span> orbitals.</li>
+<li>No more than two electrons can be placed in each orbital. Therefore, the maximum number of electrons is simply twice the number of orbitals that are employed.</li>
+<li>A quick way to determine the maximum number of electrons that an atom can have in a principal level <span class="math inline">\(n\)</span> is to use the formula <span class="math inline">\(2n^2\)</span>.</li>
+</ol>
+<div class="example">
+<p><b>Example:</b> What is the maximum number of electrons that can be present in the principal level for which <span class="math inline">\(n = 3\)</span>? <br></p>
+<p><b>Answer: </b><br> When <span class="math inline">\(n=3\)</span>, <span class="math inline">\(l\)</span> could be 0, 1, 2, corresponding to <span class="math inline">\(s\)</span>, <span class="math inline">\(p\)</span> and <span class="math inline">\(d\)</span> orbitals. <br> In <span class="math inline">\(s\)</span> orbital, <span class="math inline">\(m_l\)</span> must be 0. Thus, there is only one <span class="math inline">\(s\)</span> orbital. <br> When <span class="math inline">\(l=1\)</span>, <span class="math inline">\(m_l\)</span> has three possible values (<span class="math inline">\(-1\)</span>, 0, <span class="math inline">\(=1\)</span>), thus there are three <span class="math inline">\(p\)</span> orbitals. <br> When <span class="math inline">\(l=2\)</span>, <span class="math inline">\(m_l\)</span> has five possible values (<span class="math inline">\(-2\)</span>, <span class="math inline">\(-1\)</span>, 0, <span class="math inline">\(=1\)</span>, <span class="math inline">\(+2\)</span>), thus there are five <span class="math inline">\(d\)</span> orbitals. <br></p>
+<p>The total number of orbitals is <span class="math inline">\(1+3+5=9\)</span>. Each orbital can host two electrons with <span class="math inline">\(m_s = \pm \frac{1}{2}\)</span>, respectively. Thus, the maximum number of electrons that can be present in the principal level <span class="math inline">\(n=3\)</span> is 18.</p>
+</div>
+<div class="example">
+<p><b>Example:</b> An oxygen atom has a total of eight electrons. Write the four quantum numbers for each of the eight electrons in the ground state. <br></p>
+<p><b>Answer: </b><br> (1, 0, <span class="math inline">\(0\)</span>, <span class="math inline">\(+\frac{1}{2}\)</span>) <br> (1, 0, <span class="math inline">\(0\)</span>, <span class="math inline">\(-\frac{1}{2}\)</span>) <br> (2, 0, <span class="math inline">\(0\)</span>, <span class="math inline">\(+\frac{1}{2}\)</span>) <br> (2, 0, <span class="math inline">\(0\)</span>, <span class="math inline">\(-\frac{1}{2}\)</span>) <br> (2, 1, <span class="math inline">\(-1\)</span>, <span class="math inline">\(+\frac{1}{2}\)</span>) <br> (2, 1, 0, <span class="math inline">\(+\frac{1}{2}\)</span>) <br> (2, 1, <span class="math inline">\(+1\)</span>, <span class="math inline">\(+\frac{1}{2}\)</span>) <br> (2, 1, <span class="math inline">\(+1\)</span>, <span class="math inline">\(-\frac{1}{2}\)</span>) <br> Of course, the placement of the eighth electron in the orbital labeled <span class="math inline">\(m_l = +1\)</span> is completely arbitrary. It would be equally correct to assign it to <span class="math inline">\(m_l = 0\)</span> or <span class="math inline">\(m_l = -1\)</span>.</p>
+</div>
+<blockquote class="blockquote">
+<h4 id="requirements-4" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Remember everything in this part.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="the-building-up-principle" class="level3">
+<h3 class="anchored" data-anchor-id="the-building-up-principle">3.4. The Building-Up Principle</h3>
+<p>The <strong>Aufbau principle</strong> dictates that as protons are added one by one to the nucleus to build up the elements, electrons are similarly added to the atomic orbitals.</p>
+<p>For example, the electron configuration of argon (<span class="math inline">\(Z=18\)</span>) is <span class="math inline">\(1s^22s^22p^63s^23p^6\)</span>. Potassium (<span class="math inline">\(Z=19\)</span>) has one more proton and one more electron than argon. The electron configuration of potassium is <span class="math inline">\(1s^22s^22p^63s^23p^64s^1\)</span>. Because <span class="math inline">\(3d\)</span> orbitals have higher energy than <span class="math inline">\(4s\)</span> orbital, the outmost layer electron of potassium goes to <span class="math inline">\(4s\)</span> rather than <span class="math inline">\(3d\)</span>. Since the inner layer electron configuration of potassium is the same as argon, the electron configuration of potassium can be written as <span class="math inline">\([\ce{Ar}]4s^1\)</span> where [Ar] denotes the “argon core.”</p>
+<p>The electron configurations of all elements except hydrogen and helium are represented by a noble gas core, which shows in brackets the noble gas element that most nearly precedes the element being considered, followed by the symbol for the highest filled subshells in the outermost shells.</p>
+<p><strong>Transition metals</strong> either have incompletely filled <span class="math inline">\(d\)</span> subshells or readily give rise to cations that have incompletely filled <span class="math inline">\(d\)</span> subshells.</p>
+<p>Consider the first transition metal series, from scandium through copper. In this series additional electrons are placed in the <span class="math inline">\(3d\)</span> orbitals, according to Hund’s rule. However, there are two irregularities. The electron configuration of chromium (<span class="math inline">\(Z = 24\)</span>) is <span class="math inline">\([\ce{Ar}]4s^13d^5\)</span> and not <span class="math inline">\([\ce{Ar}]4s^23d^4\)</span>, as we might expect. A similar break in the pattern is observed for copper, whose electron configuration is <span class="math inline">\([\ce{Ar}]4s^13d^{10}\)</span> rather than <span class="math inline">\([\ce{Ar}]4s^23d^9\)</span>. The reason for these irregularities is that a slightly greater stability is associated with the half-filled (<span class="math inline">\(3d^5\)</span>) and completely filled (<span class="math inline">\(3d^{10}\)</span>) subshells.</p>
+<p>Following lanthanum are the 14 elements known as the <strong>lanthanides</strong>, or rare earth series [cerium (<span class="math inline">\(Z = 58\)</span>) to lutetium (<span class="math inline">\(Z = 71\)</span>)]. The rare earth metals have incompletely filled <span class="math inline">\(4f\)</span> subshells or readily give rise to cations that have incompletely filled <span class="math inline">\(4f\)</span> subshells.</p>
+<p>The last row of elements is the <strong>actinide series</strong>, which starts at thorium (<span class="math inline">\(Z = 90\)</span>). Most of these elements are not found in nature but have been synthesized.</p>
+<blockquote class="blockquote">
+<h4 id="requirements-5" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand how to represent the electron configuration using nobel gas core.</li>
+<li>Be familiar with the concepts and examples shown here.</li>
+</ol>
+</blockquote>
+<div class="practice">
+<p><b>Practice:</b> <br></p>
+<ol type="1">
+<li>As the frequency of an electromagnetic wave increases <br></li>
+</ol>
+<ol type="A">
+<li>its speed must increase. <br></li>
+<li>its wavelength must increase. <br></li>
+<li>its energy of one photon must increase. <br></li>
+<li>its amplitude must increase. <br></li>
+<li>its number of photons must increase. <br> Answer: C <br><br></li>
+</ol>
+<ol start="2" type="1">
+<li><p>What is the wavelength of electromagnetic radiation that has a frequency of <span class="math inline">\(2.10\times10^{14}\,\text{s}^{-1}\)</span>?<br> Answer: <span class="math inline">\(1.43\times10^{-6} m\)</span><br><br></p></li>
+<li><p>What is the energy in joules of one photon of microwave radiation with a wavelength 0.122 m?<br> Answer: <span class="math inline">\(1.63\times10^{-24}\)</span> J<br></p></li>
+<li><p>Calculate the frequency of the light emitted by a hydrogen atom during a transition of its electron from the <span class="math inline">\(n = 6\)</span> to the <span class="math inline">\(n = 3\)</span> principal energy level. <br> Answer: <span class="math inline">\(2.74\times10^{14}\)</span> Hz<br></p></li>
+<li><p>In an electron microscope, electrons are accelerated to great velocities. Calculate the wavelength of an electron traveling with a velocity of <span class="math inline">\(7.0\times10^3\,\text{km/s}\)</span>. The mass of an electron is <span class="math inline">\(9.1\times10^{-28}\,\text{g}\)</span>.<br> Answer: <span class="math inline">\(1.04\times10^{-10}\)</span> m<br></p></li>
+<li><p>Which one of the following sets of quantum numbers is not possible? <br></p></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(n=4, l=3, m_l=-2, m_s=+1/2\)</span> <br></li>
+<li><span class="math inline">\(n=3, l=0, m_l=0, m_s=+1/2\)</span> <br></li>
+<li><span class="math inline">\(n=3, l=0, m_l=1, m_s=-1/2\)</span> <br></li>
+<li><span class="math inline">\(n=2, l=1, m_l=1, m_s=-1/2\)</span> <br></li>
+<li><span class="math inline">\(n=2, l=0, m_l=0, m_s=+1/2\)</span> <br> Answer: C <br><br></li>
+</ol>
+<ol start="7" type="1">
+<li><p>What is the maximum number of electrons in an atom that can have the following set of quantum numbers? <span class="math inline">\(n = 4; l = 3; m_l = -2\)</span> <br> Answer: 2 <br><br></p></li>
+<li><p>Electrons in an orbital with <span class="math inline">\(l = 3\)</span> are in a/an <br></p></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(s\)</span> orbital <br></li>
+<li><span class="math inline">\(p\)</span> orbital <br></li>
+<li><span class="math inline">\(f\)</span> orbital <br></li>
+<li><span class="math inline">\(d\)</span> orbital <br></li>
+<li><span class="math inline">\(g\)</span> orbital <br> Answer: C <br><br></li>
+</ol>
+<ol start="9" type="1">
+<li><p>What is the number of orbitals in a <span class="math inline">\(p\)</span> subshell?<br> Answer: 3 <br><br></p></li>
+<li><p>The orbital diagram for a ground-state nitrogen atom is<br></p></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(1s\ \underline{\uparrow\downarrow}\quad 2s\ \underline{\uparrow\downarrow}\quad 2p\ \underline{\uparrow\downarrow}\ \underline{\uparrow\:\:}\ \underline{\:\:\:\:}\)</span><br></li>
+<li><span class="math inline">\(1s\ \underline{\uparrow\downarrow}\quad 2s\ \underline{\uparrow\:\:}\quad 2p\ \underline{\uparrow\:\:}\ \underline{\uparrow\:\:}\ \underline{\uparrow\:\:}\)</span><br></li>
+<li><span class="math inline">\(1s\ \underline{\uparrow\downarrow}\quad 2s\ \underline{\uparrow\downarrow}\quad 2p\ \underline{\uparrow\:\:}\ \underline{\uparrow\:\:}\ \underline{\uparrow\:\:}\)</span><br></li>
+<li><span class="math inline">\(1s\ \underline{\uparrow\downarrow}\quad 2s\ \underline{\uparrow\downarrow}\quad 2p\ \underline{\uparrow\downarrow}\ \underline{\uparrow\:\:}\ \underline{\uparrow\:\:}\)</span><br></li>
+<li><span class="math inline">\(1s\ \underline{\uparrow\downarrow}\quad 2s\ \underline{\uparrow\downarrow}\quad 2p\ \underline{\uparrow\downarrow}\ \underline{\uparrow\downarrow}\ \underline{\uparrow\:\:}\)</span><br> Answer: C <br><br></li>
+</ol>
+</div>
+<hr>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.core.display <span class="im">import</span> HTML</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>copyright <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/copyright.md"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>HTML(copyright.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<p>Copyright (C) 2021 Yu Wang</p>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+<p>Contact: Dr. Yu Wang<br>
+Department of Chemistry<br>
+Institute for Materials Research and Innovation<br>
+University of Louisiana at Lafayette<br>
+Lafayette, LA 70504<br>
+Email: yuwang@louisiana.edu</p>
+</div>
+</div>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/custom.css"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>HTML(styles.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:400,400i|Raleway:400,400i,700,700i" rel="stylesheet" type="text/css">
+<style type="text/css">
+div.text_cell_render {
+    font-family: Lora, serif;
+    color: #222222;
+}
+.text_cell_render p {
+    padding-left: 1.5em;
+    text-align: justify;
+}
+.text_cell_render h3, h4, h6 {
+    font-family: Raleway, sans-serif;
+    color: #005c99;
+}
+.text_cell_render h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+}
+.text_cell_render h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 700; 
+    margin-top: 50px;
+    display:inline-block;
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: #f8f8f8;
+    border-radius: 10px 40px 10px 40px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+}
+.text_cell_render h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    border-style: groove;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    margin: 1em 0 1em 0;
+    line-height: 1.6;
+}
+div #notebook {
+    background-color: #f8f8f8;
+    width: 1110px;  
+    margin: auto;
+    padding-left: 0em;
+    border: 3px solid #cbd3e5; 
+    box-shadow: 0px 0px 7px 1px #cccccc;
+}
+div.example {
+    background-color:#007acc;
+    color: #ffffff;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #007acc; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div.practice {
+    background-color:#fbfbfb;
+    color: #007acc;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #eeeeee; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div #notebook-container {
+    background-color: #ffffff;
+    font-size: 1.5em; 
+    line-height: 1.6;
+    width: 1100px;
+    margin: auto;
+    padding-right: 150px;
+}
+.CodeMirror-code {
+    font-size: 1.2em;
+    line-height: 125%;
+    opacity: 0.9;
+}
+
+.text_cell_render td {
+    border-style: hidden;
+}
+.text_cell_render table {
+    border-style: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 80%;
+}
+
+.text_cell_render th, td {
+    padding: 8px;
+}
+
+.text_cell_render tr:nth-child(even){background-color: #e8e8e8}
+
+.text_cell_render th {
+    border-style: hidden;
+    background-color: #004c80;
+    color: #f8f8f8;
+}
+table td, table th, table tr {
+    text-align:left !important;
+}
+</style>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

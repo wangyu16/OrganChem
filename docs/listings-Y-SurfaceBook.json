@@ -1,0 +1,26 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/chapters/Ch01_Introduction.html",
+      "/chapters/Ch02_AtomMolIon.html",
+      "/chapters/Ch03_Stoichiometry.html",
+      "/chapters/Ch04_AqReactions.html",
+      "/chapters/Ch05_Gases.html",
+      "/chapters/Ch06_Thermochemistry.html",
+      "/chapters/Ch07_Quantum.html",
+      "/chapters/Ch08_PeriodicTable.html",
+      "/chapters/Ch09_ChemicalBonds.html",
+      "/chapters/Ch10_MolGeometry.html",
+      "/chapters/Ch11_Intermolecular.html",
+      "/chapters/Ch12_Solution.html",
+      "/chapters/Ch13_Kinetics.html",
+      "/chapters/Ch14_Equilibrium.html",
+      "/chapters/Ch15_AcidBase.html",
+      "/chapters/Ch16_AcidBaseEq.html",
+      "/chapters/Ch17_Thermodynamics.html",
+      "/chapters/Ch18_Electrochemistry.html",
+      "/chapters/Ch19_NuclearChemistry.html"
+    ]
+  }
+]

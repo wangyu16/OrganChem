@@ -1,0 +1,29 @@
+---
+title: "About"
+sidebar: false
+about:
+  id: hero-heading
+  template: marquee
+  image: "img/AP-Chemistry-11.jpg"
+---
+
+:::{#hero-heading}
+
+This website is created by Dr. Sundaram Shridhar and Dr. Yu Wang. The materials, mainly the figures and the questions, are adapted from wikipedia, OpenStax, and other open resources. The website can be used as the study guide for two semester organic chemistry courses. 
+
+As open educational resources (OER), this website is licensed under Creative Commons Attribution 4.0 International License. All contents can be used for free. 
+
+### Contact: 
+
+Dr. Sundaram Shridhar
+
+
+Dr. Yu Wang  
+Department of Chemistry  
+Institute for Materials Research and Innovation  
+University of Louisiana at Lafayette  
+Lafayette, LA 70504  
+Email: yuwang@louisiana.edu  
+:::
+
+

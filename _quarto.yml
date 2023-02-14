@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Organic Chemistry"
+  sidebar: 
+    style: "floating"
+    search: true
+    contents: Modules/*
+  navbar:
+    background: "#009dc4"
+    title: "OrganChem"
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/wangyu16/OrganChem
+        aria-label: OrganChem GitHub
+  reader-mode: true
+filters:
+  - social-share
+share: 
+  permalink: ""
+  description: "Organic Chemistry Learning Materials"
+  twitter: true
+  facebook: true
+  reddit: true
+  stumble: false
+  tumblr: false
+  linkedin: true
+  email: true
+  mastodon: false  
+format:
+  html:
+    theme: 
+      - custom.scss
+    fontsize: 1.3em
+    css: styles.css
+    toc: true
+
+

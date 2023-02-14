@@ -1,0 +1,113 @@
+{
+  "index.qmd": {
+    "index.html": "b43c40ca"
+  },
+  "about.qmd": {
+    "about.html": "73b56d6e"
+  },
+  "chapters/Ch01_Introduction.qmd": {
+    "Ch01_Introduction.html": "c91f08a8"
+  },
+  "chapters/Ch011_Intermolecular.qmd": {
+    "Ch011_Intermolecular.html": "38d50821"
+  },
+  "chapters/Ch11_Intermolecular.qmd": {
+    "Ch11_Intermolecular.html": "096c74b4"
+  },
+  "chapters/Ch12_Solution.qmd": {
+    "Ch12_Solution.html": "16aab1f9"
+  },
+  "chapters/Ch02_AtomMolIon.qmd": {
+    "Ch02_AtomMolIon.html": "191fa8c4"
+  },
+  "chapters/Ch03_Stoichiometry.qmd": {
+    "Ch03_Stoichiometry.html": "48b4ac80"
+  },
+  "chapters/Ch04_AqReactions.qmd": {
+    "Ch04_AqReactions.html": "f8791f87"
+  },
+  "chapters/Ch05_Gases.qmd": {
+    "Ch05_Gases.html": "2ba257fe"
+  },
+  "chapters/Ch06_Thermochemistry.qmd": {
+    "Ch06_Thermochemistry.html": "9890328b"
+  },
+  "chapters/Ch07_Quantum.qmd": {
+    "Ch07_Quantum.html": "2298d3f7"
+  },
+  "chapters/Ch08_PeriodicTable.qmd": {
+    "Ch08_PeriodicTable.html": "717044f4"
+  },
+  "chapters/Ch09_ChemicalBonds.qmd": {
+    "Ch09_ChemicalBonds.html": "8e103335"
+  },
+  "chapters/Ch10_MolGeometry.qmd": {
+    "Ch10_MolGeometry.html": "d21b13c3"
+  },
+  "chapters/Ch13_Kinetics.qmd": {
+    "Ch13_Kinetics.html": "0e633ec1"
+  },
+  "chapters/Ch14_Equilibrium.qmd": {
+    "Ch14_Equilibrium.html": "8096124d"
+  },
+  "chapters/Ch15_AcidBase.qmd": {
+    "Ch15_AcidBase.html": "626d5dff"
+  },
+  "chapters/Ch16_AcidBaseEq.qmd": {
+    "Ch16_AcidBaseEq.html": "6ecd1740"
+  },
+  "chapters/Ch17_Thermodynamics.qmd": {
+    "Ch17_Thermodynamics.html": "aeab6ceb"
+  },
+  "chapters/Ch18_Electrochemistry.qmd": {
+    "Ch18_Electrochemistry.html": "bc28cb5f"
+  },
+  "chapters/Ch19_NuclearChemistry.qmd": {
+    "Ch19_NuclearChemistry.html": "81c99f14"
+  },
+  "ipynb/Ch01_Introduction.ipynb": {
+    "Ch01_Introduction.html": "dedc5788"
+  },
+  "ipynb/Ch02_AtomMolIon.ipynb": {
+    "Ch02_AtomMolIon.html": "81b89d22"
+  },
+  "ipynb/Ch03_Stoichiometry.ipynb": {
+    "Ch03_Stoichiometry.html": "42cce8fb"
+  },
+  "ipynb/Ch04_AqRex.ipynb": {
+    "Ch04_AqRex.html": "821eea2d"
+  },
+  "ipynb/Ch05_Gases.ipynb": {
+    "Ch05_Gases.html": "3f03d1db"
+  },
+  "ipynb/Ch06_ThermoChem.ipynb": {
+    "Ch06_ThermoChem.html": "f19376f7"
+  },
+  "ipynb/Ch07_Quantum.ipynb": {
+    "Ch07_Quantum.html": "c1661354"
+  },
+  "ipynb/Ch08_PeriodicTable.ipynb": {
+    "Ch08_PeriodicTable.html": "1f938aa3"
+  },
+  "ipynb/Ch09_ChemBonds.ipynb": {
+    "Ch09_ChemBonds.html": "4a3d77c8"
+  },
+  "ipynb/Ch10_MolGeometry.ipynb": {
+    "Ch10_MolGeometry.html": "b52c6af3"
+  },
+  "ipynb/Ch12_Intermolecular.ipynb": {
+    "Ch12_Intermolecular.html": "e69e74fc"
+  },
+  "ipynb/Ch13_Solutions.ipynb": {
+    "Ch13_Solutions.html": "c89f6d43"
+  },
+  "ipynb/Ch14_Kinetics.ipynb": {
+    "Ch14_Kinetics.html": "0c0ba962"
+  },
+  "ipynb/Ch15_Equilibrium.ipynb": {
+    "Ch15_Equilibrium.html": "60e9f43c"
+  },
+  "Modules/M01_Introduction.qmd": {
+    "M01_Introduction.html": "1dbeb208"
+  }
+}

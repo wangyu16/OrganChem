@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="In principle, all reactions are reversible. At what point would the forward reaction and backward reaction reach the same reaction rate?">
+
+<title>General Chemistry - 14 Chemical Equilibrium</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/social-share-0.1.0/social-share.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/social-share-0.1.0/all.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8484Q795DY"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-8484Q795DY', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">GenChem</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/wangyu16/GeneralChemistry"><i class="bi bi-github" role="img" aria-label="GenChem GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">14 Chemical Equilibrium</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch01_Introduction.html" class="sidebar-item-text sidebar-link">01 Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch02_AtomMolIon.html" class="sidebar-item-text sidebar-link">02 Atoms Molecules and Ions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch03_Stoichiometry.html" class="sidebar-item-text sidebar-link">03 Stoichiometry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch04_AqReactions.html" class="sidebar-item-text sidebar-link">04 Reactions in Aqueous Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch05_Gases.html" class="sidebar-item-text sidebar-link">05 Gases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch06_Thermochemistry.html" class="sidebar-item-text sidebar-link">06 Energy Relationships in Chemical Reactions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch07_Quantum.html" class="sidebar-item-text sidebar-link">07 The Electronic Structure of Atoms</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch08_PeriodicTable.html" class="sidebar-item-text sidebar-link">08 The Periodic Table</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch09_ChemicalBonds.html" class="sidebar-item-text sidebar-link">09 Chemical Bonding I – The Covalent Bond</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch10_MolGeometry.html" class="sidebar-item-text sidebar-link">10 Chemical Bonding II – Molecular Geometry and Hybridization of Atomic Orbitals</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch11_Intermolecular.html" class="sidebar-item-text sidebar-link">11 Intermolecular Forces and Liquids and Solids</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch12_Solution.html" class="sidebar-item-text sidebar-link">12 Physical Properties of Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch13_Kinetics.html" class="sidebar-item-text sidebar-link">13 Chemical Kinetics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch14_Equilibrium.html" class="sidebar-item-text sidebar-link active">14 Chemical Equilibrium</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch15_AcidBase.html" class="sidebar-item-text sidebar-link">15 Acids and Bases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch16_AcidBaseEq.html" class="sidebar-item-text sidebar-link">16 Acid-Base Equilibria and Solubility Equilibria</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch17_Thermodynamics.html" class="sidebar-item-text sidebar-link">17 Thymodynamics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch18_Electrochemistry.html" class="sidebar-item-text sidebar-link">18 Redox Reactions and Electrochemistry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch19_NuclearChemistry.html" class="sidebar-item-text sidebar-link">19 Nuclear Chemistry</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#chemical-equilibrium" id="toc-chemical-equilibrium" class="nav-link active" data-scroll-target="#chemical-equilibrium">1. Chemical Equilibrium</a></li>
+  <li><a href="#equilibrium-constants" id="toc-equilibrium-constants" class="nav-link" data-scroll-target="#equilibrium-constants">2. Equilibrium Constants</a>
+  <ul class="collapse">
+  <li><a href="#homogeneous-equilibria" id="toc-homogeneous-equilibria" class="nav-link" data-scroll-target="#homogeneous-equilibria">Homogeneous Equilibria</a></li>
+  <li><a href="#heterogeneous-equilibria" id="toc-heterogeneous-equilibria" class="nav-link" data-scroll-target="#heterogeneous-equilibria">Heterogeneous Equilibria</a></li>
+  <li><a href="#a-reaction-in-several-steps" id="toc-a-reaction-in-several-steps" class="nav-link" data-scroll-target="#a-reaction-in-several-steps">A Reaction in Several Steps</a></li>
+  </ul></li>
+  <li><a href="#reaction-quotient" id="toc-reaction-quotient" class="nav-link" data-scroll-target="#reaction-quotient">3. Reaction Quotient</a></li>
+  <li><a href="#equilibrium-concentrations" id="toc-equilibrium-concentrations" class="nav-link" data-scroll-target="#equilibrium-concentrations">4. Equilibrium Concentrations</a></li>
+  <li><a href="#le-chateliers-principle" id="toc-le-chateliers-principle" class="nav-link" data-scroll-target="#le-chateliers-principle">5. Le Chatelier’s Principle</a></li>
+  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">Practice Questions</a></li>
+  <li><a href="#copyright" id="toc-copyright" class="nav-link" data-scroll-target="#copyright">Copyright</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">14 Chemical Equilibrium</h1>
+</div>
+
+<div>
+  <div class="description">
+    In principle, all reactions are reversible. At what point would the forward reaction and backward reaction reach the same reaction rate?
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="../img/Ch14_Equilibrium.png" width="100%"></p>
+<section id="chemical-equilibrium" class="level2">
+<h2 class="anchored" data-anchor-id="chemical-equilibrium">1. Chemical Equilibrium</h2>
+<p><strong>Chemical Equilibrium</strong> refers to a state when the rates of the forward and reverse reactions are equal and the concentrations of the reactants and products no longer change with time.</p>
+<p><strong>Equilibrium Constant</strong> is the value of the reaction quotient when the reaction has reached equilibrium.</p>
+<p>Given a reaction which occurs via a mechanism of a single <em>elementary step</em> in both the forward and reverse directions,</p>
+<p><span class="math display">\[a\ce{A} +b\ce{B} \ce{&lt;=&gt;} c\ce{C} + d\ce{D}\]</span></p>
+<p>The equilibrium constant can be expressed as:</p>
+<p><span class="math display">\[K=\frac{[\ce{C}]^c[\ce{D}]^d}{[\ce{A}]^a[\ce{B}]^b}\]</span></p>
+<p>The equilibrium constant is dimensionless.<br>
+Since the rates of forward (<span class="math inline">\(rate_f\)</span>) and reverse (<span class="math inline">\(rate_r\)</span>) reactions can be expressed as:</p>
+<p><span class="math display">\[\begin{align*}
+rate_f &amp; = k_f[\ce{A}]^a[\ce{B}]^b \\
+rate_r &amp; = k_r[\ce{C}]^c[\ce{D}]^d
+\end{align*}\]</span></p>
+<p>Because the two rates must be equal: <span class="math inline">\(rate_f=rate_r\)</span>, thus</p>
+<p><span class="math display">\[\begin{align*}
+k_f[\ce{A}]^a[\ce{B}]^b &amp; = k_r[\ce{C}]^c[\ce{D}]^d \\
+\frac{[\ce{C}]^c[\ce{D}]^d}{[\ce{A}]^a[\ce{B}]^b} &amp; =\frac{k_f}{k_r}
+\end{align*}\]</span></p>
+<p>Which means:</p>
+<p><span class="math display">\[K=\frac{k_f}{k_r}\]</span></p>
+<p>Thus,</p>
+<ul>
+<li>When the equation for a reversible reaction is written in the opposite direction, the equilibrium constant becomes the reciprocal of the original equilibrium constant.<br>
+</li>
+<li><span class="math inline">\(K \gg 1\)</span> means <span class="math inline">\(k_f \gg k_r\)</span>, thus the equilibrium lies to the right (product) side.<br>
+</li>
+<li><span class="math inline">\(K \ll 1\)</span> means <span class="math inline">\(k_f \ll k_r\)</span>, thus the equilibrium lies to the left (reactant) side.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Understand chemical equilibrium and equilibrium constant.<br>
+2. Understand the general expression of equilibrium constant in terms of reactant and product concentrations. Know the correlation between equilibrium constant and forward/reverse rate constants.<br>
+3. Understand what would happen when <span class="math inline">\(K \gg 1\)</span> or <span class="math inline">\(K \ll 1\)</span>. How would the equilibrium constant change if you write a reaction equation in the opposite direction?</p>
+</blockquote>
+</section>
+<section id="equilibrium-constants" class="level2">
+<h2 class="anchored" data-anchor-id="equilibrium-constants">2. Equilibrium Constants</h2>
+<section id="homogeneous-equilibria" class="level3">
+<h3 class="anchored" data-anchor-id="homogeneous-equilibria">Homogeneous Equilibria</h3>
+<p>Homogeneous reactions are reactions in which all reacting species are in the same phase.</p>
+<p><strong>Gaseous phase reactions</strong><br>
+All reactants and products are gases.<br>
+<span class="math inline">\(K\)</span> can be expressed in mol/L concentrations (<span class="math inline">\(K_c\)</span>) or in partial pressures (<span class="math inline">\(K_P\)</span>).</p>
+<p><span class="math display">\[a\ce{A} +b\ce{B} \ce{&lt;=&gt;} c\ce{C} + d\ce{D}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+K_c &amp; =\frac{[\ce{C}]^c[\ce{D}]^d}{[\ce{A}]^a[\ce{B}]^b} \\
+K_P &amp; =\frac{P_C^cP_D^d}{P_A^aP_B^b}
+\end{align*}\]</span></p>
+<p>The correlation is:</p>
+<p><span class="math display">\[K_P=K_c(RT)^{\Delta n}\]</span></p>
+<p>where <span class="math inline">\(\Delta n = c+d-a-b\)</span><br>
+because</p>
+<p><span class="math display">\[\begin{align*}
+PV &amp; =nRT \\
+P &amp; =\frac{n}{V}RT \\
+P &amp; =cRT
+\end{align*}\]</span></p>
+<p>where <span class="math inline">\(c\)</span> is the concentration in molarity.<br>
+Thus,</p>
+<p><span class="math display">\[\begin{align*}
+K_P &amp; =\frac{P_C^cP_D^d}{P_A^aP_B^b}\\
+&amp; =\frac{([\ce{C}]RT)^c([\ce{D}]RT)^d}{([\ce{A}]RT)^a([\ce{B}]RT)^b}\\
+&amp; =K_c(RT)^{\Delta n}
+\end{align*}\]</span></p>
+<p><strong>Liquid phase reactions</strong><br>
+Equilibrium constant must be expressed in concentrations, e.g.&nbsp;only <span class="math inline">\(K_c\)</span>.<br>
+When solvent is involved in the reaction with large quantity, the concentration of solvent can be considered as constant and is included in the equilibrium constant.</p>
+<p>An example is</p>
+<p><span class="math display">\[\ce{CH3COOH(aq) +H2O(l) &lt;=&gt; CH3COO- (aq) + H3O+(aq)}\]</span></p>
+<p>The equilibrium constant is</p>
+<p><span class="math display">\[K'_c=\frac{[\ce{CH3COO-}][\ce{H3O+}]}{[\ce{CH3COOH}][\ce{H2O}]}\]</span></p>
+<p>which can be written in a different way</p>
+<p><span class="math display">\[K_c=K'_c[\ce{H2O}]=\frac{[\ce{CH3COO-}][\ce{H3O+}]}{[\ce{CH3COOH}]}\]</span></p>
+<p>The final form of equilibrium constant is <span class="math inline">\(K_c\)</span> rather than <span class="math inline">\(K'_c\)</span>.</p>
+<div class="example">
+<p><b>Example:</b> The equilibrium constant for the chemical equation</p>
+<p><span class="math display">\[\ce{2NH3(g)&lt;-&gt;N2(g) + 3H2(g)}\]</span></p>
+<p>is <span class="math inline">\(𝐾_p=15.6\)</span> at 217 <span class="math inline">\(^\circ\)</span>C. Write the expressions of the equilibrium constant in the form of <span class="math inline">\(K_p\)</span> and <span class="math inline">\(K_c\)</span> regarding to the pressures or concentrations of the reactants and products. Calculate the value of <span class="math inline">\(𝐾_c\)</span> for the reaction at the same temperature.<br></p>
+<p><b>Answer:</b> <br></p>
+<p><span class="math display">\[\begin{align*}
+K_p &amp; = \frac{p_{\text{N}_2}p_{\text{H}_2}^3}{p_{\text{NH}_3}^2}\\
+K_c &amp; = \frac{[\ce{N2}][\ce{H2}]^3}{[\ce{NH3}]^2}\\   
+K_c &amp; = K_p(RT)^{-\Delta n}\\
+    &amp; = 15.6\times(0.0821\times490)^{-2}\\
+    &amp; = 0.00964
+\end{align*}\]</span></p>
+</div>
+</section>
+<section id="heterogeneous-equilibria" class="level3">
+<h3 class="anchored" data-anchor-id="heterogeneous-equilibria">Heterogeneous Equilibria</h3>
+<p>A reversible reaction involving reactants and products that are in different phases leads to a heterogeneous equilibrium. The concentrations of pure solids and pure liquids are not included in the expression of equilibrium constants.</p>
+<p>For example,</p>
+<p><span class="math display">\[\ce{CaCO3(s) &lt;=&gt; CaO(s) + CO2(g)}\]</span></p>
+<p>The equilibrium constant is:</p>
+<p><span class="math display">\[K_c=[\ce{CO2}]\ \text{or}\ K_P=P_{\ce{CO2}}\]</span></p>
+</section>
+<section id="a-reaction-in-several-steps" class="level3">
+<h3 class="anchored" data-anchor-id="a-reaction-in-several-steps">A Reaction in Several Steps</h3>
+<p>If a reaction can be expressed as the sum of two or more reactions, the equilibrium constant for the overall reaction is given by the product of the equilibrium constants of the individual reactions.</p>
+<p><span class="math display">\[\begin{align*}
+&amp; (1)\qquad \ce{A + B &lt;-&gt; C}\qquad K_1\\
+&amp; (2)\qquad \ce{C + B &lt;-&gt; D}\qquad K_2\\
+&amp; (3)\qquad \ce{A + 2B &lt;-&gt; D}\qquad K_3
+\end{align*}\]</span></p>
+<p>Since <span class="math inline">\((3) = (1) + (2)\)</span>, we have <span class="math inline">\(K_3=K_1\times K_2\)</span>.</p>
+<div class="example">
+<p><b>Example:</b> Knowing the equilibrium constants of two reactions, calculate the equilibrium constant of the third reaction. <span class="math display">\[\begin{align*}
+(1)\quad \ce{CoO(s) + CO(g) &lt;=&gt; Co(s) + CO2(g)}\qquad &amp; K_{c1}=490\\    
+(2)\quad \ce{Co(s) + H2O(g) &lt;=&gt; CoO(s) + H2(g)}\qquad &amp; K_{c2}=0.0149\\
+(3)\quad \ce{H2O(g) + CO(g) &lt;=&gt; CO2(g) + H2(g)}\qquad &amp; K_{c3}=?    
+\end{align*}\]</span></p>
+<p><b>Answer:</b> <br></p>
+<p>Apparently, <span class="math inline">\((1) + (2) = (3)\)</span>, thus <span class="math display">\[K_{c3}=K_{c1}\times K_{c2}=490\times0.0149=7.30\]</span></p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Given reaction equations, write the expressions for <span class="math inline">\(K_c\)</span>, and <span class="math inline">\(K_P\)</span> if applicable.<br>
+2. Calculate the equilibrium constant knowing the equilibrium concentrations/partial pressures of all species. Calculate the equilibrium concentration/partial pressure of one reactant or product knowing the equilibrium constant and concentrations/partial pressures of all other species.</p>
+</blockquote>
+</section>
+</section>
+<section id="reaction-quotient" class="level2">
+<h2 class="anchored" data-anchor-id="reaction-quotient">3. Reaction Quotient</h2>
+<p>The <strong>reaction quotient</strong> (<span class="math inline">\(Q_c\)</span>) is calculated by substituting the initial concentrations of the reactants and products into the equilibrium constant (<span class="math inline">\(K_c\)</span>) expression.</p>
+<p><span class="math display">\[a\ce{A} +b\ce{B} \ce{&lt;=&gt;} c\ce{C} + d\ce{D}\]</span></p>
+<p><span class="math display">\[K_c=\frac{[\ce{C}]_{eq}^c[\ce{D}]_{eq}^d}{[\ce{A}]_{eq}^a[\ce{B}]_{eq}^b}\]</span></p>
+<p>where the subscript “eq” refers to equilibrium condition.</p>
+<p><span class="math display">\[Q_c=\frac{[\ce{C}]_{0}^c[\ce{D}]_{0}^d}{[\ce{A}]_{0}^a[\ce{B}]_{0}^b}\]</span></p>
+<p>where the subscript “0” means the initial state.</p>
+<p>Compare <span class="math inline">\(Q_c\)</span> with <span class="math inline">\(K_c\)</span>:</p>
+<ul>
+<li>If <span class="math inline">\(Q_c &gt; K_c\)</span>, the system proceeds from right to left to reach equilibrium;<br>
+</li>
+<li>If <span class="math inline">\(Q_c = K_c\)</span>, the system is at equilibrium;<br>
+</li>
+<li>If <span class="math inline">\(Q_c &lt; K_c\)</span>, The system proceeds from left to right to reach equilibrium.</li>
+</ul>
+<div class="example">
+<p><b>Example:</b> Consider the following reaction. <span class="math display">\[\ce{2SO2(g) + O2(g) &lt;=&gt; 2SO3(g)}\]</span> (a) In one experiment, the concentrations at equilibrium are <span class="math inline">\([\ce{SO2}] = 0.90\)</span> M, <span class="math inline">\([\ce{O2}] = 0.35\)</span> M, and <span class="math inline">\([\ce{SO3}] = 1.1\)</span> M. What is the value of the equilibrium constant, <span class="math inline">\(K_c\)</span>? (b) In another experiment, at one moment the concentrations of reagents are <span class="math inline">\([\ce{SO2}] = 1.9\)</span> M, <span class="math inline">\([\ce{O2}] = 0.17\)</span> M, and <span class="math inline">\([\ce{SO3}] = 0.61\)</span> M. Is the reaction at equilibrium or not? If not, to what direction would the reaction proceed?<br></p>
+<p><b>Answer:</b> <br></p>
+<ol type="a">
+<li><p><span class="math display">\[\begin{align*}
+K_c &amp; = \frac{[\ce{SO3}]^2}{[\ce{SO2}]^2[\ce{O2}]}\\
+&amp; = \frac{1.1^2}{0.90^2\times 0.35} \\
+&amp; = 4.3
+\end{align*}\]</span></p></li>
+<li><p><span class="math display">\[\begin{align*}
+Q_c &amp; = \frac{[\ce{SO3}]^2}{[\ce{SO2}]^2[\ce{O2}]}\\
+    &amp; = \frac{0.61^2}{1.9^2\times 0.17} \\
+    &amp; = 0.61
+\end{align*}\]</span></p></li>
+</ol>
+<p>Because <span class="math inline">\(Q_c &lt; K_c\)</span>, the reaction will proceed in the forward direction.</p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Given concentrations of all reactants and products at a moment, calculate the value of <span class="math inline">\(Q_c\)</span>. Compare <span class="math inline">\(Q_c\)</span> with <span class="math inline">\(K_c\)</span> and tell how would the system proceed to reach equilibrium.</p>
+</blockquote>
+</section>
+<section id="equilibrium-concentrations" class="level2">
+<h2 class="anchored" data-anchor-id="equilibrium-concentrations">4. Equilibrium Concentrations</h2>
+<p>For a reaction:</p>
+<p><span class="math display">\[a\ce{A} +b\ce{B} \ce{&lt;=&gt;} c\ce{C} + d\ce{D}\]</span></p>
+<p>given the initial concentrations of <span class="math inline">\(\ce{A}\)</span> and <span class="math inline">\(\ce{B}\)</span>, and the equilibrium constant <span class="math inline">\(K_c\)</span>, calculate the equilibrium concentrations of all reactants and products.<br>
+Use ICE table:</p>
+<table class="table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 24%">
+<col style="width: 27%">
+<col style="width: 27%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(\ce{A}\)</span></th>
+<th><span class="math inline">\(\ce{B}\)</span></th>
+<th><span class="math inline">\(\ce{C}\)</span></th>
+<th><span class="math inline">\(\ce{D}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Initial (M):</td>
+<td><span class="math inline">\([\ce{A}]_0\)</span></td>
+<td><span class="math inline">\([\ce{B}]_0\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+</tr>
+<tr class="even">
+<td>Change (M):</td>
+<td><span class="math inline">\(-ax\)</span></td>
+<td><span class="math inline">\(-bx\)</span></td>
+<td><span class="math inline">\(cx\)</span></td>
+<td><span class="math inline">\(dx\)</span></td>
+</tr>
+<tr class="odd">
+<td>Equilibrium (M):</td>
+<td><span class="math inline">\([\ce{A}]_0-ax\)</span></td>
+<td><span class="math inline">\([\ce{B}]_0-bx\)</span></td>
+<td><span class="math inline">\(cx\)</span></td>
+<td><span class="math inline">\(dx\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[K_c = \frac{(cx)^c\times (dx)^d}{([\ce{A}]_0-ax)^a\times([\ce{B}]_0-bx)^b}\]</span></p>
+<p>Solve the equation to find <span class="math inline">\(x\)</span>, then calculate the equilibrium concentrations of all species.</p>
+<div class="example">
+<p><b>Example:</b> Acetic acid reacts with ethanol to form ethyl acetate and water: <span class="math display">\[\ce{CH3COOH + C2H5OH &lt;=&gt; CH3COOC2H5 + H2O}\]</span> The equilibrium constant for this reaction with dioxane as a solvent is 4.0 at a given temperature. What are the equilibrium concentrations for a mixture that is initially 0.15 M in <span class="math inline">\(\ce{CH3COOH}\)</span>, 0.15 M in <span class="math inline">\(\ce{C2H5OH}\)</span>, 0 M in <span class="math inline">\(\ce{CH3COOC2H5}\)</span>, and 0 M in <span class="math inline">\(\ce{H2O}\)</span>?<br></p>
+<p><b>Answer:</b> <br></p>
+<table class="table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 29%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(\ce{CH3COOH}\)</span></th>
+<th><span class="math inline">\(\ce{C2H5OH}\)</span></th>
+<th><span class="math inline">\(\ce{CH3COOC2H5}\)</span></th>
+<th><span class="math inline">\(\ce{H2O}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Initial (M):</td>
+<td><span class="math inline">\(0.15\)</span></td>
+<td><span class="math inline">\(0.15\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+</tr>
+<tr class="even">
+<td>Change (M):</td>
+<td><span class="math inline">\(-x\)</span></td>
+<td><span class="math inline">\(-x\)</span></td>
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x\)</span></td>
+</tr>
+<tr class="odd">
+<td>Equilibrium (M):</td>
+<td><span class="math inline">\(0.15-x\)</span></td>
+<td><span class="math inline">\(0.15-x\)</span></td>
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[\begin{align*}
+K_c &amp; = \frac{[\ce{CH3COOC2H5}][\ce{H2O}]}{[\ce{CH3COOH}][\ce{C2H5OH}]}\\     &amp; = \frac{x\times x}{(0.15-x)\times(0.15-x)}\\
+    &amp; = 4.0\\
+  x &amp; = 0.10
+\end{align*}\]</span></p>
+<p>When reaching equilibrium, the concentrations of <span class="math inline">\(\ce{CH3COOC2H5}\)</span> and <span class="math inline">\(\ce{H2O}\)</span> are both 0.10 M, the concentrations of <span class="math inline">\(\ce{CH3COOH}\)</span> and <span class="math inline">\(\ce{C2H5OH}\)</span> are both 0.05 M.</p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Knowing the initial concentrations of reactants and the equilibrium constant, calculate the equilibrium concentrations of all species.</p>
+</blockquote>
+</section>
+<section id="le-chateliers-principle" class="level2">
+<h2 class="anchored" data-anchor-id="le-chateliers-principle">5. Le Chatelier’s Principle</h2>
+<p><strong>Le Chatelier’s Principle</strong> tells if an external stress is applied to a system at equilibrium, the system adjusts in such a way that the stress is partially offset as it tries to reestablish equilibrium.</p>
+<ul>
+<li>Adding of reactant push the reaction proceeds towards the product; adding of product, towards reactant. Removal of reactant draw the reaction proceeds back towards the reactant; removal of product, towards product.<br>
+</li>
+<li>With decreasing external pressure (= increasing volume), the reaction shifts towards the side which generates more gaseous species; while increasing external pressure (= decreasing volume) push the reaction towards the side which generates less gaseous species.<br>
+</li>
+<li>Increased temperature shifts the equilibrium towards endothermic direction (<span class="math inline">\(\Delta H^o &gt; 0\)</span>); decreased temperature drives the equilibrium towards exothermic direction (<span class="math inline">\(\Delta H^o &lt; 0\)</span>).<br>
+</li>
+<li>Catalyst does not affect equilibrium.</li>
+</ul>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Shift Equilibrium?</th>
+<th>Change <span class="math inline">\(K_c\)</span>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Concentration</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Pressure</td>
+<td>Yes*</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Volume</td>
+<td>Yes*</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Temperature</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Catalyst</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>*Dependent on relative moles of gaseous reactants and products</p>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Understand Le Chatelier’s Principle.<br>
+2. Predict the equilibrium shift of a reaction using Le Chatelier’s Principle.</p>
+</blockquote>
+</section>
+<section id="practice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="practice-questions">Practice Questions</h2>
+<div class="practice">
+<ol type="1">
+<li><p>Write the equilibrium constant expression (<span class="math inline">\(K_c\)</span>) for the reaction <span class="math inline">\(\ce{CO2(aq) + H2O(l) &lt;=&gt; H2CO3(aq)}\)</span>. <br></p></li>
+<li><p>The following reactions occur at 500 K. Arrange them in order of increasing tendency to proceed to completion (least to greatest tendency). <span class="math display">\[\begin{align*}
+\ce{2NOCl &lt;=&gt; 2NO + Cl2}\qquad &amp; K_P = 1.7\times 10^{-2}\\
+\ce{2SO3 &lt;=&gt; 2SO2 + O2}\qquad &amp; K_P = 1.3\times 10^{-5}\\
+\ce{2NO2 &lt;=&gt; 2NO + O2}\qquad &amp; K_P = 5.9\times 10^{-5}
+\end{align*}\]</span> <br></p></li>
+<li><p>A reaction is given: <span class="math inline">\(\ce{A(g) &lt;=&gt; 3B(g)}\)</span> and its equilibrium constant, <span class="math inline">\(K_c\)</span>, is 0.10 under 1 atm and at 298 K. What will be <span class="math inline">\(K_c\)</span> for the reaction of <span class="math inline">\(\ce{3B(g) &lt;=&gt; A(g)}\)</span> under the same condition? <br></p></li>
+<li><p>What is the value of <span class="math inline">\(\Delta n\)</span> in the formula <span class="math inline">\(K_p = K_c(RT)^{\Delta n}\)</span> for the following equilibrium? <span class="math display">\[\ce{CH3OH(g) &lt;=&gt; CO(g) + 2H2(g)}\]</span> <br></p></li>
+<li><p>The equilibrium constants for the reaction <span class="math display">\[\ce{N2(g) + O2(g) &lt;=&gt; 2NO(g)}\]</span> are <span class="math inline">\(K_p = 1.1\times 10^{-3}\)</span> and <span class="math inline">\(3.6\times 10^{-3}\)</span> at 2200 K and 2500 K, respectively. Which one of these statements is true?<br> A. The reaction is endothermic.<br> B. The partial pressure of NO (g) is less at 2500K than at 2200 K.<br> C. <span class="math inline">\(K_p\)</span> is less than <span class="math inline">\(K_c\)</span> by a factor of (RT).<br> D. The total pressure at 2200 K is the same as at 2500 K.<br> E. Higher total pressure shifts the equilibrium to the left.<br></p></li>
+<li><p>In the uncatalyzed reaction <span class="math inline">\(\ce{N2O4(g) &lt;=&gt; 2NO2(g)}\)</span> at 373 K, the pressure of the gases at equilibrium are <span class="math inline">\(p_{\ce{N2O4}} = 0.377\)</span> atm and <span class="math inline">\(p_{\ce{NO2}} = 1.56\)</span> atm. What would happen to the overall pressure if a catalyst were present? Will the system shift to the right or to the right in the presence of a catalyst? <br></p></li>
+<li><p>When the substances in the equation below are at equilibrium, at a given pressure and temperature, the equilibrium can be shifted to favor the products by which method? <span class="math display">\[\ce{Cu(s) + H2O(g) &lt;=&gt; H2(g) + CuO(s)}\qquad \Delta H^\ominus = 2.0\text{ kJ/mol}\]</span> A. increasing the pressure by means of a moving piston at constant T.<br> B. decreasing the pressure by means of a moving piston at constant T.<br> C. decreasing the temperature at constant pressure.<br> D. increase the temperature at constant pressure.<br> E. adding a catalyst.<br></p></li>
+<li><p>At 375 °C, the reaction <span class="math inline">\(\ce{N2(g) + 3H2(g) &lt;=&gt; 2NH3(g)}\)</span> has an equilibrium constant <span class="math inline">\(K_c = 1.2\)</span>. The moles of the reacting species are <span class="math inline">\(\ce{N2}\)</span>: 0.351 mol; <span class="math inline">\(\ce{H2}\)</span>: 0.267 mol; <span class="math inline">\(\ce{NH3}: 8.51\times 10^{-4}\)</span> mol. The container has a volume of 3.75 L. Is the reaction at equilibrium? If not, in which direction will the reaction proceed to reach equilibrium? (Answer: <span class="math inline">\(Q_c = 0.00152 &lt; K_c\)</span>, shift to the right)<br></p></li>
+<li><p>Consider this equilibrium process at 686 °C: <span class="math display">\[\ce{CO2(g) + H2 (g) &lt;=&gt; CO(g) + H2O(g)}\]</span> The equilibrium concentrations of the reacting species are <span class="math inline">\([\ce{CO}] = 0.050\)</span> M, <span class="math inline">\([\ce{H2}] = 0.045\)</span> M, <span class="math inline">\([\ce{CO2}] = 0.086\)</span> M, and <span class="math inline">\([\ce{H2O}] = 0.040\)</span> M. (a) Calculate <span class="math inline">\(K_c\)</span> for this reaction. (b) In another experiment, only <span class="math inline">\([\ce{CO2}] = 0.086\)</span> M, <span class="math inline">\([\ce{H2}] = 0.045\)</span> M are initially added to a close reactor. What are the equilibrium concentrations of all species. (Answer: (a) <span class="math inline">\(K_c = 0.517\)</span>; (b)<span class="math inline">\(x=0.025\)</span>)<br>
+</p></li>
+</ol>
+</div>
+</section>
+<section id="copyright" class="level2">
+<h2 class="anchored" data-anchor-id="copyright">Copyright</h2>
+<p>Copyright(C) 2022 Yu Wang</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<div class="page-columns page-rows-contents page-layout-article"><div class="social-share"><a href="https://twitter.com/share?url=https://wangyu16.quarto.pub/general-chemistry/&amp;text=General Chemistry Study Guide" target="_blank" class="twitter"><i class="fab fa-twitter fa-fw fa-lg"></i></a><a href="https://www.linkedin.com/shareArticle?url=https://wangyu16.quarto.pub/general-chemistry/&amp;title=General Chemistry Study Guide" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in fa-fw fa-lg"></i></a>  <a href="mailto:?subject=General Chemistry Study Guide&amp;body=Check out this link:https://wangyu16.quarto.pub/general-chemistry/" target="_blank" class="email"><i class="fa-solid fa-envelope fa-fw fa-lg"></i></a><a href="https://www.facebook.com/sharer.php?u=https://wangyu16.quarto.pub/general-chemistry/" target="_blank" class="facebook"><i class="fab fa-facebook-f fa-fw fa-lg"></i></a><a href="https://reddit.com/submit?url=https://wangyu16.quarto.pub/general-chemistry/&amp;title=General Chemistry Study Guide" target="_blank" class="reddit">   <i class="fa-brands fa-reddit-alien fa-fw fa-lg"></i></a></div></div>
+
+
+
+</body></html>

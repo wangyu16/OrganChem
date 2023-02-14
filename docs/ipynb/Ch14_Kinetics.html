@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>General Chemistry – ch14_kinetics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">GenChem</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch01_Introduction.html" class="sidebar-item-text sidebar-link">Chapter 01 Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch02_AtomMolIon.html" class="sidebar-item-text sidebar-link">Chapter 02 Atoms Molecules and Ions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch03_Stoichiometry.html" class="sidebar-item-text sidebar-link">Chapter 03 Stoichiometry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch04_AqReactions.html" class="sidebar-item-text sidebar-link">Chapter 04 Reactions in Aqueous Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch05_Gases.html" class="sidebar-item-text sidebar-link">Chapter 05 Gases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch06_Thermochemistry.html" class="sidebar-item-text sidebar-link">Chapter 06 Energy Relationships in Chemical Reactions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch07_Quantum.html" class="sidebar-item-text sidebar-link">Chapter 07 The Electronic Structure of Atoms</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch08_PeriodicTable.html" class="sidebar-item-text sidebar-link">Chapter 08 The Periodic Table</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch09_ChemicalBonds.html" class="sidebar-item-text sidebar-link">Chapter 09 Chemical Bonding I – The Covalent Bond</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch10_MolGeometry.html" class="sidebar-item-text sidebar-link">Chapter 10 Chemical Bonding II – Molecular Geometry and Hybridization of Atomic Orbitals</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch11_Intermolecular.html" class="sidebar-item-text sidebar-link">Chapter 11 Intermolecular Forces and Liquids and Solids</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch12_Solution.html" class="sidebar-item-text sidebar-link">Chapter 12 Physical Properties of Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch13_Kinetics.html" class="sidebar-item-text sidebar-link">Chapter 13 Chemical Kinetics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch14_Equilibrium.html" class="sidebar-item-text sidebar-link">Chapter 14 Chemical Equilibrium</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch15_AcidBase.html" class="sidebar-item-text sidebar-link">Chapter 15 Acids and Bases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch16_AcidBaseEq.html" class="sidebar-item-text sidebar-link">Chapter 16 Acid-Base Equilibria and Solubility Equilibria</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch17_Thermodynamics.html" class="sidebar-item-text sidebar-link">Chapter 17 Thymodynamics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch18_Electrochemistry.html" class="sidebar-item-text sidebar-link">Chapter 18 Redox Reactions and Electrochemistry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch19_NuclearChemistry.html" class="sidebar-item-text sidebar-link">Chapter 19 Nuclear Chemistry</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">HOME</a></li>
+  <li><a href="#rate-of-reaction-and-rate-law" id="toc-rate-of-reaction-and-rate-law" class="nav-link" data-scroll-target="#rate-of-reaction-and-rate-law">1. Rate of Reaction and Rate Law</a>
+  <ul class="collapse">
+  <li><a href="#rate-of-reaction" id="toc-rate-of-reaction" class="nav-link" data-scroll-target="#rate-of-reaction">Rate of Reaction</a></li>
+  <li><a href="#rate-law" id="toc-rate-law" class="nav-link" data-scroll-target="#rate-law">Rate Law</a></li>
+  </ul></li>
+  <li><a href="#reaction-orders" id="toc-reaction-orders" class="nav-link" data-scroll-target="#reaction-orders">2. Reaction Orders</a>
+  <ul class="collapse">
+  <li><a href="#first-order-reactions" id="toc-first-order-reactions" class="nav-link" data-scroll-target="#first-order-reactions">First-Order Reactions</a></li>
+  <li><a href="#second-order-reactions" id="toc-second-order-reactions" class="nav-link" data-scroll-target="#second-order-reactions">Second-Order Reactions</a></li>
+  <li><a href="#zero-order-reactions" id="toc-zero-order-reactions" class="nav-link" data-scroll-target="#zero-order-reactions">Zero-Order Reactions</a></li>
+  <li><a href="#summary-of-reaction-orders" id="toc-summary-of-reaction-orders" class="nav-link" data-scroll-target="#summary-of-reaction-orders">Summary of Reaction Orders</a></li>
+  </ul></li>
+  <li><a href="#temperature-effect" id="toc-temperature-effect" class="nav-link" data-scroll-target="#temperature-effect">3. Temperature Effect</a></li>
+  <li><a href="#reaction-mechanisms" id="toc-reaction-mechanisms" class="nav-link" data-scroll-target="#reaction-mechanisms">4. Reaction Mechanisms</a></li>
+  <li><a href="#catalysis" id="toc-catalysis" class="nav-link" data-scroll-target="#catalysis">5. Catalysis</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/wangyu16/GeneralChemistry/assets/js/code_toggle.js"></script>
+<p><span class="math display">\[\require{mhchem}\]</span></p>
+<section id="home" class="level3">
+<h3 class="anchored" data-anchor-id="home"><a href="https://wangyu16.github.io/GeneralChemistry/">HOME</a></h3>
+#
+<center>
+General Chemistry Study Guide
+</center>
+###
+<center>
+Chapter 14. Chemical Kinetics
+</center>
+<hr>
+<section id="openstax-12-kinetics.-brown-14-chemical-kinetics." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-12-kinetics.-brown-14-chemical-kinetics."><b>OpenStax</b> 12 Kinetics. <b>Brown</b> 14 Chemical Kinetics.</h5>
+</section>
+</section>
+<section id="rate-of-reaction-and-rate-law" class="level2">
+<h2 class="anchored" data-anchor-id="rate-of-reaction-and-rate-law">1. Rate of Reaction and Rate Law</h2>
+<section id="rate-of-reaction" class="level3">
+<h3 class="anchored" data-anchor-id="rate-of-reaction">Rate of Reaction</h3>
+<p>For the reaction</p>
+<p><span class="math display">\[a\ce{A} +b\ce{B} \ce{-&gt;} c\ce{C} +d\ce{D}\]</span></p>
+<p>The reaction rate is</p>
+<p><span class="math display">\[\begin{align}rate=-\frac{1}{a}\frac{\Delta [\ce{A}]}{\Delta t}=-\frac{1}{b}\frac{\Delta [\ce{B}]}{\Delta t}=\frac{1}{c}\frac{\Delta [\ce{C}]}{\Delta t}=\frac{1}{d}\frac{\Delta [\ce{D}]}{\Delta t}\end{align}\]</span></p>
+<div class="example">
+<p><b>Example:</b> Consider the reaction</p>
+<p><span class="math display">\[\ce{4PH3(g) -&gt; P4(g) + 6H2(g)}\]</span></p>
+<p>Suppose that, at a particular moment during the reaction, molecular hydrogen is being formed at the rate of <span class="math inline">\(0.078\ \text{M/s}\)</span>. (a) At what rate is <span class="math inline">\(\ce{P4}\)</span> being formed? (b) At what rate is <span class="math inline">\(\ce{PH3}\)</span> reacting?<br></p>
+<p><b>Answer:</b> <br></p>
+<p>Step 1. Write the reaction rate expressions from the reaction<br></p>
+<p><span class="math display">\[rate=-\frac{1}{4}\frac{\Delta[\ce{PH3}]}{\Delta t}=\frac{\Delta[\ce{P4}]}{\Delta t}=\frac{1}{6}\frac{\Delta[\ce{H2}]}{\Delta t}\]</span></p>
+<p>Step 2. Translate the information “molecular hydrogen is being formed at the rate of <span class="math inline">\(0.078\ \text{M/s}\)</span>” to a mathematic expression</p>
+<p><span class="math display">\[\frac{\Delta[\ce{H2}]}{\Delta t}=0.078\ \text{M/s}\]</span></p>
+<p>Step 3. Calculate <span class="math inline">\(\frac{\Delta[\ce{P4}]}{\Delta t}\)</span> and <span class="math inline">\(\frac{\Delta[\ce{PH3}]}{\Delta t}\)</span>.</p>
+<p><span class="math display">\[\frac{\Delta[\ce{P4}]}{\Delta t}=\frac{1}{6}\frac{\Delta[\ce{H2}]}{\Delta t}=\frac{1}{6}\times 0.078\ \text{M/s}=0.013\ \text{M/s}\]</span></p>
+<p><span class="math display">\[\frac{\Delta[\ce{PH3}]}{\Delta t}=-\frac{4}{6}\frac{\Delta[\ce{H2}]}{\Delta t}=-\frac{4}{6}\times 0.078\ \text{M/s}=-0.052\ \text{M/s}\]</span></p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong> 1. Write the rate expressions for given reactions in terms of the disappearance of the reactants and the appearance of the products. Or write a balanced equation for a reaction whose rate is given. 2. Knowing the consuming rate of a reactant (or the generating rate of a product), tell the rate of the consentration changes of other reactants and products.</p>
+</blockquote>
+</section>
+<section id="rate-law" class="level3">
+<h3 class="anchored" data-anchor-id="rate-law">Rate Law</h3>
+<p>The <strong>rate law</strong> expresses the relationship of the rate of a reaction to the rate constant (<span class="math inline">\(k\)</span>) and the concentrations of the reactants raised to some powers.</p>
+<p><span class="math display">\[a\ce{A} +b\ce{B} \ce{-&gt;} c\ce{C} +d\ce{D}\]</span></p>
+<p><span class="math display">\[\begin{align}rate=k[\ce{A}]^x[\ce{B}]^y\end{align}\]</span></p>
+<ul>
+<li>Reaction is <span class="math inline">\(x\)</span>th order in A</li>
+<li>Reaction is <span class="math inline">\(y\)</span>th order in B</li>
+<li>Reaction is <span class="math inline">\((x + y)\)</span>th order overall</li>
+</ul>
+<p><span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are NOT related with <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. The values of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are determined experimentally.</p>
+<p><span class="math inline">\(k\)</span> depends on the nature of the reactants and the temperature, but does not depend on the concentrations of the reactants.</p>
+<p>The unit of <span class="math inline">\(k\)</span> is to keep the unit balanced on both sides.</p>
+<div class="example">
+<p><b>Example:</b> Using the initial rates method and the experimental data, determine the rate law and the value of the rate constant for this reaction: <span class="math display">\[\ce{2NO + Cl2 -&gt; 2NOCl}\]</span></p>
+
+<table>
+<thead>
+<tr>
+<th>
+Trial
+</th>
+<th>
+[<span class="math inline">\(\ce{NO}\)</span>] (mol/L)
+</th>
+<th>
+[<span class="math inline">\(\ce{Cl2}\)</span>] (mol/L)
+</th>
+<th>
+<span class="math inline">\(-\frac{\Delta[\ce{NO}]}{\Delta t}\)</span> (mol L<span class="math inline">\(^{-1}\)</span> s<span class="math inline">\(^{-1}\)</span>)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+0.10
+</td>
+<td>
+0.10
+</td>
+<td>
+0.00300
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+0.10
+</td>
+<td>
+0.15
+</td>
+<td>
+0.00450
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+0.15
+</td>
+<td>
+0.10
+</td>
+<td>
+0.00675
+</td>
+</tr>
+</tbody>
+
+</table>
+<p><br><br>
+<b>Answer:</b> <br></p>
+<p>The reaction rate could be expressed as:</p>
+<p><span class="math display">\[\begin{align*}
+    \text{rate}=k[\ce{NO}]^x[\ce{Cl2}]^y
+\end{align*}\]</span></p>
+<p>Plug in the experimental results</p>
+<p><span class="math display">\[\begin{align*}
+    \text{rate}_1=k\times 0.10^x\times0.10^y=0.00300\\
+    \text{rate}_2=k\times 0.10^x\times0.15^y=0.00450\\
+    \text{rate}_3=k\times 0.15^x\times0.10^y=0.00675\\
+\end{align*}\]</span></p>
+<p>Compare rate<span class="math inline">\(_1\)</span> and rate<span class="math inline">\(_2\)</span></p>
+<p><span class="math display">\[\begin{align*}
+    \frac{\text{rate}_2}{\text{rate}_1}=\left(\frac{0.15}{0.10}\right)^y=\frac{0.00450}{0.00300}   
+\end{align*}\]</span></p>
+<p>Thus <span class="math inline">\(y=1\)</span></p>
+<p>Compare rate<span class="math inline">\(_1\)</span> and rate<span class="math inline">\(_3\)</span></p>
+<p><span class="math display">\[\begin{align*}
+    \frac{\text{rate}_3}{\text{rate}_1}=\left(\frac{0.15}{0.10}\right)^x=\frac{0.00675}{0.00300}   
+\end{align*}\]</span></p>
+<p>Thus <span class="math inline">\(x=2\)</span></p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong> 1. Determine the values of <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(k\)</span> from experimental data.</p>
+</blockquote>
+</section>
+</section>
+<section id="reaction-orders" class="level2">
+<h2 class="anchored" data-anchor-id="reaction-orders">2. Reaction Orders</h2>
+<section id="first-order-reactions" class="level3">
+<h3 class="anchored" data-anchor-id="first-order-reactions">First-Order Reactions</h3>
+<p>A <strong>first-order reaction</strong> is a reaction whose rate depends on the reactant concentration raised to the first power.</p>
+<p><span class="math display">\[\ce{A}\ce{-&gt;} \ce{B} \]</span><br>
+<span class="math display">\[\begin{align}
+&amp; rate = k[\ce{A}] \\
+&amp; rate =-\frac{\Delta[\ce{A}]}{\Delta t} \\
+&amp; k[\ce{A}] =-\frac{\Delta[\ce{A}]}{\Delta t} \\
+&amp; k=\frac{rate}{[\ce{A}]}=\frac{\text{M/s}}{\text{M}}=\text{1/s}\ \text{or}\ \text{s}^{-1} \\
+\end{align}\]</span></p>
+<p>The concentration of <span class="math inline">\(\ce{A}\)</span> and time <span class="math inline">\(t\)</span> can be correlated by the following equations.</p>
+<p><span class="math display">\[\begin{align}
+&amp; \ln\frac{[\ce{A}]_t}{[\ce{A}]_0}=-kt \\
+&amp; \ln [\ce{A}]_t=-kt+ \ln [\ce{A}]_0
+\end{align}\]</span></p>
+<p>where <span class="math inline">\([\ce{A}]_t\)</span> is the concentration of <span class="math inline">\(\ce{A}\)</span> at time <span class="math inline">\(t\)</span>; <span class="math inline">\([\ce{A}]_0\)</span> is the concentration of <span class="math inline">\(\ce{A}\)</span> at time <span class="math inline">\(0\)</span>.</p>
+<p><strong>Half-life</strong><br>
+The <em>half-life</em> of a reaction, <span class="math inline">\(t_{1/2}\)</span>, is the time requied for the concentration of a reactant to decrease to half of its initial concentration.<br>
+Half-life of a first-order reaction is<br>
+<span class="math display">\[\begin{align}t_{1/2}=\frac{\ln 2}{k}\end{align}\]</span></p>
+<div class="example">
+<p><b>Example:</b> The rate constant for the first-order decomposition of cyclobutane, <span class="math inline">\(\ce{C4H8}\)</span> at 500 °C is <span class="math inline">\(9.2\times10^{−3}\ \text{s}^{−1}\)</span>. (a) Calculate the half life of cyclobutane. (b) If the initial amount of cyclobutane is 1 mol, calculate the amount of cyclobutane remaining after 3 minutes reaction. <br></p>
+<p><b>Answer:</b> <br></p>
+<ol type="a">
+<li><p><span class="math display">\[\begin{align*}
+t_{1/2} &amp; = \frac{\ln 2}{k}\\
+&amp; = \frac{\ln 2}{9.2\times 10^{-3}\ \text{s}^{-1}}\\
+&amp; = 75\ \text{s}
+\end{align*}\]</span></p></li>
+<li><p><span class="math display">\[\begin{align*}
+&amp; \ln\left(\frac{[\ce{C4H8}]_0}{[\ce{C4H8}]}\right)=kt=9.2\times10^{−3}\ \text{s}^{−1}\times 180\ \text{s}=1.6\\
+&amp; \frac{[\ce{C4H8}]_0}{[\ce{C4H8}]}=4.9\\
+&amp; [\ce{C4H8}]=0.20\ \text{mol}
+\end{align*}\]</span></p></li>
+</ol>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Calculate half-life of a first-order reaction from known rate constant. 2. Calculate <span class="math inline">\(k\)</span> from the plot of <span class="math inline">\(\ln [\ce{A}]\)</span> vs <span class="math inline">\(t\)</span>. 2. Knowing <span class="math inline">\(k\)</span> and <span class="math inline">\([\ce{A}]_0\)</span>, calculate the concentration of <span class="math inline">\(\ce{A}\)</span> after time <span class="math inline">\(t\)</span>; or knowing <span class="math inline">\(k\)</span>, <span class="math inline">\([\ce{A}]_0\)</span> and <span class="math inline">\([\ce{A}]_t\)</span>, calculate the time <span class="math inline">\(t\)</span>.</p>
+</blockquote>
+</section>
+<section id="second-order-reactions" class="level3">
+<h3 class="anchored" data-anchor-id="second-order-reactions">Second-Order Reactions</h3>
+<p>A <strong>second-order reaction</strong> is a reaction whose rate depends on the concentration of one reactant raised to the second power or on the concentrations of two different reactants, each raised to the first power.</p>
+<p><span class="math display">\[\ce{A}\ce{-&gt;} \ce{B} \\\]</span> <span class="math display">\[\begin{align}
+&amp; rate = k[\ce{A}]^2 \\
+&amp; rate =-\frac{\Delta[\ce{A}]}{\Delta t} \\
+&amp; k[\ce{A}]^2 =-\frac{\Delta[\ce{A}]}{\Delta t} \\
+&amp; k=\frac{rate}{[\ce{A}]^2}=\frac{\text{M/s}}{\text{M}^2}=\text{1/M}\cdot\text{s}\ \text{or}\ \text{M}^{-1}\text{s}^{-1} \\
+\end{align}\]</span></p>
+<p>The concentration of <span class="math inline">\(\ce{A}\)</span> and time <span class="math inline">\(t\)</span> can be correlated by the following equation.</p>
+<p><span class="math display">\[\begin{align}
+\frac{1}{[\ce{A}]_t}=\frac{1}{[\ce{A}]_0}+kt
+\end{align}\]</span></p>
+<p>where <span class="math inline">\([\ce{A}]_t\)</span> is the concentration of <span class="math inline">\(\ce{A}\)</span> at time <span class="math inline">\(t\)</span>; <span class="math inline">\([\ce{A}]_0\)</span> is the concentration of <span class="math inline">\(\ce{A}\)</span> at time <span class="math inline">\(0\)</span>.</p>
+<p>The half-life of a second-order reaction is</p>
+<p><span class="math display">\[\begin{align}
+t_{1/2}=\frac{1}{k[\ce{A}]_0}
+\end{align}\]</span></p>
+<div class="example">
+<p><b>Example:</b> The reaction of butadiene gas to yield <span class="math inline">\(\ce{C8H12}\)</span> gas is a second order reaction with a rate constant <span class="math inline">\(5.76\times10^{-2}\ \text{L mol}^{-1}\ \text{min}^{-1}\)</span>. If the initial concentration of butadiene is <span class="math inline">\(0.200\ \text{mol L}^{-1}\)</span>, what is the concentration after 10.0 min?<br></p>
+<p><span class="math display">\[\ce{2C4H6 -&gt; C8H12}\]</span></p>
+<p><b>Answer:</b> <br><br>
+<span class="math display">\[\begin{align*}
+&amp; \frac{1}{[\ce{C4H6}]_t}\\
+&amp; =\frac{1}{[\ce{C4H6}]_0}+kt\\
+&amp; = \frac{1}{0.200\ \text{mol L}^{-1}} + 5.76\times10^{-2}\ \text{L mol}^{-1}\ \text{min}^{-1}\times 10.0\ \text{min}\\
+&amp; = 5.58\ \text{L mol}^{-1}\\
+&amp; [\ce{C4H6}]_t = 1.79\times 10^{-1}\ \text{mol L}^{-1}
+\end{align*}\]</span></p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Calculate <span class="math inline">\(k\)</span> from the plot of <span class="math inline">\(\frac{1}{[\ce{A}]}\)</span> vs <span class="math inline">\(t\)</span>. 2. Calculate half-life of a second-order reaction from known rate constant and initial concentration. 3. Knowing <span class="math inline">\(k\)</span> and <span class="math inline">\([\ce{A}]_0\)</span>, calculate the concentration of <span class="math inline">\(\ce{A}\)</span> after time <span class="math inline">\(t\)</span>; or knowing <span class="math inline">\(k\)</span>, <span class="math inline">\([\ce{A}]_0\)</span> and <span class="math inline">\([\ce{A}]_t\)</span>, calculate the time <span class="math inline">\(t\)</span>.</p>
+</blockquote>
+</section>
+<section id="zero-order-reactions" class="level3">
+<h3 class="anchored" data-anchor-id="zero-order-reactions">Zero-Order Reactions</h3>
+<p><span class="math display">\[\ce{A}\ce{-&gt;} \ce{B} \\\]</span> <span class="math display">\[\begin{align}
+&amp; rate = k[\ce{A}]^0  = k \\
+&amp; rate =-\frac{\Delta[\ce{A}]}{\Delta t} \\
+&amp; k =-\frac{\Delta[\ce{A}]}{\Delta t} \\
+&amp; k=\frac{rate}{[\ce{A}]^0}=\text{M/s}\\
+\end{align}\]</span></p>
+<p>The concentration of <span class="math inline">\(\ce{A}\)</span> and time <span class="math inline">\(t\)</span> can be correlated by the following equation.</p>
+<p><span class="math display">\[\begin{align}
+[\ce{A}]_t=[\ce{A}]_0-kt
+\end{align}\]</span></p>
+<p>where <span class="math inline">\([\ce{A}]_t\)</span> is the concentration of <span class="math inline">\(\ce{A}\)</span> at time <span class="math inline">\(t\)</span>; <span class="math inline">\([\ce{A}]_0\)</span> is the concentration of <span class="math inline">\(\ce{A}\)</span> at time <span class="math inline">\(0\)</span>.</p>
+<p>The half-life of a second-order reaction is</p>
+<p><span class="math display">\[\begin{align}
+t_{1/2}=\frac{[\ce{A}]_0}{2k}
+\end{align}\]</span></p>
+</section>
+<section id="summary-of-reaction-orders" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-reaction-orders">Summary of Reaction Orders</h3>
+<table class="table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 24%">
+<col style="width: 23%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Zero-Order</th>
+<th>First-Order</th>
+<th>Second-Order</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>rate law</td>
+<td><span class="math inline">\(\text{rate}=k\)</span></td>
+<td><span class="math inline">\(\text{rate}=k[\ce{A}]\)</span></td>
+<td><span class="math inline">\(\text{rate}=k[\ce{A}]^2\)</span></td>
+</tr>
+<tr class="even">
+<td>units of rate constant</td>
+<td><span class="math inline">\(\text{M s}^{-1}\)</span></td>
+<td><span class="math inline">\(\text{s}^{-1}\)</span></td>
+<td><span class="math inline">\(\text{M}^{-1}\text{ s}^{-1}\)</span></td>
+</tr>
+<tr class="odd">
+<td>integrated rate law</td>
+<td><span class="math inline">\([\ce{A}]=[\ce{A}]_0-kt\)</span></td>
+<td><span class="math inline">\(\ln[\ce{A}]=\ln[\ce{A}]_0+kt\)</span></td>
+<td><span class="math inline">\(\frac{1}{[\ce{A}]}=\frac{1}{[\ce{A}]_0}+kt\)</span></td>
+</tr>
+<tr class="even">
+<td>half-life</td>
+<td><span class="math inline">\(t_{1/2}=\frac{[\ce{A}]_0}{2k}\)</span></td>
+<td><span class="math inline">\(t_{1/2}=\frac{\ln 2}{k}\)</span></td>
+<td><span class="math inline">\(t_{1/2}=\frac{1}{[\ce{A}]_0 k}\)</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Understand what is a zero-order reaction.</p>
+</blockquote>
+</section>
+</section>
+<section id="temperature-effect" class="level2">
+<h2 class="anchored" data-anchor-id="temperature-effect">3. Temperature Effect</h2>
+<p><strong>Collision Theory</strong><br>
+1. Reaction rate is proportional to the frequency of molecular collisions. This relationship explains the dependence of reaction rate on concentration. 2. Not all collisions result in reactions. To react, the colliding molecules must have a total kinetic energy equal to or greater than the <strong>activation energy</strong> (<span class="math inline">\(E_a\)</span>).</p>
+<p><strong>Activiation Energy</strong> is the minimum amount of energy required to initiate a chemical reaction.<br>
+<strong>Transition State</strong> refers to the species temporarily formed by the reactant molecules as a result of the collision before they form the product.</p>
+<p><strong>Arrhenius Equation</strong><br>
+<span class="math display">\[\begin{align}
+&amp; k=Ae^{-E_a/RT} \\
+&amp; \ln k = \ln A - \frac{E_a}{RT} \\
+\end{align}\]</span></p>
+<p>Alternate form of Arrhenius Equation <span class="math display">\[\ln\frac{k_1}{k_2}=\frac{E_a}{R}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)\]</span></p>
+<div class="example">
+<p><b>Example:</b> The rate constant for the decomposition of acetaldehyde, <span class="math inline">\(\ce{CH3CHO}\)</span>, to methane, <span class="math inline">\(\ce{CH4}\)</span>, and carbon monoxide, <span class="math inline">\(\ce{CO}\)</span>, in the gas phase is <span class="math inline">\(1.1\times10^{−2}\ \text{L mol}^{−1}\ \text{s}^{−1}\)</span> at 703 K and <span class="math inline">\(4.95\ \text{L mol}^{−1}\ \text{s}^{−1}\)</span> at 865 K. Determine the activation energy for this decomposition.<br></p>
+<p><b>Answer:</b> <br> Plug in the numbers to the alternate form of Arrhenius Equation</p>
+<p><span class="math display">\[\ln\frac{1.1\times10^{−2}\ \text{L mol}^{−1}\ \text{s}^{−1}}{4.95\ \text{L mol}^{−1}\ \text{s}^{−1}}\\=\frac{E_a}{8.314\ \text{J mol}^{-1}\ \text{K}^{-1}}\left(\frac{1}{865\ \text{K}}-\frac{1}{703\ \text{K}}\right)\]</span></p>
+<p>Solve the equation and get the value of <span class="math inline">\(E_a\)</span></p>
+<p><span class="math display">\[E_a=1.90\times10^5\ \text{J mol}^{-1}\]</span></p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Understand collision theory; know what is activation energy and what is transition state. 2. Calculate rate constans at different temperatures using Arrhenius Equation.</p>
+</blockquote>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Knowing k at one temperature, calculate k at another temperature. Ea is given.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span><span class="op">*</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Ea <span class="op">=</span> <span class="dv">110</span> <span class="co"># in kJ/mol</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>T1<span class="op">=</span><span class="dv">27</span> <span class="co"># in Celsius</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>T2<span class="op">=</span><span class="dv">42</span> <span class="co"># in Celsius</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>k1<span class="op">=</span><span class="fl">3.27e-6</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>k2<span class="op">=</span>k1<span class="op">/</span>exp(Ea<span class="op">*</span><span class="dv">1000</span><span class="op">/</span><span class="fl">8.314</span><span class="op">*</span>(<span class="dv">1</span><span class="op">/</span>(T2<span class="op">+</span><span class="dv">273</span>)<span class="op">-</span><span class="dv">1</span><span class="op">/</span>(T1<span class="op">+</span><span class="dv">273</span>)))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>k2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>2.6706322527649514e-05</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Knowing A, Ea and T, calculate k</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> <span class="dv">7500000</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Ea <span class="op">=</span> <span class="fl">33.1</span> <span class="co"># in kJ/mol</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>T<span class="op">=</span><span class="dv">25</span> <span class="co"># in Celsius</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>k<span class="op">=</span>A<span class="op">*</span>exp(<span class="op">-</span>Ea<span class="op">/</span><span class="fl">0.008314</span><span class="op">/</span>(T<span class="op">+</span><span class="dv">273</span>))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>k</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>11.829065218689623</code></pre>
+</div>
+</div>
+</section>
+<section id="reaction-mechanisms" class="level2">
+<h2 class="anchored" data-anchor-id="reaction-mechanisms">4. Reaction Mechanisms</h2>
+<p><strong>Elementary Reactions</strong> are a series of simple reactions that represent the progress of the overall reaction at the molecular levle.</p>
+<p><strong>Reaction Mechanism</strong> is the sequence of elementary reactions that leads to product formation.</p>
+<p>An Example from the Textbook:<br>
+The overall reaction<br>
+<span class="math display">\[\ce{2NO(g) + O2(g) -&gt; 2NO2(g)}\]</span><br>
+is actually a sum of two elementary reactions<br>
+<span class="math display">\[\ce{NO +NO -&gt; N2O2}\]</span><br>
+<span class="math display">\[\ce{N2O2 + O2 -&gt; 2NO2}\]</span><br>
+<em>The sum of the elementary steps must give the overall balanced equation for the reaction. </em></p>
+<p><strong>Intermediats</strong> (are not the same as transition states) are formed in early elementary steps and consumed in later elementary steps. Thus intermediats do not appear in the overall ballanced equation.</p>
+<p><strong>molecularity of a reaction</strong> is the number of molecules reacting in an elementary step, such as unimolecular reaction, bimolecular reaction and termolecular reaction.</p>
+<p><strong>Rate Laws of Elementary Reactions</strong><br>
+<span class="math display">\[a\ce{A} +b\ce{B} \ce{-&gt;} c\ce{C} +d\ce{D}\]</span><br>
+If this is an elementary reaction, then<br>
+<span class="math display">\[\begin{align}rate=k[\ce{A}]^a[\ce{B}]^b\end{align}\]</span></p>
+<p>Since an elementary reaction usually involves only one or two molecules, there are only a few possible types of elementary reactions, which are:</p>
+<p><span class="math display">\[\begin{align*}
+\ce{A -&gt; B}\qquad &amp; \text{rate}=k[\ce{A}]\\
+\ce{2A -&gt; B}\qquad &amp; \text{rate}=k[\ce{A}]^2\\
+\ce{A + B -&gt; C}\qquad &amp; \text{rate}=k[\ce{A}][\ce{B}]
+\end{align*}\]</span></p>
+<p>Termolecular reaction is possible, but is rare. Kinetics of termolecular reactions is not discussed here.</p>
+<p><strong>Rate-determining step</strong> is the slowest step in the sequence of steps leading to product formation.</p>
+<p><em>The rate-determining step should predict the same rate law as is determined experimentally. </em></p>
+<p><strong>Potential energy profile for a multi-step reaction</strong><br>
+* Compare the potential energy of reactants and products to get whether the overall reaction is exothermic or endothermic. * The maxima are the transition states; and the number of maxima tells the number of elementary steps. * The minima are intermediates (not including the reactions and the products). * Activation energies are the defference of potential energies between reactants (or intermediates) and transition states. * The rate-determining step corresponds to the largest activation energy.</p>
+<div class="example">
+<p><b>Example:</b> The two-step mechanism below has been proposed for a reaction between nitrogen dioxide and carbon mononoxide: <span class="math display">\[\begin{align*}
+&amp; \text{(1)}\quad\ce{2NO2(g) -&gt; NO3(g) + NO(g)}\qquad\text{slow}\\
+&amp; \text{(2)}\quad\ce{NO3(g) + CO(g) -&gt; NO2(g) + CO2(g)}\qquad\text{fast}
+\end{align*}\]</span><br>
+What is the overall reaction? What is the intermediate? What is the overall rate law?</p>
+<p><b>Answer:</b> <br></p>
+<p>The overall reaction is the sum of the two steps:</p>
+<p><span class="math display">\[\begin{align*}
+&amp; \ce{2NO2(g) + NO3(g) + CO(g)\\
+&amp; -&gt; NO3(g) + NO(g) + NO2(g) + CO2(g)}    
+\end{align*}\]</span></p>
+<p>This need to be simplified to:</p>
+<p><span class="math display">\[\begin{align*}
+\ce{NO2(g) + CO(g) -&gt; NO(g) + CO2(g)}    
+\end{align*}\]</span></p>
+<p>The intermediate is <span class="math inline">\(\ce{NO3}\)</span>.</p>
+<p>The overall rate law equals to the slow step, which is <span class="math inline">\(\text{rate}=k[\ce{NO2}]^2\)</span>.</p>
+</div>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong><br>
+1. Given elementary steps, identify the intermediates and write the overall balanced reaction equation. 2. Knowing the rate-determining step of a reaction, tell the rate law of the overall reaction. Or knowing the rate law of a reaction and the elementary steps, tell which is the rate-determining step. 3. Given the potential energy profile of a multi-step reaction, tell whether the overal reaction is exothermic or endothermic, the number of elementary steps, the intermediate(s), the transition states, the activation energies of each step, the rate-determining step.</p>
+</blockquote>
+</section>
+<section id="catalysis" class="level2">
+<h2 class="anchored" data-anchor-id="catalysis">5. Catalysis</h2>
+<p><strong>Catalyst</strong> is a substance that increases the rate of a chemical reaction without itself undergoing any permanent chemical change. A catalyst lowers the activation energy for both the forward and reverse reactions.</p>
+<p>Three types of catalysis: heterogeneous catalysis, homogeneous catalysis, and enzyme catalysis.</p>
+<blockquote class="blockquote">
+<p><strong>Requirements</strong> 1. Know what is a catalyst and its role in a reaction. 2. Know the three types of catalysis.</p>
+</blockquote>
+<div class="practice">
+<p><b>Practice</b> <br></p>
+<ol type="1">
+<li><p>For the elementary reaction shown below, which one of the following statements can be rightly assumed? <span class="math display">\[\ce{A + B -&gt; C + D}\]</span> A. <span class="math inline">\(\text{rate}=k[\ce{A}][\ce{B}]\)</span><br> B. <span class="math inline">\(\text{rate}=k[\ce{A}]^2[\ce{B}]\)</span><br> C. <span class="math inline">\(\text{rate}=k[\ce{A}]^2[\ce{B}]^2\)</span><br> D. <span class="math inline">\(\text{rate}=k[\ce{A}][\ce{B}]^2\)</span><br> E. Rate law for this reaction can not be determined based on the available information. <br><br></p></li>
+<li><p>What is the correct balanced equation for the following rate expression? <span class="math display">\[\text{rate}=-\frac{\Delta[\ce{SO2}]}{\Delta t}=-\frac{1}{3}\frac{\Delta[\ce{CO}]}{\Delta t}=\frac{1}{2}\frac{\Delta[\ce{CO2}]}{\Delta t}=\frac{\Delta[\ce{COS}]}{\Delta t}\]</span><br>
+A. <span class="math inline">\(\ce{1/2CO2 + COS -&gt; SO2 + 1/3CO}\)</span><br> B. <span class="math inline">\(\ce{2CO2 + COS -&gt; SO2 + 3CO}\)</span><br> C. <span class="math inline">\(\ce{SO2 + 1/3CO -&gt; 1/2CO2 + COS}\)</span><br> D. <span class="math inline">\(\ce{SO2 + 3CO -&gt; 2CO2 + COS}\)</span><br> E. The balanced equation cannot be determined based on the available information.<br><br></p></li>
+<li><p>Use the following data to determine the rate law for the reaction shown below. <span class="math display">\[\ce{2NO(g) + 2H2(g) -&gt; N2(g) + 2H2O(g)}\]</span></p>
+
+<table>
+<thead>
+<tr>
+<th>
+<p>Trial</p>
+</th>
+<th>
+<p>[<span class="math inline">\(\ce{NO}\)</span>] (mol/L)</p>
+</th>
+<th>
+<p>[<span class="math inline">\(\ce{H2}\)</span>] (mol/L)</p>
+</th>
+<th>
+<p><span class="math inline">\(-\frac{\Delta[\ce{NO}]}{\Delta t}\)</span> (mol L<span class="math inline">\(^{-1}\)</span> s<span class="math inline">\(^{-1}\)</span>)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p><span class="math inline">\(5.0\times10^{-3}\)</span></p>
+</td>
+<td>
+<p><span class="math inline">\(2.0\times10^{-3}\)</span></p>
+</td>
+<td>
+<p><span class="math inline">\(1.25\times10^{-5}\)</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p><span class="math inline">\(10.0\times10^{-3}\)</span></p>
+</td>
+<td>
+<p><span class="math inline">\(2.0\times10^{-3}\)</span></p>
+</td>
+<td>
+<p><span class="math inline">\(5.0\times10^{-5}\)</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p><span class="math inline">\(10.0\times10^{-3}\)</span></p>
+</td>
+<td>
+<p><span class="math inline">\(4.0\times10^{-3}\)</span></p>
+</td>
+<td>
+<p><span class="math inline">\(10.0\times10^{-5}\)</span></p>
+</td>
+</tr>
+</tbody>
+
+</table></li>
+</ol>
+<p>A. <span class="math inline">\(\text{rate}=k[\ce{NO}][\ce{H2}]\)</span><br> B. <span class="math inline">\(\text{rate}=k[\ce{NO}]^2[\ce{H2}]\)</span><br> C. <span class="math inline">\(\text{rate}=k[\ce{NO}][\ce{H2}]^2\)</span><br> D. <span class="math inline">\(\text{rate}=k[\ce{NO}]^2[\ce{H2}]^2\)</span><br> E. <span class="math inline">\(\text{rate}=k[\ce{NO}]^2[\ce{H2}]^4\)</span><br><br></p>
+<ol start="4" type="1">
+<li><p>The two-step mechanism below has been proposed for a reaction between nitrogen dioxide and carbon mononoxide: <span class="math display">\[\begin{align*}
+&amp; \text{(1)}\quad\ce{N2O -&gt; N2 + O}\\
+&amp; \text{(2)}\quad\ce{N2O + O -&gt; N2 + O2}
+\end{align*}\]</span><br>
+What is the overall reaction? What is the intermediate? If the rate law is <span class="math inline">\(\text{rate}=k[\ce{N2O}]\)</span>, which step is the rate limiting step?<br><br></p></li>
+<li><p>For the reaction <span class="math inline">\(\ce{BrO3- + 5Br- + 6H+ -&gt; 3Br2 + 3H2O}\)</span> at a particular time, the molecular <span class="math inline">\(\ce{H2O}\)</span> is being formed at the rate of <span class="math inline">\(1.5\times 10^{-2}\)</span> M/s. What rate is <span class="math inline">\(\ce{H+}\)</span> reacting? (Answer: <span class="math inline">\(3.0\times 10^{-2}\)</span> M/s)<br><br></p></li>
+<li><p>The reaction <span class="math inline">\(\ce{A + 2B -&gt; C}\)</span> has the rate law <span class="math inline">\(rate=k[\ce{A}][\ce{B}]^3\)</span>. If the concentration of <span class="math inline">\(\ce{B}\)</span> is doubled while that of <span class="math inline">\(\ce{A}\)</span> is unchanged, by what factor will the rate of reaction increase? (Answer: 8)<br><br></p></li>
+<li><p>The activation energy for the following first-order reaction is 110 kJ/mol. <span class="math display">\[\ce{N2O5(g) &lt;=&gt; 2NO2(g) + \frac{1}{2}O2(g)}\]</span> The value of the rate constant, <span class="math inline">\(k\)</span>, is <span class="math inline">\(3.27\times 10^{-6}\ \text{s}^{-1}\)</span> at 27 <span class="math inline">\(^\circ\)</span>C. What is the value of <span class="math inline">\(k\)</span> at 42 <span class="math inline">\(^\circ\)</span>C? (Answer: <span class="math inline">\(2.67\times 10^{-5}\)</span> s<span class="math inline">\(^{-1}\)</span>)<br><br></p></li>
+<li><p>The initial concentration of the reactant A is 0.58 M in a second-order reaction <span class="math inline">\(\ce{A -&gt; B}\)</span>. After 28 min, the concentration of A decreased to 0.16 M. What is the rate constant of the reaction? How long would it take in minutes for the reaction to be <span class="math inline">\(90\%\)</span> complete starting from 0.58 M of A? (Answer: <span class="math inline">\(k = 0.162\)</span> M<span class="math inline">\(^{-1}\)</span>min<span class="math inline">\(^{-1}\)</span>, <span class="math inline">\(t = 95.8\)</span> min)<br>
+</p></li>
+</ol>
+</div>
+<hr>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.core.display <span class="im">import</span> HTML</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>copyright <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/copyright.md"</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>HTML(copyright.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<p>Copyright (C) 2021 Yu Wang</p>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+<p>Contact: Dr. Yu Wang<br>
+Department of Chemistry<br>
+Institute for Materials Research and Innovation<br>
+University of Louisiana at Lafayette<br>
+Lafayette, LA 70504<br>
+Email: yuwang@louisiana.edu</p>
+</div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/custom.css"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>HTML(styles.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:400,400i|Raleway:400,400i,700,700i" rel="stylesheet" type="text/css">
+<style type="text/css">
+div.text_cell_render {
+    font-family: Lora, serif;
+    color: #222222;
+}
+.text_cell_render p {
+    padding-left: 1.5em;
+    text-align: justify;
+}
+.text_cell_render h3, h4, h6 {
+    font-family: Raleway, sans-serif;
+    color: #005c99;
+}
+.text_cell_render h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+}
+.text_cell_render h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 700; 
+    margin-top: 50px;
+    display:inline-block;
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: #f8f8f8;
+    border-radius: 10px 40px 10px 40px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+}
+.text_cell_render h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    border-style: groove;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    margin: 1em 0 1em 0;
+    line-height: 1.6;
+}
+div #notebook {
+    background-color: #f8f8f8;
+    width: 1110px;  
+    margin: auto;
+    padding-left: 0em;
+    border: 3px solid #cbd3e5; 
+    box-shadow: 0px 0px 7px 1px #cccccc;
+}
+div.example {
+    background-color:#007acc;
+    color: #ffffff;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #007acc; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div.practice {
+    background-color:#fbfbfb;
+    color: #007acc;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #eeeeee; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div #notebook-container {
+    background-color: #ffffff;
+    font-size: 1.5em; 
+    line-height: 1.6;
+    width: 1100px;
+    margin: auto;
+    padding-right: 150px;
+}
+.CodeMirror-code {
+    font-size: 1.2em;
+    line-height: 125%;
+    opacity: 0.9;
+}
+
+.text_cell_render td {
+    border-style: hidden;
+}
+.text_cell_render table {
+    border-style: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 80%;
+}
+
+.text_cell_render th, td {
+    padding: 8px;
+}
+
+.text_cell_render tr:nth-child(even){background-color: #e8e8e8}
+
+.text_cell_render th {
+    border-style: hidden;
+    background-color: #004c80;
+    color: #f8f8f8;
+}
+table td, table th, table tr {
+    text-align:left !important;
+}
+</style>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

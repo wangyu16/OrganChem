@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>General Chemistry – ch09_chembonds</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">GenChem</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch01_Introduction.html" class="sidebar-item-text sidebar-link">Chapter 01 Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch02_AtomMolIon.html" class="sidebar-item-text sidebar-link">Chapter 02 Atoms Molecules and Ions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch03_Stoichiometry.html" class="sidebar-item-text sidebar-link">Chapter 03 Stoichiometry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch04_AqReactions.html" class="sidebar-item-text sidebar-link">Chapter 04 Reactions in Aqueous Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch05_Gases.html" class="sidebar-item-text sidebar-link">Chapter 05 Gases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch06_Thermochemistry.html" class="sidebar-item-text sidebar-link">Chapter 06 Energy Relationships in Chemical Reactions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch07_Quantum.html" class="sidebar-item-text sidebar-link">Chapter 07 The Electronic Structure of Atoms</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch08_PeriodicTable.html" class="sidebar-item-text sidebar-link">Chapter 08 The Periodic Table</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch09_ChemicalBonds.html" class="sidebar-item-text sidebar-link">Chapter 09 Chemical Bonding I – The Covalent Bond</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch10_MolGeometry.html" class="sidebar-item-text sidebar-link">Chapter 10 Chemical Bonding II – Molecular Geometry and Hybridization of Atomic Orbitals</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch11_Intermolecular.html" class="sidebar-item-text sidebar-link">Chapter 11 Intermolecular Forces and Liquids and Solids</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch12_Solution.html" class="sidebar-item-text sidebar-link">Chapter 12 Physical Properties of Solutions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch13_Kinetics.html" class="sidebar-item-text sidebar-link">Chapter 13 Chemical Kinetics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch14_Equilibrium.html" class="sidebar-item-text sidebar-link">Chapter 14 Chemical Equilibrium</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch15_AcidBase.html" class="sidebar-item-text sidebar-link">Chapter 15 Acids and Bases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch16_AcidBaseEq.html" class="sidebar-item-text sidebar-link">Chapter 16 Acid-Base Equilibria and Solubility Equilibria</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch17_Thermodynamics.html" class="sidebar-item-text sidebar-link">Chapter 17 Thymodynamics</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch18_Electrochemistry.html" class="sidebar-item-text sidebar-link">Chapter 18 Redox Reactions and Electrochemistry</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Ch19_NuclearChemistry.html" class="sidebar-item-text sidebar-link">Chapter 19 Nuclear Chemistry</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">HOME</a></li>
+  <li><a href="#ionic-bond-and-covalent-bond" id="toc-ionic-bond-and-covalent-bond" class="nav-link" data-scroll-target="#ionic-bond-and-covalent-bond">1. Ionic Bond and Covalent Bond</a>
+  <ul class="collapse">
+  <li><a href="#lewis-dot-symbols" id="toc-lewis-dot-symbols" class="nav-link" data-scroll-target="#lewis-dot-symbols">1.1. Lewis Dot Symbols</a></li>
+  <li><a href="#the-ionic-bond" id="toc-the-ionic-bond" class="nav-link" data-scroll-target="#the-ionic-bond">1.2. The Ionic Bond</a></li>
+  <li><a href="#lattice-energy-of-ionic-compounds" id="toc-lattice-energy-of-ionic-compounds" class="nav-link" data-scroll-target="#lattice-energy-of-ionic-compounds">1.3. Lattice Energy of Ionic Compounds</a></li>
+  <li><a href="#the-covalent-bond" id="toc-the-covalent-bond" class="nav-link" data-scroll-target="#the-covalent-bond">1.4. The Covalent Bond</a></li>
+  <li><a href="#electronegativity" id="toc-electronegativity" class="nav-link" data-scroll-target="#electronegativity">1.5. Electronegativity</a></li>
+  </ul></li>
+  <li><a href="#lewis-structure" id="toc-lewis-structure" class="nav-link" data-scroll-target="#lewis-structure">2. Lewis Structure</a>
+  <ul class="collapse">
+  <li><a href="#writing-lewis-structures" id="toc-writing-lewis-structures" class="nav-link" data-scroll-target="#writing-lewis-structures">2.1. Writing Lewis Structures</a></li>
+  <li><a href="#formal-charge-and-lewis-structure" id="toc-formal-charge-and-lewis-structure" class="nav-link" data-scroll-target="#formal-charge-and-lewis-structure">2.2. Formal Charge and Lewis Structure</a></li>
+  <li><a href="#the-concept-of-resonance" id="toc-the-concept-of-resonance" class="nav-link" data-scroll-target="#the-concept-of-resonance">2.3. The Concept of Resonance</a></li>
+  <li><a href="#exceptions-to-the-octet-rule" id="toc-exceptions-to-the-octet-rule" class="nav-link" data-scroll-target="#exceptions-to-the-octet-rule">2.4. Exceptions to the Octet Rule</a></li>
+  </ul></li>
+  <li><a href="#bond-enthalpy" id="toc-bond-enthalpy" class="nav-link" data-scroll-target="#bond-enthalpy">3. Bond Enthalpy</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/wangyu16/GeneralChemistry/assets/js/code_toggle.js"></script>
+<p><span class="math display">\[\require{mhchem}\]</span></p>
+<section id="home" class="level3">
+<h3 class="anchored" data-anchor-id="home"><a href="https://wangyu16.github.io/GeneralChemistry/">HOME</a></h3>
+#
+<center>
+General Chemistry Study Guide
+</center>
+###
+<center>
+Chapter 9. Chemical Bonding I: The Covalent Bond
+</center>
+<hr>
+<section id="openstax-7-chemical-bonding-and-molecular-geometry-7.1---7.5.-brown-8-basic-concepts-of-chemical-bonding." class="level5">
+<h5 class="anchored" data-anchor-id="openstax-7-chemical-bonding-and-molecular-geometry-7.1---7.5.-brown-8-basic-concepts-of-chemical-bonding."><b>OpenStax</b> 7 Chemical Bonding and Molecular Geometry 7.1 - 7.5. <b>Brown</b> 8 Basic Concepts of Chemical Bonding.</h5>
+</section>
+</section>
+<section id="ionic-bond-and-covalent-bond" class="level2">
+<h2 class="anchored" data-anchor-id="ionic-bond-and-covalent-bond">1. Ionic Bond and Covalent Bond</h2>
+<section id="lewis-dot-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="lewis-dot-symbols">1.1. Lewis Dot Symbols</h3>
+<p>Atoms combine to achieve a more stable electron configuration. Maximum stability results when an atom is isoelectronic with a noble gas.</p>
+<p>Valence electrons are the outer shell electrons of an atom. The valence electrons are the electrons that participate in chemical bonding.</p>
+<p>A Lewis dot symbol consists of the symbol of an element and one dot for each valence electron in an atom of the element.</p>
+<figure class="figure">
+<img src="https://cnx.org/resources/c7d8fb42087a4bc5245003783081923155a91ae1" style="width:800px" class="figure-img">
+</figure>
+</section>
+<section id="the-ionic-bond" class="level3">
+<h3 class="anchored" data-anchor-id="the-ionic-bond">1.2. The Ionic Bond</h3>
+<p>As a rule, the elements most likely to form cations in ionic compounds are the alkali metals and alkaline earth metals, and the elements most likely to form anions are the halogens and oxygen.</p>
+<p>An <strong>ionic bond</strong> is the electrostatic force that holds ions together in an ionic compound. The compound itself is electrically neutral.</p>
+<p>Examples (remember to balance the equation):</p>
+<p><img src="https://cnx.org/resources/a752501f23b0d79683e2c9410d82a996361cc140"></p>
+</section>
+<section id="lattice-energy-of-ionic-compounds" class="level3">
+<h3 class="anchored" data-anchor-id="lattice-energy-of-ionic-compounds">1.3. Lattice Energy of Ionic Compounds</h3>
+<p>A quantitative measure of the stability of any ionic solid is its <strong>lattice energy</strong>, defined as the energy required to completely separate one mole of a solid ionic compound into gaseous ions.</p>
+<p>There is a rough correlation between lattice energy and melting point. The larger the lattice energy, the more stable the solid and the more tightly held the ions. It takes more energy to melt such a solid, and so the solid has a higher melting point than one with a smaller lattice energy. Note that <span class="math inline">\(\ce{MgCl2}\)</span>, <span class="math inline">\(\ce{MgO}\)</span>, and <span class="math inline">\(\ce{CaO}\)</span> have unusually high lattice energies. The first of these ionic compounds has a doubly charged cation (<span class="math inline">\(\ce{Mg^{2+}}\)</span>) and in the second and third compounds there is an interaction between two doubly charged species (<span class="math inline">\(\ce{Mg^{2+}}\)</span> or <span class="math inline">\(\ce{Ca^{2+}}\)</span> and <span class="math inline">\(\ce{O^{2−}}\)</span>). * The coulombic attractions between two doubly charged species, or between a doubly charged ion and a singly charged ion, are much stronger than those between singly charged anions and cations. * The coulombic attractions between smaller ions are stronger than those between larger ions.</p>
+</section>
+<section id="the-covalent-bond" class="level3">
+<h3 class="anchored" data-anchor-id="the-covalent-bond">1.4. The Covalent Bond</h3>
+<p><strong>Covalent bond</strong> is a bond in which two electrons are shared by two atoms. <strong>Covalent compounds</strong> are compounds that contain only covalent bonds.</p>
+<p>For the sake of simplicity, the shared pair of electrons is often represented by a single line. Thus, the covalent bond in the hydrogen molecule can be written as <span class="math inline">\(\ce{H-H}\)</span>. In a covalent bond, each electron in a shared pair is attracted to the nuclei of both atoms. This attraction holds the two atoms in <span class="math inline">\(\ce{H2}\)</span> together and is responsible for the formation of covalent bonds in other molecules.</p>
+<p><strong>lone pairs</strong>: pairs of valence electrons that are not involved in covalent bond formation.</p>
+<p>A <strong>Lewis structure</strong> is a representation of covalent bonding in which shared electron pairs are shown either as lines or as pairs of dots between two atoms, and lone pairs are shown as pairs of dots on individual atoms.</p>
+<p><strong>Octet rule</strong>: An atom other than hydrogen tends to form bonds until it is surrounded by eight valence electrons.</p>
+<p>A <strong>single bond</strong>, two atoms are held together by one electron pair. If two atoms share two pairs of electrons, the covalent bond is called a <strong>double bond</strong>. A <strong>triple bond</strong> arises when two atoms share three pairs of electrons, as in the nitrogen molecule (<span class="math inline">\(\ce{N2}\)</span>).</p>
+<p>For the same pair of atoms, multiple bonds are shorter than single covalent bonds. <strong>Bond length</strong> is defined as the distance between the nuclei of two covalently bonded atoms in a molecule. Generally, shorter means stronger.</p>
+</section>
+<section id="electronegativity" class="level3">
+<h3 class="anchored" data-anchor-id="electronegativity">1.5. Electronegativity</h3>
+<p>In a <strong>Polar covalent bond</strong>, or simply a polar bond, the electrons spend more time in the vicinity of one atom than the other.</p>
+<p><strong>Electronegativity</strong> is the ability of an atom to attract toward itself the electrons in a chemical bond.</p>
+<p>Electronegativity is related to electron affinity and ionization energy. Thus, an atom such as fluorine, which has a high electron affinity (tends to pick up electrons easily) and a high ionization energy (does not lose electrons easily), has a high electronegativity. On the other hand, sodium has a low electron affinity, a low ionization energy, and a low electronegativity.</p>
+<p>In general, electronegativity increases from left to right across a period in the periodic table, as the metallic character of the elements decreases. Within each group, electronegativity decreases with increasing atomic number, and increasing metallic character.</p>
+<ul>
+<li>An ionic bond forms when the electronegativity difference between the two bonding atoms is 2.0 or more. This rule applies to most but not all ionic compounds.</li>
+<li>A polar covalent bond forms when the electronegativity difference between the atoms is in the range of 0.3–2.0.</li>
+<li>If the electronegativity difference is below 0.3, the bond is normally classified as a covalent bond, with little or no polarity.</li>
+</ul>
+<p>Electronegativity and electron affinity are related but different concepts. Both indicate the tendency of an atom to attract electrons. However, electron affinity refers to an isolated atom’s attraction for an additional electron, whereas electronegativity signifies the ability of an atom in a chemical bond (with another atom) to attract the shared electrons.</p>
+<p><strong>Oxidation number</strong> refers to the number of charges an atom would have if electrons were transferred completely to the more electronegative of the bonded atoms in a molecule.</p>
+<blockquote class="blockquote">
+<h4 id="requirements" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand the concepts</li>
+<li>Understand how to distinguish ionic band and covalent bond based on the electronegtivities.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="lewis-structure" class="level2">
+<h2 class="anchored" data-anchor-id="lewis-structure">2. Lewis Structure</h2>
+<section id="writing-lewis-structures" class="level3">
+<h3 class="anchored" data-anchor-id="writing-lewis-structures">2.1. Writing Lewis Structures</h3>
+<ol type="1">
+<li>Write the skeletal structure of the compound, using chemical symbols and placing bonded atoms next to one another.</li>
+<li>Count the total number of valence electrons present, referring, if necessary, to Figure 9.1. For polyatomic anions, add the number of negative charges to that total. For polyatomic cations, we subtract the number of positive charges from this total.</li>
+<li>Draw a single covalent bond between the central atom and each of the surrounding atoms. Complete the octets of the atoms bonded to the central atom. Electrons belonging to the central or surrounding atoms must be shown as lone pairs if they are not involved in bonding. The total number of electrons to be used is that determined in step 2.</li>
+<li>After completing steps 1–3, if the central atom has fewer than eight electrons, try adding double or triple bonds between the surrounding atoms and the central atom, using lone pairs from the surrounding atoms to complete the octet of the central atom.</li>
+</ol>
+<blockquote class="blockquote">
+<h4 id="requirements-1" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Remember the Lewis structures of the example compounds in the textbook.</li>
+</ol>
+</blockquote>
+</section>
+<section id="formal-charge-and-lewis-structure" class="level3">
+<h3 class="anchored" data-anchor-id="formal-charge-and-lewis-structure">2.2. Formal Charge and Lewis Structure</h3>
+<p>An atom’s <strong>formal charge</strong> is the electrical charge difference between the valence electrons in an isolated atom and the number of electrons assigned to that atom in a Lewis structure.</p>
+<p>To assign the number of electrons on an atom in a Lewis structure, we proceed as follows: * All the atom’s nonbonding electrons are assigned to the atom. * We break the bond(s) between the atom and other atom(s) and assign half of the bonding electrons to the atom.</p>
+<p><span class="math display">\[\text { formal charge }=\# \text { valence shell electrons (free atom) }-\# \text { lone pair electrons }-\frac{1}{2} \# \text { bonding electrons }\]</span></p>
+<p>Example</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Co2-1.png" style="width:200px"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Ls4.png" style="width:400px"></p>
+<blockquote class="blockquote">
+<h4 id="requirements-2" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Learn how to count formal charge.</li>
+</ol>
+</blockquote>
+</section>
+<section id="the-concept-of-resonance" class="level3">
+<h3 class="anchored" data-anchor-id="the-concept-of-resonance">2.3. The Concept of Resonance</h3>
+<p>A <strong>resonance structure</strong> is one of two or more Lewis structures for a single molecule that cannot be represented accurately by only one Lewis structure.</p>
+<p>The term <strong>resonance</strong> itself means the use of two or more Lewis structures to represent a particular molecule.</p>
+<p>A common misconception about resonance is the notion that a molecule such as ozone somehow shifts quickly back and forth from one resonance structure to the other. Keep in mind that neither resonance structure adequately represents the actual molecule, which has its own unique, stable structure. “Resonance” is a human invention, designed to address the limitations in these simple bonding models.</p>
+<p>Examples</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Delocalization_ozone.svg"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Carbonate-ion-resonance-2D.png" style="width:400px"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Benz3.svg" style="width:300px"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Nitrous-oxide-2D-VB.svg" style="width:300px"></p>
+<blockquote class="blockquote">
+<h4 id="requirements-3" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand what is resonance structure and remember the examples.</li>
+</ol>
+</blockquote>
+</section>
+<section id="exceptions-to-the-octet-rule" class="level3">
+<h3 class="anchored" data-anchor-id="exceptions-to-the-octet-rule">2.4. Exceptions to the Octet Rule</h3>
+<p>The octet rule applies mainly to the <em>second-period elements</em>. Exceptions to the octet rule fall into three categories characterized by an incomplete octet, an odd number of electrons, or more than eight valence electrons around the central atom.</p>
+<section id="the-incomplete-octet" class="level4">
+<h4 class="anchored" data-anchor-id="the-incomplete-octet">The Incomplete Octet</h4>
+<p>In some compounds, the number of electrons surrounding the central atom in a stable molecule is fewer than eight. Consider, for example, beryllium, and boron.</p>
+<p>Example, in boron trifluoride there are only six electrons around the boron atom</p>
+<p><img src="https://chem.libretexts.org/@api/deki/files/43166/IMG00018.GIF?revision=1&amp;size=bestfit&amp;width=134&amp;height=143"></p>
+<p>Although boron trifluoride is stable, it readily reacts with ammonia.</p>
+<p><img src="https://chem.libretexts.org/@api/deki/files/43168/IMG00020.GIF?revision=1"></p>
+<p>The bond between <span class="math inline">\(\ce{N}\)</span> and <span class="math inline">\(\ce{B}\)</span> is called a <strong>coordinate covalent bond</strong>, defined as a covalent bond in which one of the atoms donates both electrons.</p>
+</section>
+<section id="odd-electron-molecules" class="level4">
+<h4 class="anchored" data-anchor-id="odd-electron-molecules">Odd-Electron Molecules</h4>
+<p>Some molecules contain an odd number of electrons. Among them are nitric oxide (<span class="math inline">\(\ce{NO}\)</span>) and nitrogen dioxide (<span class="math inline">\(\ce{NO2}\)</span>).</p>
+<p><img src="https://chem.libretexts.org/@api/deki/files/10211/NO.jpg?revision=2"></p>
+<p>Odd-electron molecules are sometimes called radicals. Many radicals are highly reactive. For example, when two nitrogen dioxide molecules collide, they can form dinitrogen tetroxide in which the octet rule is satisfied for both the N and O atoms:</p>
+</section>
+<section id="the-expanded-octet" class="level4">
+<h4 class="anchored" data-anchor-id="the-expanded-octet">The Expanded Octet</h4>
+<p>Atoms of the second-period elements cannot have more than eight valence electrons around the central atom, but atoms of elements in and beyond the third period of the periodic table form some compounds in which more than eight electrons surround the central atom. In addition to the <span class="math inline">\(3s\)</span> and <span class="math inline">\(3p\)</span> orbitals, elements in the third period also have <span class="math inline">\(3d\)</span> orbitals that can be used in bonding. These orbitals enable an atom to form an <strong>expanded octet</strong>.</p>
+<p>One compound in which there is an expanded octet is sulfur hexafluoride, a very stable compound. The electron configuration of sulfur is <span class="math inline">\([\ce{Ne}]3s^23p^4\)</span>. In <span class="math inline">\(\ce{SF6}\)</span>, each of sulfur’s six valence electrons forms a covalent bond with a fluorine atom, so there are twelve electrons around the central sulfur atom:</p>
+<p><img src="https://cnx.org/resources/751589fc19ee4118adf16419497c7f36dcc3b7c0"></p>
+<blockquote class="blockquote">
+<h4 id="requirements-4" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand the concepts.</li>
+<li>Remember the examples.</li>
+</ol>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="bond-enthalpy" class="level2">
+<h2 class="anchored" data-anchor-id="bond-enthalpy">3. Bond Enthalpy</h2>
+<p><strong>Bond enthalpy</strong> is the enthalpy change required to break a particular bond in 1 mole of gaseous molecules.</p>
+<p>The <strong>bond enthalpy</strong> of the same bond, for example <span class="math inline">\(\ce{O-H}\)</span>, in two different molecules, such as methanol (<span class="math inline">\(\ce{CH3OH}\)</span>) and water (<span class="math inline">\(\ce{H2O}\)</span>), will not be the same because their environments are different. Thus, for polyatomic molecules we speak of the average bond enthalpy of a particular bond. Table 9.3 in the textbook.</p>
+<p>The enthalpy of reaction in the gas phase is given by</p>
+<p><span class="math display">\[\Delta H=\Sigma D_{\text { bonds broken }}-\Sigma D_{\text { bonds formed }}\]</span></p>
+<p>The reason is</p>
+<blockquote class="blockquote">
+<h4 id="requirements-5" class="anchored">Requirements</h4>
+<ol type="1">
+<li>Understand the concepts.</li>
+</ol>
+</blockquote>
+<div class="practice">
+<p><b>Practice:</b> <br></p>
+<ol type="1">
+<li>Which one of the following is most likely to be an ionic compound?<br></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{ClF3}\)</span><br></li>
+<li><span class="math inline">\(\ce{MgCl2}\)</span><br></li>
+<li><span class="math inline">\(\ce{NH3}\)</span><br></li>
+<li><span class="math inline">\(\ce{PF3}\)</span><br></li>
+<li><span class="math inline">\(\ce{SO3}\)</span><br></li>
+</ol>
+<p>Answer: B <br><br></p>
+<ol start="2" type="1">
+<li>Which one of the following is most likely to be a covalent compound?<br></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{CsOH}\)</span><br></li>
+<li><span class="math inline">\(\ce{CaO}\)</span><br></li>
+<li><span class="math inline">\(\ce{NF3}\)</span><br></li>
+<li><span class="math inline">\(\ce{LiF}\)</span><br></li>
+<li><span class="math inline">\(\ce{Sr(NO3)2}\)</span><br></li>
+</ol>
+<p>Answer: C <br><br></p>
+<ol start="3" type="1">
+<li>Draw the Lewis dot symbol for a chloride ion.<br></li>
+</ol>
+<p>Answer: Cl with 8 dots around it and a negtive sign in the upper right corner. <br></p>
+<ol start="4" type="1">
+<li>Which of the atoms listed below is the most electronegative?<br></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{Li}\)</span><br></li>
+<li><span class="math inline">\(\ce{Cs}\)</span><br></li>
+<li><span class="math inline">\(\ce{P}\)</span><br></li>
+<li><span class="math inline">\(\ce{As}\)</span><br></li>
+<li><span class="math inline">\(\ce{Ge}\)</span><br></li>
+</ol>
+<p>Answer: C <br><br></p>
+<ol start="5" type="1">
+<li>A polar covalent bond would form in which one of the following pairs of atoms?<br></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{Cl-Cl}\)</span><br></li>
+<li><span class="math inline">\(\ce{Si-Si}\)</span><br></li>
+<li><span class="math inline">\(\ce{P-Cl}\)</span><br></li>
+<li><span class="math inline">\(\ce{Ca-Cl}\)</span><br></li>
+<li><span class="math inline">\(\ce{Cr-Br}\)</span><br></li>
+</ol>
+<p>Answer: C <br><br></p>
+<ol start="6" type="1">
+<li>Which one of these polar covalent bonds would have the greatest percent ionic character?<br></li>
+</ol>
+<ol type="A">
+<li><span class="math inline">\(\ce{H-C}\)</span><br></li>
+<li><span class="math inline">\(\ce{H-S}\)</span><br></li>
+<li><span class="math inline">\(\ce{H-O}\)</span><br></li>
+<li><span class="math inline">\(\ce{H-N}\)</span><br></li>
+<li>cannot tell<br></li>
+</ol>
+<p>Answer: C <br><br></p>
+<ol start="7" type="1">
+<li>What is the number of lone electron pairs in a <span class="math inline">\(\ce{N2}\)</span> molecule?<br></li>
+</ol>
+<p>Answer: 2 pairs<br><br></p>
+<ol start="8" type="1">
+<li><p>Draw the Lewis structures for <span class="math inline">\(\ce{NH3}\)</span>, <span class="math inline">\(\ce{F2}\)</span>, <span class="math inline">\(\ce{N2}\)</span>, <span class="math inline">\(\ce{CH4}\)</span>, and <span class="math inline">\(\ce{H3O+}\)</span>.<br><br></p></li>
+<li><p>Assuming the octet rule is obeyed, how many covalent bonds will a carbon atom form to give a formal charge of zero?<br></p></li>
+</ol>
+<p>Answer: 4 <br><br></p>
+<ol start="10" type="1">
+<li>What is the formal charge on the oxygen atom in <span class="math inline">\(\ce{N2O}\)</span> (the atomic order is <span class="math inline">\(\ce{N-N-O}\)</span>)?<br></li>
+</ol>
+<p>Answer: -1 <br></p>
+</div>
+<hr>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.core.display <span class="im">import</span> HTML</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>copyright <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/copyright.md"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>HTML(copyright.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<p>Copyright (C) 2021 Yu Wang</p>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+<p>Contact: Dr. Yu Wang<br>
+Department of Chemistry<br>
+Institute for Materials Research and Innovation<br>
+University of Louisiana at Lafayette<br>
+Lafayette, LA 70504<br>
+Email: yuwang@louisiana.edu</p>
+</div>
+</div>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> requests.get(<span class="st">"https://raw.githubusercontent.com/wangyu16/GeneralChemistry/master/custom.css"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>HTML(styles.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:400,400i|Raleway:400,400i,700,700i" rel="stylesheet" type="text/css">
+<style type="text/css">
+div.text_cell_render {
+    font-family: Lora, serif;
+    color: #222222;
+}
+.text_cell_render p {
+    padding-left: 1.5em;
+    text-align: justify;
+}
+.text_cell_render h3, h4, h6 {
+    font-family: Raleway, sans-serif;
+    color: #005c99;
+}
+.text_cell_render h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+}
+.text_cell_render h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 700; 
+    margin-top: 50px;
+    display:inline-block;
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: #f8f8f8;
+    border-radius: 10px 40px 10px 40px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+}
+.text_cell_render h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    border-style: groove;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    margin: 1em 0 1em 0;
+    line-height: 1.6;
+}
+div #notebook {
+    background-color: #f8f8f8;
+    width: 1110px;  
+    margin: auto;
+    padding-left: 0em;
+    border: 3px solid #cbd3e5; 
+    box-shadow: 0px 0px 7px 1px #cccccc;
+}
+div.example {
+    background-color:#007acc;
+    color: #ffffff;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #007acc; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div.practice {
+    background-color:#fbfbfb;
+    color: #007acc;
+    margin: auto;
+    width: 100%; 
+    padding: 1.4em; 
+    border: 3px solid #eeeeee; 
+    border-radius: 10px; 
+    margin-bottom: 14px; 
+    margin-top: 14px;  
+    box-shadow: 7px 7px 5px #cccccc; 
+    overflow: hidden;
+}
+div #notebook-container {
+    background-color: #ffffff;
+    font-size: 1.5em; 
+    line-height: 1.6;
+    width: 1100px;
+    margin: auto;
+    padding-right: 150px;
+}
+.CodeMirror-code {
+    font-size: 1.2em;
+    line-height: 125%;
+    opacity: 0.9;
+}
+
+.text_cell_render td {
+    border-style: hidden;
+}
+.text_cell_render table {
+    border-style: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 80%;
+}
+
+.text_cell_render th, td {
+    padding: 8px;
+}
+
+.text_cell_render tr:nth-child(even){background-color: #e8e8e8}
+
+.text_cell_render th {
+    border-style: hidden;
+    background-color: #004c80;
+    color: #f8f8f8;
+}
+table td, table th, table tr {
+    text-align:left !important;
+}
+</style>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
