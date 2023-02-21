@@ -837,6 +837,13 @@
     "href": "Modules/M01_Introduction.html#general-concepts-in-organic-chemistry",
     "title": "01 Introduction",
     "section": "1. General Concepts in Organic Chemistry",
-    "text": "1. General Concepts in Organic Chemistry\nChemistry is the study of matter and the changes it undergoes.\nMatter is anything that occupies space and has mass."
+    "text": "1. General Concepts in Organic Chemistry\nChemistry is the study of matter and the changes it undergoes.\nMatter is anything that occupies space and has mass.\nTest Observable JS\n\nviewof bill_length_min = Inputs.range(\n  [32, 50], \n  {value: 35, step: 1, label: \"Bill length (min):\"}\n)\nviewof islands = Inputs.checkbox(\n  [\"Torgersen\", \"Biscoe\", \"Dream\"], \n  { value: [\"Torgersen\", \"Biscoe\"], \n    label: \"Islands:\"\n  }\n)\n\nsales = [\n  {units: 10, fruit: \"peach\"},\n  {units: 20, fruit: \"pear\"},\n  {units: 40, fruit: \"plum\"},\n  {units: 30, fruit: \"plum\"}\n]\n\nPlot.plot({\n  marks: [\n    Plot.barX(sales, {x: \"units\", y: \"fruit\", fill: \"fruit\"}),\n    Plot.ruleX([0])\n  ]\n})"
+  },
+  {
+    "objectID": "readme.html",
+    "href": "readme.html",
+    "title": "Organic Chemistry",
+    "section": "",
+    "text": "This is a website containg orgniac chemistry learning materials. Visit at https://wangyu16.github.io/OrganChem/"
   }
 ]
